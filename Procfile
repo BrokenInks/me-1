@@ -1,1 +1,1 @@
-web: /public/home-page.html
+web: ./public/home-page.html

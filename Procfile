@@ -1,1 +1,1 @@
-web: ./public/home-page.html
+web: bash ./public/home-page.html

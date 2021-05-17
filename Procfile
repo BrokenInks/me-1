@@ -1,1 +1,1 @@
-worker: node web.js
+web: bash ./source/home_page.html

@@ -1,1 +1,1 @@
-web: bash ./source/home_page.html
+web: bash /source/home_page.html

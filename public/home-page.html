@@ -16,8 +16,7 @@
 <script>
     new WOW().init();
     const profile = {
-        "count": 5,
-        "1": {
+        1: {
             name: 'New Senpaii#0209',
             description: '★ Мультифункциональный бот для discord ★',
             icon: 'https://cdn.discordapp.com/avatars/674942800894361611/0a36c777c40d995bb58ed2917463db97.webp?size=4096',
@@ -28,7 +27,7 @@
             platform: ['Github', 'Discord'],
             button: 'посетить'
         },
-        "2": {
+        2: {
             name: 'Asami#3799',
             description: '★ Slash бот для discord ★',
             icon: 'https://cdn.discordapp.com/avatars/783995245075103744/3dd132807603c07c36715019a2236d7c.webp?size=4096',
@@ -39,7 +38,7 @@
             platform: ['Github', 'Discord'],
             button: 'посетить'
         },
-        "3": {
+        3: {
             name: 'Zipp Wickness',
             description: '★ Альбом Выва 2 | 2021 на YouTube ★',
             icon: '../public/img/avatars/youtube_avatar.jpg',
@@ -50,7 +49,7 @@
             platform: ['YouTube', ''],
             button: 'смотреть'
         },
-        "4": {
+        4: {
             name: 'Zipp Wickness',
             description: '★ Альбом Выва 2 | 2021 на SoundCloud ★',
             icon: '../public/img/avatars/Soundcloud.jpg',
@@ -61,7 +60,7 @@
             platform: ['SoundCloud', ''],
             button: 'слушать'
         },
-        "5": {
+        5: {
             name: 'Название',
             description: 'Описание',
             icon: '',
@@ -160,7 +159,7 @@
 
                             <script>
                                 let code = '';
-                                for (let i = 1; i <= profile.count; i++) {
+                                for (let i = 1; i <= Object.keys(profile).length; i++) {
                                     code = code + `<tbody class="zoomIn${0.6 + ((i - 1) * 0.3) == 0.6 ? 'Down' : ''} wow" data-wow-duration="${0.6 + ((i - 1) * 0.3)}s" data-wow-delay="0.0s"
                                 data-wow-offset="10" data-wow-iteration="1">
                                 <tr class="tr"

@@ -41,7 +41,7 @@
         3: {
             name: 'Zipp Wickness',
             description: '★ Альбом Выва 2 | 2021 на YouTube ★',
-            icon: '../public/img/avatars/youtube_avatar.jpg',
+            icon: '../source/img/avatars/youtube_avatar.jpg',
             link: 'https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ',
             date: '23/4/2021',
             bg: 'bg2.jpg',
@@ -52,7 +52,7 @@
         4: {
             name: 'Zipp Wickness',
             description: '★ Альбом Выва 2 | 2021 на SoundCloud ★',
-            icon: '../public/img/avatars/Soundcloud.jpg',
+            icon: '../source/img/avatars/Soundcloud.jpg',
             link: 'https://soundcloud.com/valeriy-is-bro-vp/sets/2-1',
             date: '23/4/2021',
             bg: 'bg2.jpg',
@@ -163,25 +163,25 @@
                                     code = code + `<tbody class="zoomIn${0.6 + ((i - 1) * 0.3) == 0.6 ? 'Down' : ''} wow" data-wow-duration="${0.6 + ((i - 1) * 0.3)}s" data-wow-delay="0.0s"
                                 data-wow-offset="10" data-wow-iteration="1">
                                 <tr class="tr"
-                                    style="box-shadow: inset 0px 0px 134px rgba(0,0,0,1); background: url(../public/img/bgs/${profile[i].bg}) no-repeat #343D46; background-size: cover; background-position: 0px -130px;">
+                                    style="box-shadow: inset 0px 0px 134px rgba(0,0,0,1); background: url(../source/img/bgs/${profile[i].bg}) no-repeat #343D46; background-size: cover; background-position: 0px -130px;">
                                     <td style="background: ${profile[i].color}; border: 5px solid ${profile[i].color};" class=" numSection t3">
                                         <span name="place" value="528509008022208513">${i}</span>
                                 ${profile[i].platform[0] !== '' ? `                                <br>
-								<img src="../public/img/icons/${profile[i].platform[0]}.svg" alt="Контент на площадке ${profile[i].platform[0]}" title="ru">` : ``}
+								<img src="../source/img/icons/${profile[i].platform[0]}.svg" alt="Контент на площадке ${profile[i].platform[0]}" title="ru">` : ``}
 								${profile[i].platform[1] !== '' ? `
                                     <br>
-								<img class=" serverStatus" src="../public/img/icons/${profile[i].platform[1]}.svg" width="22px" alt="Сервер на платформе ${profile[i].platform[1]}"><br>` : ``}
+								<img class=" serverStatus" src="../source/img/icons/${profile[i].platform[1]}.svg" width="22px" alt="Сервер на платформе ${profile[i].platform[1]}"><br>` : ``}
                                     </td>
                                         <td style="border: 5px solid ${profile[i].color};" class="serverAvatar t3">
                                             <img class="" src="${profile[i].icon}"
-                                                onerror="this.src='../public/img/avatars/avatar.webp'" alt="">
+                                                onerror="this.src='../source/img/avatars/avatar.webp'" alt="">
                                     </td>
                                             <td style="border: 5px solid ${profile[i].color};" class="serverDesc t3">
                                                 <div class="row">
                                                     <div class=" hideServerAvatar">
                                                         <img class="mobileServerAvatar"
                                                             src="${profile[i].icon}"
-                                                            onerror="this.src='../public/img/avatars/avatar.webp'" alt="">
+                                                            onerror="this.src='../source/img/avatars/avatar.webp'" alt="">
                                             </div>
                                                         <p class="col labelServerText">
                                                             <a class="serverName">${profile[i].name}</a>

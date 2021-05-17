@@ -1,6 +1,9 @@
 var express = require('express');
 var app = express();
-var path = require('path');
-app.use(express.static(path.join(process.cwd(), 'source')));
-console.log(process.env.PORT || 5000);
-app.listen(process.env.PORT || 5000);
+
+app.set('port', (process.env.PORT || 5000));
+app.use(express.static(__dirname + '/source'));
+
+app.listen(app.get('port'), function () {
+    console.log("Node app is running at localhost:" + app.get('port'))
+});

@@ -1,1 +1,1 @@
-web: bash ./public/home-page.html
+worker: node web.js

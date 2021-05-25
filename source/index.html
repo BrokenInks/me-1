@@ -20,56 +20,34 @@
             name: 'New Senpaii#0209',
             description: '★ Мультифункциональный бот для discord ★',
             icon: 'https://cdn.discordapp.com/avatars/674942800894361611/0a36c777c40d995bb58ed2917463db97.webp?size=4096',
-            link: '',
+            link: [{ link: '', title: 'Купить скрипт бота' }, ''],
             date: '3/4/2021',
             bg: 'bg0.gif',
             color: '#f2d3a9',
             platform: ['Github', 'Discord'],
-            button: 'посетить'
+            button: 'Купить'
         },
         2: {
             name: 'Asami#3799',
             description: '★ Slash бот для discord ★',
             icon: 'https://cdn.discordapp.com/avatars/783995245075103744/3dd132807603c07c36715019a2236d7c.webp?size=4096',
-            link: '',
+            link: [{ link: '', title: 'Купить скрипт бота' }, ''],
             date: '7/05/2021',
-            bg: 'bg1.gif',
+            bg: 'bg1.jpg',
             color: '#ffc0ed',
             platform: ['Github', 'Discord'],
-            button: 'посетить'
+            button: 'Купить'
         },
         3: {
             name: 'Zipp Wickness',
-            description: '★ Альбом Выва 2 | 2021 на YouTube ★',
-            icon: '../source/img/avatars/youtube_avatar.jpg',
-            link: 'https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ',
+            description: '★ Альбом Выва 2 | 2021 ★',
+            icon: '../source/img/avatars/soundcloud_avatar.jpg',
+            link: [{ link: 'https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ', title: 'Перейти на YouTube плейлист' }, 'https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ - YouTube\nhttps://soundcloud.com/valeriy-is-bro-vp/sets/2-1 - SoundCloud'],
             date: '23/4/2021',
             bg: 'bg2.jpg',
             color: '#ab7fbc',
-            platform: ['YouTube', ''],
-            button: 'смотреть'
-        },
-        4: {
-            name: 'Zipp Wickness',
-            description: '★ Альбом Выва 2 | 2021 на SoundCloud ★',
-            icon: '../source/img/avatars/Soundcloud.jpg',
-            link: 'https://soundcloud.com/valeriy-is-bro-vp/sets/2-1',
-            date: '23/4/2021',
-            bg: 'bg2.jpg',
-            color: '#ab7fbc',
-            platform: ['SoundCloud', ''],
-            button: 'слушать'
-        },
-        5: {
-            name: 'Название',
-            description: 'Описание',
-            icon: '',
-            link: '',
-            date: 'Дата',
-            bg: '',
-            color: '',
-            platform: ['', ''],
-            button: 'Кнопка'
+            platform: ['YouTube', 'SoundCloud'],
+            button: 'Смотреть'
         }
 
     }
@@ -85,7 +63,7 @@
                 <div class="row">
                     <div class="col-md-12" style="padding-right: 0">
                         <div class="logo" alt="">
-                            <a itemprop="url" tabindex="0" href="./home-page.html" alt="DISCORD" title="На главную"><img
+                            <a itemprop="url" tabindex="0" href="./index.html" alt="DISCORD" title="На главную"><img
                                     itemprop="logo" src="./img/logo.svg"></a>
                         </div>
                         <div class="topMenu hidden-sm hidden-xs">
@@ -174,14 +152,14 @@
                                     </td>
                                         <td style="border: 5px solid ${profile[i].color};" class="serverAvatar t3">
                                             <img class="" src="${profile[i].icon}"
-                                                onerror="this.src='../source/img/avatars/avatar.webp'" alt="">
+                                                onerror="this.src='../source/img/avatars/avatar.gif'" alt="">
                                     </td>
                                             <td style="border: 5px solid ${profile[i].color};" class="serverDesc t3">
                                                 <div class="row">
                                                     <div class=" hideServerAvatar">
                                                         <img class="mobileServerAvatar"
                                                             src="${profile[i].icon}"
-                                                            onerror="this.src='../source/img/avatars/avatar.webp'" alt="">
+                                                            onerror="this.src='../source/img/avatars/avatar.gif'" alt="">
                                             </div>
                                                         <p class="col labelServerText">
                                                             <a class="serverName">${profile[i].name}</a>
@@ -192,15 +170,15 @@
                                                         </p>
                                     </td>
                                                     <td style="border: 5px solid ${profile[i].color};" class="join t3"><span
-                                                        class="rating all">Дата: <b>${profile[i].date}</b></span><a href="./return.html"
+                                                        class="rating all">Дата: <b>${profile[i].date}</b></span><a href="${profile[i].link[0].link}"
                                                             style="background: ${profile[i].color};"
                                                             onmouseover="this.style.backgroundColor='${profile[i].color} linear-gradient(-80deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, .5), rgba(255, 255, 255, 0)) no-repeat !important';"
                                                             onmouseout="this.style.backgroundColor='${profile[i].color}';" class="boost t3"
-                                                            target="_blank" rel="noopener" title="Вступить на сервер"
+                                                            target="_blank" rel="noopener" title="${profile[i].link[0].title}"
                                                             tabindex="0">${profile[i].button}</a><a onclick=copyLink(event)
-                                            data-link='${profile[i].link === '' ? 'Ссылка приватная, или автор её не добавлял' : profile[i].link}'
+                                            data-link='${profile[i].link[1].link === '' ? 'Ссылка приватная, или автор её не добавлял' : profile[i].link[1].link}'
                                             class="aboutbt" rel="noopener" id="copyLink"
-                                            title="Скопировать ссылку на ${profile[i].platform.join(' / ')}" tabindex="0">Поделиться</a></td>
+                                            title="Скопировать ссылку на ${profile[i].platform.join(' или ')}" tabindex="0">Поделиться</a></td>
                             </tbody>`
                                 }
                                 document.write(code)

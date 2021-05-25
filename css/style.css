@@ -248,7 +248,7 @@ border: 1px solid #D2D1D4;
 
 :focus {
 	/*outline: 2px dashed #4E5D94;*/
-	outline: 2px dashed rgba(78, 93, 148, 0.5);
+	outline: 2px dashed #e4a4ad;
 }
 
 html {

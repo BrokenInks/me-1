@@ -627,3 +627,22 @@ td:hover .description {
 	src: url(../fonts/fa-solid-900.eot);
 	src: url(../fonts/fa-solid-900.eot#iefix) format("embedded-opentype"), url(../fonts/fa-solid-900.woff2) format("woff2"), url(../fonts/fa-solid-900.woff) format("woff"), url(../fonts/fa-solid-900.ttf) format("truetype"), url(../fonts/fa-solid-900.svg#fontawesome) format("svg");
 }
+
+.errorPage {
+	margin-top: -10px;
+	color: #F04747;
+	padding: 5px;
+	border: 2px solid #F04747;
+	border-radius: 5px;
+	background: #23272A;
+}
+
+.wumpusEasteregg {
+	pointer-events: auto;
+	opacity: 0.1;
+	transition: all 0.5s;
+}
+
+.wumpusEasteregg:hover {
+	opacity: 1;
+}

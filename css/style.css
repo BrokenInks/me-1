@@ -63,7 +63,7 @@ header::before {
 	position: absolute;
 	top: 110vh;
 	background: rgba(0, 0, 0, 0.74);
-	padding: 30px;
+	padding: 10px;
 	color: grey;
 }
 

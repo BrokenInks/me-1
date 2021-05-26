@@ -50,7 +50,7 @@ header::before {
 	right: 0;
 	bottom: 0;
 	display: block;
-	background: url(https://cdn.discordapp.com/attachments/724940553535488041/795224923098316830/mountains-minimalists-4k-vx-3840x2400.jpg);
+	background: url(../img/banner.jpg);
 	background-size: cover;
 	transform-origin: center center 0;
 	transform: translateZ(-1px) scale(2);
@@ -71,7 +71,7 @@ header::before {
 .container {
 	align-items: center;
 	display: flex;
-	height: 1100px;
+	height: 600px;
 	justify-content: center;
 	width: 900px;
 }

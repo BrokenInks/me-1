@@ -60,7 +60,7 @@ header, header:before {
 header::before {
 	content: "";
 	position: absolute;
-	top: 0;
+	top: -50px;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -71,12 +71,6 @@ header::before {
 	transform: translateZ(-1px) scale(2);
 	z-index: -1;
 	min-height: 100vh;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
 }
 
 button {
@@ -109,7 +103,7 @@ button:focus {
 .parallaxContainer {
 	z-index: 2;
 	position: absolute;
-	top: 110vh;
+	top: 120vh;
 	background: rgba(0, 0, 0, 0.74);
 	color: grey;
 	padding: 10px;

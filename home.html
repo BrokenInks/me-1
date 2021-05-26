@@ -159,80 +159,86 @@
     
 -->
 
-
-    <main class="h">
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12" id="table">
-                        <table class="table serversList">
-
-
-                            <script>
-                                let code = '';
-                                for (let i = 1; i <= Object.keys(profile).length; i++) {
-                                    code = code + `<tbody class="zoomIn${0.6 + ((i < 3 ? i - 1 : 2) * 0.3) == 0.6 ? 'Down' : ''} wow" data-wow-duration="${0.6 + ((i - 1) * 0.3)}s" data-wow-delay="0.0s"
-                                data-wow-offset="10" data-wow-iteration="1">
-                                <tr class="tr"
-                                    style="box-shadow: inset 0px 0px 134px rgba(0,0,0,1); background: url(./img/bgs/${profile[i].bg}) no-repeat #343D46; background-size: cover; background-position: 0px -130px;">
-                                    <td style="background: ${profile[i].color}; border: 5px solid ${profile[i].color};" class=" numSection t3">
-                                        <span name="place" value="528509008022208513">${i}</span>
-                                ${profile[i].platform[0] !== '' ? `                                <br>
-								<img src="./img/icons/${profile[i].platform[0]}.svg" alt="Контент на площадке ${profile[i].platform[0]}" title="ru">` : ``}
-								${profile[i].platform[1] !== '' ? `
-                                    <br>
-								<img class=" serverStatus" src="./img/icons/${profile[i].platform[1]}.svg" width="22px" alt="Сервер на платформе ${profile[i].platform[1]}"><br>` : ``}
-                                    </td>
-                                        <td style="border: 5px solid ${profile[i].color};" class="serverAvatar t3">
-                                            <img class="" src="${profile[i].icon}"
-                                                onerror="this.src='./img/avatars/avatar.gif'" alt="">
-                                    </td>
-                                            <td style="border: 5px solid ${profile[i].color};" class="serverDesc t3">
-                                                <div class="row">
-                                                    <div class=" hideServerAvatar">
-                                                        <img class="mobileServerAvatar"
-                                                            src="${profile[i].icon}"
-                                                            onerror="this.src='./img/avatars/avatar.gif'" alt="">
+    <div class="parallaxContainer">
+        <main class="h">
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12" id="table">
+                            <table class="table serversList">
+    
+    
+                                <script>
+                                    let code = '';
+                                    for (let i = 1; i <= Object.keys(profile).length; i++) {
+                                        code = code + `<tbody class="zoomIn${0.6 + ((i < 3 ? i - 1 : 2) * 0.3) == 0.6 ? 'Down' : ''} wow" data-wow-duration="${0.6 + ((i - 1) * 0.3)}s" data-wow-delay="0.0s"
+                                    data-wow-offset="10" data-wow-iteration="1">
+                                    <tr class="tr"
+                                        style="box-shadow: inset 0px 0px 134px rgba(0,0,0,1); background: url(./img/bgs/${profile[i].bg}) no-repeat #343D46; background-size: cover; background-position: 0px -130px;">
+                                        <td style="background: ${profile[i].color}; border: 5px solid ${profile[i].color};" class=" numSection t3">
+                                            <span name="place" value="528509008022208513">${i}</span>
+                                    ${profile[i].platform[0] !== '' ? `                                <br>
+                                    <img src="./img/icons/${profile[i].platform[0]}.svg" alt="Контент на площадке ${profile[i].platform[0]}" title="ru">` : ``}
+                                    ${profile[i].platform[1] !== '' ? `
+                                        <br>
+                                    <img class=" serverStatus" src="./img/icons/${profile[i].platform[1]}.svg" width="22px" alt="Сервер на платформе ${profile[i].platform[1]}"><br>` : ``}
+                                        </td>
+                                            <td style="border: 5px solid ${profile[i].color};" class="serverAvatar t3">
+                                                <img class="" src="${profile[i].icon}"
+                                                    onerror="this.src='./img/avatars/avatar.gif'" alt="">
+                                        </td>
+                                                <td style="border: 5px solid ${profile[i].color};" class="serverDesc t3">
+                                                    <div class="row">
+                                                        <div class=" hideServerAvatar">
+                                                            <img class="mobileServerAvatar"
+                                                                src="${profile[i].icon}"
+                                                                onerror="this.src='./img/avatars/avatar.gif'" alt="">
+                                                </div>
+                                                            <p class="col labelServerText">
+                                                                <a class="serverName">${profile[i].name}</a>
+                                                                <br>
+                                                </p>
                                             </div>
-                                                        <p class="col labelServerText">
-                                                            <a class="serverName">${profile[i].name}</a>
-                                                            <br>
-                                            </p>
-                                        </div>
-                                                        <p class="description">${profile[i].description}
-                                                        </p>
-                                    </td>
-                                                    <td style="border: 5px solid ${profile[i].color};" class="join t3"><span
-                                                        class="rating all">Дата: <b>${profile[i].date}</b></span><a href="${profile[i].link[0].link}"
-                                                            style="background: ${profile[i].color};"
-                                                            onmouseover="this.style.backgroundColor='${profile[i].color} linear-gradient(-80deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, .5), rgba(255, 255, 255, 0)) no-repeat !important';"
-                                                            onmouseout="this.style.backgroundColor='${profile[i].color}';" class="boost t3"
-                                                            target="_blank" rel="noopener" title="${profile[i].link[0].title}"
-                                                            tabindex="0">${profile[i].button}</a><a onclick=copyLink(event)
-                                            data-link='${profile[i].link[1].link === '' ? 'Ссылка приватная, или автор её не добавлял' : profile[i].link[1].link}'
-                                            class="aboutbt" rel="noopener" id="copyLink"
-                                            title="Скопировать ссылку на ${profile[i].platform.join(' или ')}" tabindex="0">Поделиться</a></td>
-                            </tbody>`
-                                }
-                                document.write(code)
-                            </script>
-
-                        </table>
+                                                            <p class="description">${profile[i].description}
+                                                            </p>
+                                        </td>
+                                                        <td style="border: 5px solid ${profile[i].color};" class="join t3"><span
+                                                            class="rating all">Дата: <b>${profile[i].date}</b></span><a href="${profile[i].link[0].link}"
+                                                                style="background: ${profile[i].color};"
+                                                                onmouseover="this.style.backgroundColor='${profile[i].color} linear-gradient(-80deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, .5), rgba(255, 255, 255, 0)) no-repeat !important';"
+                                                                onmouseout="this.style.backgroundColor='${profile[i].color}';" class="boost t3"
+                                                                target="_blank" rel="noopener" title="${profile[i].link[0].title}"
+                                                                tabindex="0">${profile[i].button}</a><a onclick=copyLink(event)
+                                                data-link='${profile[i].link[1].link === '' ? 'Ссылка приватная, или автор её не добавлял' : profile[i].link[1].link}'
+                                                class="aboutbt" rel="noopener" id="copyLink"
+                                                title="Скопировать ссылку на ${profile[i].platform.join(' или ')}" tabindex="0">Поделиться</a></td>
+                                </tbody>`
+                                    }
+                                    document.write(code)
+                                </script>
+    
+                            </table>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <script>
-            function copyLink(e) {
-                let link = e.target.dataset.link;
-                let tmp = document.createElement('INPUT');
-                tmp.value = link;
-                document.body.appendChild(tmp);
-                tmp.select();
-                document.execCommand('copy');
-                document.body.removeChild(tmp);
-            }
-        </script>
-    </main>
+            </section>
+            <script>
+                function copyLink(e) {
+                    let link = e.target.dataset.link;
+                    let tmp = document.createElement('INPUT');
+                    tmp.value = link;
+                    document.body.appendChild(tmp);
+                    tmp.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(tmp);
+                }
+            </script>
+        </main>
+
+    </div>
+    <header>
+        <h1>Абоба</h1>
+    </header>
+
 
 </html>

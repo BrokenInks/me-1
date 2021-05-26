@@ -63,8 +63,9 @@ header::before {
 	position: absolute;
 	top: 110vh;
 	background: rgba(0, 0, 0, 0.74);
-	padding: 10px;
 	color: grey;
+	padding: 10px;
+	border-radius: 20px;
 }
 
 .container {
@@ -294,7 +295,7 @@ main {
 main.h {
 	color: #fff;
 	position: relative;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 	min-height: calc(100vh - 385px);
 }
 

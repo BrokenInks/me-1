@@ -15,7 +15,10 @@ body {
 	display: flex;
 	font-family: sans-serif;
 	justify-content: center;
-	background: url(../img/testback.png) repeat;
+	background: url(../img/bc50f78.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-attachment: fixed;
 	height: 100vh;
 	margin: 0;
 	font-family: 'Font-reg', Font-reg
@@ -56,7 +59,7 @@ body {
 border: 1px solid #D2D1D4;
 */
 	display: flex;
-	height: 400px;
+	height: 900px;
 	justify-content: center;
 	width: 900px;
 }
@@ -1203,7 +1206,7 @@ footer.h:hover {
 	font-size: 15px;
 	border-radius: 5px;
 	margin: 20px;
-	curor: help;
+	cursor: help;
 }
 
 .toplinevis {
@@ -1229,24 +1232,24 @@ footer.h:hover {
 }
 
 .tr {
-	border-radius: 10px;
+	border-radius: 20px;
 	background: #343D46;
 }
 
 tr:first-child {
-	border-top-left-radius: 10px;
+	border-top-left-radius: 20px;
 }
 
 td:first-child {
 	background: #37404A;
-	width: 60px;
+	width: 20px;
 	text-align: center;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-	-moz-border-top-left-radius: 10px;
-	-moz-border-bottom-left-radius: 10px;
-	-webkit-border-top-left-radius: 10px;
-	-webkit-border-bottom-left-radius: 10px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	-moz-border-top-left-radius: 20px;
+	-moz-border-bottom-left-radius: 20px;
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
 }
 
 .serverStatus {

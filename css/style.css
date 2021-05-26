@@ -37,8 +37,8 @@ header h1 {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	display: inline-block;
-	background: #fff;
-	color: black;
+	background: rgba(0, 0, 0, 0.74);
+	color: #fff;
 	margin-bottom: 0;
 	padding: .5rem 10rem .625rem 10rem;
 	font-size: 90px;

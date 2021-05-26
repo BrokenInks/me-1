@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    </script>
     <link rel="icon" type="image/ico" sizes="32x32" href="./img/favicon.ico">
     <link rel="icon" type="image/ico" sizes="16x16" href="./img/favicon.ico">
     <link rel="shortcut icon" href="./img/favicon.ico">
@@ -68,8 +69,11 @@
                         <div class="topMenu hidden-sm hidden-xs">
                             <nav id="top-menu" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
                                 <ul>
-                                    <li itemprop="name"><a itemprop="url" tabindex="0" href="./information.html"><i
-                                                class="fas fa-info-circle"></i> Информация</a></li>
+                                    <li itemprop="name">
+                                        <a itemprop="url" tabindex="0" href="./information.html">
+                                            <i class="fas fa-info-circle"></i>Информация
+                                        </a>
+                                    </li>
                                     <li itemprop="name"><a itemprop="url" tabindex="0" href="./donation.html"><i
                                                 class="fas fa-coffee"></i> Пожертвование</a></li>
                                     <li itemprop="name"><a itemprop="url" tabindex="0" href="./news.html"><i
@@ -83,48 +87,36 @@
         </div>
     </section>
 
+    <nav class="scrollto">
+    </nav>
 
+    <header>
+        <a href="#element1">
+            <button class="black noselect">Портфолио</button>
+        </a>
+    </header>
 
-    <!-- 
+    <script>document.querySelectorAll('a[href^="#"').forEach(link => {
 
-        <h1 class="zoomInDown wow" alt="Логотип" data-wow-duration="0.9s" data-wow-delay="0.0s" data-wow-offset="10"
-        data-wow-iteration="1">
-        <div class="container">
-            <div class="email" onclick="this.classList.add('expand')">
-                <div class="from">
-                    <div class="from-contents">
-                        <div class="name">My page</div>
-                    </div>
-                </div>
-                <div class="to">
-                    <div class="to-contents">
-                        <div class="top">
-                            <div class="avatar-large me"></div>
-                            <div class="name-large">ZippWitch</div>
-                            <script>
-                                document.onclick = function (e) {
-                                    if (['container', '', 'email '].includes(event.target.className)) {
-                                        document.querySelector('.email').classList.remove('expand'); event.stopPropagation();
-                                    }
-                                };
-                            </script>
-                        </div>
-                        <div class="bottom">
-                            <div class="row">
-                                <div class="link"><a href="./return.html">Link №1</a></div>
-                            </div>
-                            <div class="row">
-                                <div class="link"><a href="./return.html">Link №2</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </h1>
-    
--->
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
 
+                let href = this.getAttribute('href').substring(1);
+
+                const scrollTarget = document.getElementById(href);
+
+                const topOffset = document.querySelector('.scrollto').offsetHeight;
+                // const topOffset = 0; // если не нужен отступ сверху 
+                const elementPosition = scrollTarget.getBoundingClientRect().top;
+                const offsetPosition = elementPosition - topOffset;
+
+                window.scrollBy({
+                    top: 1000,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
     <div class="parallaxContainer">
         <main class="h">
             <section>
@@ -132,8 +124,8 @@
                     <div class="row">
                         <div class="col-md-12" id="table">
                             <table class="table serversList">
-    
-    
+
+
                                 <script>
                                     let code = '';
                                     for (let i = 1; i <= Object.keys(profile).length; i++) {
@@ -182,7 +174,7 @@
                                     }
                                     document.write(code)
                                 </script>
-    
+
                             </table>
                         </div>
                     </div>
@@ -202,9 +194,9 @@
         </main>
 
     </div>
-    <header>
-        <h1>Портфолио</h1>
-    </header>
 
+    <section id="element1"></section>
+
+    </section>
 
 </html>

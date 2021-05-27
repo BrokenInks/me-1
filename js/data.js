@@ -19,7 +19,7 @@ const profile = {
         bg: 'bg1.jpg',
         color: '#ffc0ed',
         platform: ['Github', 'Discord'],
-        button: [{ buttonName: 'купить', buttonLink: '', buttonColor: '#52b36e' }]
+        button: [{ buttonName: 'Купить', buttonLink: '', buttonColor: '#52b36e' }]
     },
     3: {
         name: 'Zipp Wickness',

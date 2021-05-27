@@ -124,7 +124,6 @@
                                     <tr class="tr"
                                         style="box-shadow: inset 0px 0px 150px rgba(0,0,0,1); background: url(./img/bgs/${profile[i].bg}) no-repeat #343D46; background-size: cover; background-position: 0px -100px;">
                                         <td style="background: ${profile[i].color}; border: 5px solid ${profile[i].color};" class=" numSection t3">
-
                                             <span name="place" value="528509008022208513">${i}</span>
                                     `;
                                         for (let pl = 0; !!profile[i].platform[pl]; pl++) {
@@ -169,7 +168,6 @@
                                                                 `
                                         }
                                         code = code + `
-
                                                                 <a onclick=copyLink(event)
                                                 data-link='${profile[i].buttonShare[1].link === '' ? 'Ссылка приватная, или автор её не добавлял' : profile[i].buttonShare[1].link}'
                                                 class="aboutbt" rel="noopener" id="copyLink"

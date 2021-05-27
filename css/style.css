@@ -115,7 +115,8 @@ header::before {
 	min-height: 100vh;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');button {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+button {
 	font-family: 'Montserrat', sans-serif;
 	width: 300px;
 	height: 50px;
@@ -712,14 +713,4 @@ td:hover .description {
 	border: 2px solid #e4a4ad;
 	border-radius: 5px;
 	background: #23272A;
-}
-
-.wumpusEasteregg {
-	pointer-events: auto;
-	opacity: 0.1;
-	transition: all 0.5s;
-}
-
-.wumpusEasteregg:hover {
-	opacity: 1;
 }

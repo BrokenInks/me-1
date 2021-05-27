@@ -28,25 +28,29 @@
         </div>
     </div>
     <section class="topLine h" id="topLine">
-        <div class="fadeIn wow" alt="Логотип" data-wow-duration="2" data-wow-delay="0.0s" data-wow-offset="10"
+        <div class="fadeIn wow" alt="Логотип" data-wow-duration="2s" data-wow-delay="0.0s" data-wow-offset="10"
             data-wow-iteration="1">
 
             <div class=" container-fluid">
                 <div class="row">
                     <div class="col-md-12" style="padding-right: 0">
-                        <div class="logo" alt="server-discord.com">
+                        <div class="logo" alt="">
                             <a itemprop="url" tabindex="0" href="./home.html" alt="DISCORD" title="На главную"><img
-                                    itemprop="logo" src="./img/logo.svg"></a>
+                                    itemprop="logo" class="hoverable" src="./img/logo.svg"></a>
                         </div>
                         <div class="topMenu hidden-sm hidden-xs">
                             <nav id="top-menu" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
                                 <ul>
-                                    <li itemprop="name"><a itemprop="url" tabindex="0" href="./information.html"><i
-                                                class="fas fa-info-circle"></i> Информация</a></li>
-                                    <li itemprop="name"><a itemprop="url" tabindex="0" href="./donation.html"><i
-                                                class="fas fa-coffee"></i> Пожертвование</a></li>
-                                    <li itemprop="name"><a itemprop="url" tabindex="0" href="./news.html"><i
-                                                class="fa fa-newspaper" aria-hidden="true"></i> Новости</a></li>
+                                    <li itemprop="name">
+                                        <a itemprop="url" tabindex="0" class="hoverable" href="./information.html">
+                                            <i class="fas fa-info-circle"></i>Информация
+                                        </a>
+                                    </li>
+                                    <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable"
+                                            href="./donation.html"><i class="fas fa-coffee"></i> Пожертвование</a></li>
+                                    <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable"
+                                            href="./news.html"><i class="fa fa-newspaper" aria-hidden="true"></i>
+                                            Новости</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -55,6 +59,9 @@
             </div>
         </div>
     </section>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
+    <script src="./js/cursor.js"></script>
 </body>
 
 </html>

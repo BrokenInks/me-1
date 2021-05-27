@@ -714,3 +714,28 @@ td:hover .description {
 	border-radius: 5px;
 	background: #23272A;
 }
+
+/* весь скролбар */
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* линия всего скролбара */
+
+::-webkit-scrollbar-track {
+	background: #332a64;
+	border-radius: 50px;
+}
+
+/* ползунок */
+
+::-webkit-scrollbar-thumb {
+	background-color: #7f78bd;
+}
+
+/* нижний угол скролбара где встречаются горизонтальный и вертикальный скролбары */
+
+::-webkit-scrollbar-corner {
+	background-color: #7f78bd;
+}

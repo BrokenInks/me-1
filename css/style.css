@@ -19,9 +19,12 @@ body {
 	font-family: 'Font-reg', Font-reg;
 }
 
+
+
 body h1, body p, body a {
 	color: #fff;
 }
+
 
 body .cursor {
 	pointer-events: none;
@@ -119,7 +122,7 @@ button {
 	height: 50px;
 	margin: 150px;
 	font-size: 26px;
-	color: #1c1982;
+	color: #fff;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 	cursor: pointer;
 	border: none;

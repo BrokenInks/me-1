@@ -54,10 +54,11 @@
                                             <i class="fas fa-info-circle"></i>Информация
                                         </a>
                                     </li>
-                                    <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable" href="./donation.html"><i
-                                                class="fas fa-coffee"></i> Пожертвование</a></li>
-                                    <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable" href="./news.html"><i
-                                                class="fa fa-newspaper" aria-hidden="true"></i> Новости</a></li>
+                                    <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable"
+                                            href="./donation.html"><i class="fas fa-coffee"></i> Пожертвование</a></li>
+                                    <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable"
+                                            href="./news.html"><i class="fa fa-newspaper" aria-hidden="true"></i>
+                                            Новости</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -71,8 +72,10 @@
         <nav class="scrollto">
         </nav>
 
-        <a href="#element1">
-            <button href="#element1" class="black noselect hoverable">Portfolio</button>
+        <a href="#zaraza">
+            <button href="#zaraza" class="black noselect hoverable zoomInDown wow"
+            data-wow-duration="0.6s" data-wow-delay="0.0s" data-wow-offset="10"
+            data-wow-iteration="1">Portfolio</button>
         </a>
     </header>
 
@@ -109,8 +112,7 @@
                                 <script>
                                     let code = '';
                                     for (let i = 1; i <= Object.keys(profile).length; i++) {
-                                        code = code + `<tbody class="zoomIn${0.6 + ((i < 3 ? i - 1 : 2) * 0.3) == 0.6 ? 'Down' : ''} wow" data-wow-duration="${0.6 + ((i - 1) * 0.3)}s" data-wow-delay="0.0s"
-                                    data-wow-offset="10" data-wow-iteration="1">
+                                        code = code + `<tbody>
                                     <tr class="tr"
                                         style="box-shadow: inset 0px 0px 150px rgba(0,0,0,1); background: url(./img/bgs/${profile[i].bg}) no-repeat #343D46; background-size: cover; background-position: 0px -100px;">
                                         <td style="background: ${profile[i].color}; border: 5px solid ${profile[i].color};" class=" numSection t3">
@@ -152,7 +154,8 @@
                                                             <a href="${profile[i].button[but].buttonLink}"
                                                                 style="background: ${profile[i].button[but].buttonColor !== '' ? profile[i].button[but].buttonColor : profile[i].color};"
                                                                 onmouseover="this.style.backgroundColor='${profile[i].button[but].buttonColor !== '' ? profile[i].button[but].buttonColor : profile[i].color} linear-gradient(-80deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, .5), rgba(255, 255, 255, 0)) no-repeat !important';"
-                                                                onmouseout="this.style.backgroundColor='${profile[i].button[but].buttonColor !== '' ? profile[i].button[but].buttonColor : profile[i].color}';" class="boost t3"
+                                                                onmouseout="this.style.backgroundColor='${profile[i].button[but].buttonColor !== '' ? profile[i].button[but].buttonColor : profile[i].color}';" class="boost t3 pulse wow" data-wow-duration="1s" data-wow-delay="0.6s" data-wow-offset="10"
+        data-wow-iteration="1" 
                                                                 target="_blank" rel="noopener" title="${profile[i].button[but].buttonName}"
                                                                 tabindex="0">${profile[i].button[but].buttonName}</a>
                                                                 `
@@ -188,7 +191,7 @@
 
     </div>
 
-    <section id="element1"></section>
+    <section id="zaraza"></section>
 
     </section>
 

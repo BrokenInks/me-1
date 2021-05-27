@@ -5,7 +5,7 @@ const profile = {
         icon: 'https://cdn.discordapp.com/avatars/674942800894361611/0a36c777c40d995bb58ed2917463db97.webp?size=4096',
         buttonShare: [{ link: '', title: 'Купить скрипт бота' }, ''],
         date: '3/4/2021',
-        bg: 'bg0.gif',
+        bg: 'bg1.jpg',
         color: '#f2d3a9',
         platform: ['Github', 'Discord'],
         button: [{ buttonName: 'Купить', buttonLink: '', buttonColor: '#52b36e' }]

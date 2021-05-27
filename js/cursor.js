@@ -26,7 +26,7 @@ function onMouseMove(e) {
 // Hover an element
 function onMouseHover() {
     TweenMax.to($bigBall, .3, {
-        scale: 4
+        scale: 3
     });
 
 }

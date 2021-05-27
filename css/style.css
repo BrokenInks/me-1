@@ -19,6 +19,47 @@ body {
 	font-family: 'Font-reg', Font-reg;
 }
 
+body h1, body p, body a {
+	color: #fff;
+}
+
+body .cursor {
+	pointer-events: none;
+}
+
+body .cursor__ball {
+	position: fixed;
+	top: 0;
+	left: 0;
+	mix-blend-mode: difference;
+	z-index: 1000;
+}
+
+body .cursor__ball circle {
+	fill: #f7f8fa;
+}
+
+body .left, body .right {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+body .right {
+	background: #fff;
+}
+
+body .right a {
+	border-bottom: 2px solid #000;
+}
+
+body .right h1, body .right p, body .right a {
+	color: #000;
+}
+
 header {
 	box-sizing: border-box;
 	min-height: 60vh;
@@ -78,7 +119,7 @@ button {
 	height: 50px;
 	margin: 150px;
 	font-size: 26px;
-	color: #fff;
+	color: #1c1982;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 	cursor: pointer;
 	border: none;
@@ -356,19 +397,20 @@ td:first-child {
 	text-align: center;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
-	-moz-border-top-left-radius: 20px;
-	-moz-border-bottom-left-radius: 20px;
-	-webkit-border-top-left-radius: 20px;
-	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-top-left-radius: 10px;
+	-moz-border-bottom-left-radius: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
 }
 
 .serverStatus {
 	width: 27px;
 	height: 27px;
-	background: transparent;
+	background: rgba(0, 0, 0, 0.466);
+	margin: 1px;
 	border-radius: 3px;
 	padding: 3px;
-	transition: all 0.2s;
+	transition: all 0.1s;
 }
 
 td:first-child:hover .serverStatus {
@@ -545,7 +587,7 @@ td:hover .description {
 .rating.all {
 	font-size: 12px;
 	color: #fff;
-	cursor: help;
+	cursor: not-allowed;
 	border-radius: 5px;
 	border-bottom: solid 1px #fff;
 	padding: 6px 24px 6px 24px;

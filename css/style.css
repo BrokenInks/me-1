@@ -12,9 +12,6 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	perspective: 1px;
-	transform-style: preserve-3d;
-	overflow-y: scroll;
-	overflow-x: hidden;
 	height: 100vh;
 	margin: 0;
 	font-family: 'Font-reg', Font-reg;

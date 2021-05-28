@@ -8,9 +8,10 @@
     <link rel="shortcut icon" href="./img/favicon.ico">
     <title>Интеграции и портфолио ZippWitch</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/jquery.fullPage.css">
     <link rel="stylesheet" media="all" href="./css/animate.css">
     <script src="./js/wow.min.js"></script>
-    <script src="./js/data.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
 
     <meta name="theme-color" content="#7f78bd">
@@ -77,130 +78,84 @@
         </div>
     </section>
 
-    <header>
-        <nav class="scrollto">
-        </nav>
+    <script>
+        var body = document.getElementsByTagName('body')[0];
 
-        <a href="#zaraza">
-            <button href="#zaraza" class="black noselect hoverable zoomInDown wow" data-wow-duration="0.6s"
-                data-wow-delay="0.0s" data-wow-offset="10" data-wow-iteration="1">Моё портфолио</button>
-        </a>
-    </header>
+        // по клику 
+        window.addEventListener('click', function (e) {
 
-    <script>document.querySelectorAll('a[href^="#"').forEach(link => {
-
-            link.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                let href = this.getAttribute('href').substring(1);
-
-                const scrollTarget = document.getElementById(href);
-
-                const topOffset = document.querySelector('.scrollto').offsetHeight;
-                // const topOffset = 0; // если не нужен отступ сверху 
-                const elementPosition = scrollTarget.getBoundingClientRect().top;
-                const offsetPosition = elementPosition - topOffset;
-
-                window.scrollBy({
-                    top: 1000,
-                    behavior: 'smooth'
-                });
+            // создадим кастомное событие типа scroll
+            var event = new CustomEvent("scroll", {
+                detail: {
+                    scrollTop: 0 // передадим нужные значения
+                }
             });
+            // "вызовем" событие
+            window.dispatchEvent(event);
+        });
+
+        // добавим слушателя события scroll
+        window.addEventListener('scroll', function (e) {
+            console.log(e);
+            // если событие не настоящее
+            if (!e.isTrusted) {
+                body.scrollTop = e.detail.scrollTop; // изменяем scrollTop на переданное значение
+            }
         });
     </script>
-    <div class="parallaxContainer">
-        <main class="h">
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12" id="table">
-                            <table class="table serversList">
 
+    <div class="fullpage" id="js-fullpage">
+        <div class="section">
+            <header>
 
-                                <script>
-                                    let code = '';
-                                    for (let i = 1; i <= Object.keys(profile).length; i++) {
-                                        code = code + `<tbody>
-                                    <tr class="tr"
-                                        style="box-shadow: inset 0px 0px 150px rgba(0,0,0,1); background: url(./img/bgs/${profile[i].bg}) no-repeat #343D46; background-size: cover; background-position: 0px -100px;">
-                                        <td style="background: ${profile[i].color}; border: 5px solid ${profile[i].color};" class=" numSection t3">
-                                            <span name="place" value="528509008022208513">${i}</span>
-                                    `;
-                                        for (let pl = 0; !!profile[i].platform[pl]; pl++) {
-                                            code = code + `
-                                        
-                                    <img class="serverStatus" src="./img/icons/${profile[i].platform[pl]}.svg" width="22px" alt="Сервер на платформе ${profile[i].platform[1]}"><br>`
-                                        }
+                <nav class="scrollto">
+                </nav>
 
-                                        code = code + `
-                                    </td >
-                                                <td style="border: 5px solid ${profile[i].color};" class="serverAvatar t3">
-                                                    <img class="" src="${profile[i].icon}"
-                                                        onerror="this.src='./img/avatars/avatar.gif'" alt="">
-                                        </td>
-                                                    <td style="border: 5px solid ${profile[i].color};" class="serverDesc t3">
-                                                        <div class="row">
-                                                            <div class=" hideServerAvatar">
-                                                                <img class="mobileServerAvatar"
-                                                                    src="${profile[i].icon}"
-                                                                    onerror="this.src='./img/avatars/avatar.jpg'" alt="">
-                                                </div>
-                                                                <p class="col labelServerText">
-                                                                    <a class="serverName">${profile[i].name}</a>
-                                                                    <br>
-                                                </p>
-                                            </div>
-                                                                <p class="description">${profile[i].description}
-                                                                </p>
-                                        </td>
-                                                            <td style="border: 5px solid ${profile[i].color};" class="join t3"><span
-                                                                class="rating all"><b>${profile[i].date}</b></span>
-                                                            `;
-                                        for (let but = 0; !!profile[i].button[but]; but++) {
-                                            code = code + `
-                                                            <a href="${profile[i].button[but].buttonLink}"
-                                                                style="background: ${profile[i].button[but].buttonColor !== '' ? profile[i].button[but].buttonColor : profile[i].color};"
-                                                                onmouseover="this.style.backgroundColor='${profile[i].button[but].buttonColor !== '' ? profile[i].button[but].buttonColor : profile[i].color} linear-gradient(-80deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, .5), rgba(255, 255, 255, 0)) no-repeat !important';"
-                                                                onmouseout="this.style.backgroundColor='${profile[i].button[but].buttonColor !== '' ? profile[i].button[but].buttonColor : profile[i].color}';" class="boost t3 pulse wow" data-wow-duration="1s" data-wow-delay="0.6s" data-wow-offset="10"
-        data-wow-iteration="1" 
-                                                                target="_blank" rel="noopener" title="${profile[i].button[but].buttonName}"
-                                                                tabindex="0">${profile[i].button[but].buttonName}</a>
-                                                                `
-                                        }
-                                        code = code + `
-                                                                <a onclick=copyLink(event)
-                                                data-link='${profile[i].buttonShare[1].link === '' ? 'Ссылка приватная, или автор её не добавлял' : profile[i].buttonShare[1].link}'
-                                                class="aboutbt" rel="noopener" id="copyLink"
-                                                title="Скопировать ссылку на ${profile[i].platform.join(' или ')}" tabindex="0">Поделиться</a></td>
-                                </tbody>`
-                                    }
-                                    document.write(code)
-                                </script>
+                <button href="#zaraza" class="black noselect hoverable">Моё портфолио</button>
+            </header>
+        </div>
+        <div class="section">
+            <div class="fullpage__slide">
+                <div class="parallaxContainer">
+                    <main class="h">
+                        <section>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12" id="table">
+                                        <table class="table serversList">
 
-                            </table>
-                        </div>
-                    </div>
+                                            <script src="./js/loop.js"></script>
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <script>
+                            function copyLink(e) {
+                                let link = e.target.dataset.link;
+                                let tmp = document.createElement('INPUT');
+                                tmp.value = link;
+                                document.body.appendChild(tmp);
+                                tmp.select();
+                                document.execCommand('copy');
+                                document.body.removeChild(tmp);
+                            }
+                        </script>
+                    </main>
+
                 </div>
-            </section>
-            <script>
-                function copyLink(e) {
-                    let link = e.target.dataset.link;
-                    let tmp = document.createElement('INPUT');
-                    tmp.value = link;
-                    document.body.appendChild(tmp);
-                    tmp.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(tmp);
-                }
-            </script>
-        </main>
+            </div>
+        </div>
 
     </div>
-
-    <section id="zaraza"></section>
-
-    </section>
-
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/jquery.fullPage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="./js/parallax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
+    <script src="./js/common.min.js"></script>
     <!-- partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
     <script src="./js/cursor.js"></script>

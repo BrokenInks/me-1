@@ -63,9 +63,9 @@ a:hover {
 }
 
 .title__text {
-    font-size: 12rem;
+    font-size: 8rem;
     line-height: 1;
-    letter-spacing: 0.1em;
+    letter-spacing: 10px;
     margin-bottom: 1.6rem;
     font-family: "Exo 2";
     font-weight: normal;
@@ -297,7 +297,7 @@ a:hover {
     overflow-y: hidden;
     right: -7.5490%;
     bottom: 12.3762%;
-    font-size: 15rem;
+    font-size: 9rem;
     color: #fff;
     font-family: "Abril Fatface";
     z-index: 200;

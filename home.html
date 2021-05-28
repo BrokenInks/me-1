@@ -78,32 +78,6 @@
         </div>
     </section>
 
-    <script>
-        var body = document.getElementsByTagName('body')[0];
-
-        // по клику 
-        window.addEventListener('click', function (e) {
-
-            // создадим кастомное событие типа scroll
-            var event = new CustomEvent("scroll", {
-                detail: {
-                    scrollTop: 0 // передадим нужные значения
-                }
-            });
-            // "вызовем" событие
-            window.dispatchEvent(event);
-        });
-
-        // добавим слушателя события scroll
-        window.addEventListener('scroll', function (e) {
-            console.log(e);
-            // если событие не настоящее
-            if (!e.isTrusted) {
-                body.scrollTop = e.detail.scrollTop; // изменяем scrollTop на переданное значение
-            }
-        });
-    </script>
-
     <div class="fullpage" id="js-fullpage">
         <div class="section">
             <header>

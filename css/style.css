@@ -1,5 +1,9 @@
 /*! CSS Used from: https://zippwitch-alt.github.io/zippp/css/style.css */
 
+html {
+	scroll-behavior: smooth
+}
+
 body {
 	align-items: center;
 	display: flex;
@@ -142,13 +146,12 @@ button:focus {
 	outline: none;
 }
 
-
-
 .container {
 	align-items: center;
 	justify-content: center;
 	display: flex;
-	height: 720px;
+	height: 900px;
+	/* 400px */
 	width: 900px;
 }
 

@@ -150,7 +150,7 @@ button:focus {
 	align-items: center;
 	justify-content: center;
 	display: flex;
-	height: 900px;
+	height: 400px;
 	/* 400px */
 	width: 900px;
 }
@@ -469,7 +469,9 @@ td:last-child {
 }
 
 .boost:hover {
-	background: #687CC7;
+	cursor: none;
+	transform: translateY(5px);
+	box-shadow: 0px 0px transparent, 0px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 .boost.t3:hover {
@@ -609,6 +611,10 @@ td:hover .description {
 
 .fa-coffee:before {
 	content: "\f0f4";
+}
+
+.fa-user:before {
+	content: "\f007";
 }
 
 .fa-info-circle:before {

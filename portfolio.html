@@ -76,34 +76,42 @@
         </div>
     </section>
 
-    <div class="parallaxContainer">
-        <main class="h">
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12" id="table">
-                            <table class="table serversList">
+    <div class="wrapper" data-barba="container">
+        <div class="page-holder">
+            <div class="page-scroller">
 
-                                <script src="./js/loop.js"></script>
 
-                            </table>
-                        </div>
-                    </div>
+                <div class="parallaxContainer">
+                    <main class="h">
+                        <section>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12" id="table">
+                                        <table class="table serversList">
+
+                                            <script src="./js/loop.js"></script>
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <script>
+                            function copyLink(e) {
+                                let link = e.target.dataset.link;
+                                let tmp = document.createElement('INPUT');
+                                tmp.value = link;
+                                document.body.appendChild(tmp);
+                                tmp.select();
+                                document.execCommand('copy');
+                                document.body.removeChild(tmp);
+                            }
+                        </script>
+                    </main>
+
                 </div>
-            </section>
-            <script>
-                function copyLink(e) {
-                    let link = e.target.dataset.link;
-                    let tmp = document.createElement('INPUT');
-                    tmp.value = link;
-                    document.body.appendChild(tmp);
-                    tmp.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(tmp);
-                }
-            </script>
-        </main>
-
+            </div>
+        </div>
     </div>
 
 
@@ -111,8 +119,11 @@
     <html>
 
     <head>
+
         <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
         <script src="./js/cursor.js"></script>
+
+
 </body>
 
 </html>

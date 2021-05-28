@@ -608,6 +608,10 @@ td:hover .description {
 	content: "\f0f4";
 }
 
+.fa-chevron-down:before {
+	content: "\f078";
+}
+
 .fa-cc-visa:before {
 	content: "\f1f0";
 }

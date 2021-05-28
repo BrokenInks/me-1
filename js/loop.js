@@ -82,7 +82,7 @@ style="box-shadow: inset 0px 0px 150px rgba(0,0,0,1); background: url(./img/bgs/
                     <a href="${profile[i].button[but].buttonLink}"
                         style="background: ${profile[i].button[but].buttonColor !== '' ? profile[i].button[but].buttonColor : profile[i].color};"
                         onmouseover="this.style.backgroundColor='${profile[i].button[but].buttonColor !== '' ? profile[i].button[but].buttonColor : profile[i].color} linear-gradient(-80deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, .5), rgba(255, 255, 255, 0)) no-repeat !important';"
-                        onmouseout="this.style.backgroundColor='${profile[i].button[but].buttonColor !== '' ? profile[i].button[but].buttonColor : profile[i].color}';" class="black boost"
+                        onmouseout="this.style.backgroundColor='${profile[i].button[but].buttonColor !== '' ? profile[i].button[but].buttonColor : profile[i].color}';" class="black boost hoverable"
                         target="_blank" rel="noopener" title="${profile[i].button[but].buttonName}"
                         tabindex="0">${profile[i].button[but].buttonName}</a>
                         `

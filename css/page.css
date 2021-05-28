@@ -303,7 +303,7 @@ a:hover {
 .page-num-main-page {
     color: #67c7c3;
     bottom: 50.3762%;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 @media screen and (max-width:800px) {

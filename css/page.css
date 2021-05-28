@@ -290,7 +290,7 @@ a:hover {
 }
 
 .image .page-num {
-    position: absolute;
+    position: fixed;
     overflow-y: hidden;
     right: -7.5490%;
     bottom: 12.3762%;
@@ -298,6 +298,12 @@ a:hover {
     color: #fff;
     font-family: "Abril Fatface";
     z-index: 200;
+}
+
+.page-num-main-page {
+    color: #67c7c3;
+    bottom: 50.3762%;
+    font-size: 1rem;
 }
 
 @media screen and (max-width:800px) {

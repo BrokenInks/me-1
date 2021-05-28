@@ -613,6 +613,10 @@ td:hover .description {
 	content: "\f0f4";
 }
 
+.fa-cc-visa:before {
+	content: "\f1f0";
+}
+
 .fa-user:before {
 	content: "\f007";
 }

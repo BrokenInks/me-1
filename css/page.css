@@ -285,7 +285,7 @@ a:hover {
 }
 
 .image--about {
-    background: url(https://cdn.discordapp.com/attachments/807672784482336809/847757387266916352/20210528_114429.jpg) no-repeat center;
+    background: url(https://cdn.pixabay.com/photo/2017/08/02/23/08/dj-2573925_1280.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -293,7 +293,7 @@ a:hover {
     position: fixed;
     overflow-y: hidden;
     right: -7.5490%;
-    bottom: 12.3762%;
+    bottom: 1.3762%;
     font-size: 9rem;
     color: #fff;
     font-family: "Abril Fatface";
@@ -331,11 +331,6 @@ a:hover {
 }
 
 /*! CSS Used fontfaces */
-
-@font-face {
-    font-family: "Exo 2";
-    src: url(https://kuon.space/assets/font/Futura-Med.eot) format("eot"), url(https://kuon.space/assets/font/Futura-Med.woff) format("woff");
-}
 
 @font-face {
     font-family: 'Abril Fatface';

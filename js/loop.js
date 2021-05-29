@@ -3,8 +3,8 @@ const profile = {
     1: {
         name: 'Music или mod discord бот на заказ',
         description: `Модератор-бот на JS (ban, clear, kick, lock-channel, move, mute, poll, unban, unlock-channel, unmute)
-        Музыкальный-бот на JS (loop, now-playing, play, queue, resume, shuffle, skip, stop, volume)`,
-        icon: '',
+        <br>Музыкальный-бот на JS (loop, now-playing, play, queue, resume, shuffle, skip, stop, volume)`,
+        icon: './img/avatars/1.gif',
         buttonShare: [{ link: '', title: 'Купить скрипт бота' }, ''],
         date: 'Услуга',
         bg: 'bg1.jpg',
@@ -17,7 +17,7 @@ const profile = {
         description: `New Senpaii — проект мультифункционального, в том числе и развлекательного бота для Вашего сервера в Discord, основанный на желаниях и потребностях пользователей аудитории.
 
         Созданный в 2019 году бот, продолжающий радовать своих пользователей и находящийся в активной разработке будет рад выполнять свои функции и на Вашем сервере.`,
-        icon: 'https://cdn.discordapp.com/avatars/674942800894361611/0a36c777c40d995bb58ed2917463db97.webp?size=4096',
+        icon: 'https://cdn.discordapp.com/avatars/674942800894361611/568429c0828ceabc102df5dd5617d907.webp?size=4096',
         buttonShare: [{ link: '', title: 'Купить скрипт бота' }, ''],
         date: '3/4/2021',
         bg: 'bg1.jpg',
@@ -28,7 +28,7 @@ const profile = {
     3: {
         name: 'Asami#3799',
         description: 'Slash бот для discord',
-        icon: 'https://cdn.discordapp.com/avatars/783995245075103744/3dd132807603c07c36715019a2236d7c.webp?size=4096',
+        icon: 'https://cdn.discordapp.com/avatars/783995245075103744/405ff76ecd30ee7943f29023d59eea22.webp?size=4096',
         buttonShare: [{ link: '', title: 'Купить скрипт бота' }, ''],
         date: '7/05/2021',
         bg: 'bg1.jpg',
@@ -45,7 +45,7 @@ const profile = {
         bg: 'bg2.jpg',
         color: '',
         platform: ['YouTube', 'SoundCloud'],
-        button: [{ buttonName: 'Смотреть', buttonLink: 'https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ', buttonColor: '' }, { buttonName: 'Слушать', buttonLink: 'https://soundcloud.com/valeriy-is-bro-vp/sets/2-1', buttonColor: '' }]
+        button: [{ buttonName: 'YouTube', buttonLink: 'https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ', buttonColor: '' }, { buttonName: 'SoundCloud', buttonLink: 'https://soundcloud.com/valeriy-is-bro-vp/sets/2-1', buttonColor: '' }]
     }
 }
 
@@ -79,7 +79,7 @@ style="box-shadow: inset 0px 0px 150px rgba(0,0,0,1); background: url(./img/bgs/
                             onerror="this.src='./img/avatars/avatar.jpg'" alt="">
         </div>
                         <p class="col labelServerText">
-                            <a class="serverName">${profile[i].name}</a>
+                            <a href="${profile[i].button[0].buttonLink}" class="serverName hoverable">${profile[i].name}</a>
                             <br>
         </p>
     </div>

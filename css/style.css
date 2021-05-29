@@ -145,7 +145,7 @@ button:focus {
 	align-items: center;
 	justify-content: center;
 	display: flex;
-	height: 400px;
+	height: 500px;
 	/* 400px */
 	width: 900px;
 }

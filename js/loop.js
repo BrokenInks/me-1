@@ -1,6 +1,18 @@
 const profile = {
     defColor: '#7f78bd',
     1: {
+        name: 'Music или mod discord бот на заказ',
+        description: `Модератор-бот на JS (ban, clear, kick, lock-channel, move, mute, poll, unban, unlock-channel, unmute)
+        Музыкальный-бот на JS (loop, now-playing, play, queue, resume, shuffle, skip, stop, volume)`,
+        icon: '',
+        buttonShare: [{ link: '', title: 'Купить скрипт бота' }, ''],
+        date: 'Услуга',
+        bg: 'bg1.jpg',
+        color: '',
+        platform: ['Discord'],
+        button: [{ buttonName: '499₽', buttonLink: './items/buy-3.html', buttonColor: '' }]
+    },
+    2: {
         name: 'New Senpaii#0209',
         description: `New Senpaii — проект мультифункционального, в том числе и развлекательного бота для Вашего сервера в Discord, основанный на желаниях и потребностях пользователей аудитории.
 
@@ -13,7 +25,7 @@ const profile = {
         platform: ['Github', 'Discord'],
         button: [{ buttonName: '2900₽', buttonLink: './items/buy-1.html', buttonColor: '' }]
     },
-    2: {
+    3: {
         name: 'Asami#3799',
         description: 'Slash бот для discord',
         icon: 'https://cdn.discordapp.com/avatars/783995245075103744/3dd132807603c07c36715019a2236d7c.webp?size=4096',
@@ -24,7 +36,7 @@ const profile = {
         platform: ['Github', 'Discord'],
         button: [{ buttonName: '899₽', buttonLink: './items/buy-2.html', buttonColor: '' }]
     },
-    3: {
+    4: {
         name: 'Zipp Wickness',
         description: 'Альбом Выва 2 | 2021',
         icon: './img/avatars/soundcloud_avatar.jpg',

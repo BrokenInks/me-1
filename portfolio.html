@@ -60,8 +60,11 @@
                                     <li>
                                         <a>
                                             <script src="./js/search.js"></script>
-                                            <input type="text" id="code" onkeyup="redirectUser()" placeholder="Перейти"
-                                                title="Type in a category">
+                                            <input type="text" id="code" onkeydown="document.getElementById('code').onkeypress = function($) {
+                                                if ($.keyCode === 13) {
+                                                    redirectUser();
+                                                }
+                                              }" placeholder=" Перейти" title="Введи название страницы">
                                         </a>
 
                                     </li>

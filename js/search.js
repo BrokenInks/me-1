@@ -22,13 +22,13 @@ function redirectUser() {
     var code = document.getElementById("code").value;
 
     switch (code) {
-        case 'портфолио':
+        case /(портфолио)|(пф)|(portfolio)|(pf)/ui:
             file = 'portfolio'
             break
-        case 'новости':
+        case /(новости)|(news)|(события)|(нововведения)/ui:
             file = 'news'
             break
-        case 'главная':
+        case /(главная)|(main)|(индекс)|(домашняя)|(home)/ui:
             file = 'index'
             break
         case 'Hello, world!':

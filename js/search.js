@@ -17,24 +17,23 @@ function searchTab() {
     }
 }
 
+
+
+
 function redirectUser() {
+    document.addEventListener('keydown', console.log)
     let link = 'https://zippwitch-alt.github.io/zippp/'
     var code = document.getElementById("code").value;
     let file;
 
-    switch (true) {
-        case /(портфолио)|(пф)|(portfolio)|(pf)/ui.test(code):
-            file = 'portfolio'
-            break;
-        case /(новости)|(news)|(события)|(нововведения)/ui.test(code):
-            file = 'news'
-            break;
-        case /(главная)|(main)|(индекс)|(домашняя)|(home)/ui.test(code):
-            file = 'index'
-            break;
-        case /Hello, world!/ui.test(code):
-            file = 'game3000'
-            break;
+    if (['portfolio', 'портфолио', 'pf', 'пф'].includes(code)) {
+        file = 'portfolio'
+    } else if (['новости', 'news', 'события', 'ивенты'].includes(code)) {
+        file = 'news'
+    } else if (['главная', 'домашняя', 'home', 'main'].includes(code)) {
+        file = 'index'
+    } else if (['Hello, world!'].includes(code)) {
+        file = 'game3000'
     }
 
     window.location.href = file !== 'index' ? link + file + '.html' : link

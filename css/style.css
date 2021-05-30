@@ -340,7 +340,7 @@ img {
 }
 
 .topMenu li {
-	padding-top: 16px;
+	padding-top: 13px;
 	display: inline-block;
 	color: black;
 	min-height: 100%;
@@ -358,6 +358,45 @@ img {
 .topMenu li:hover {
 	opacity: 1;
 	transform: scale(1.05) translateY(-1px);
+}
+
+/* Стиль окна поиска */
+
+#code {
+	text-align: center;
+	border: 0;
+	border-radius: 5px;
+	width: 90%;
+	height: 25px;
+	padding: 0px;
+	font-size: 14px;
+	-webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	-ms-transition: all .1s ease-in-out;
+	-o-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+}
+
+/* Стиль меню навигации */
+
+#myMenu {
+	height: 3%;
+	list-style-type: circle;
+	padding: 0px;
+	margin: 0;
+}
+
+/* Стиль навигационных ссылок */
+
+#myMenu li a {
+	padding: 0px;
+	text-decoration: none;
+	color: black;
+	display: block
+}
+
+#myMenu li a:hover {
+	background-color: #eee;
 }
 
 main {

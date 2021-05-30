@@ -62,9 +62,18 @@ background-attachment: fixed;">
                             <a itemprop="url" tabindex="0" href="./" alt="DISCORD" title="На главную"><img
                                     itemprop="logo" class="hoverable" src="./img/logo.svg"></a>
                         </div>
+
                         <div class="topMenu hidden-sm hidden-xs">
                             <nav id="top-menu" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
                                 <ul>
+                                    <li>
+                                        <a>
+                                            <script src="./js/search.js"></script>
+                                            <input type="text" id="code" onkeyup="redirectUser()" placeholder="Поиск"
+                                                title="Type in a category">
+                                        </a>
+
+                                    </li>
                                     <li itemprop="name">
                                         <a itemprop="url" tabindex="0" class="hoverable" href="./portfolio.html">
                                             <i class="fas fa-user"></i> Портфолио

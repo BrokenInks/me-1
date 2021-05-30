@@ -20,6 +20,7 @@ function searchTab() {
 function redirectUser() {
     let link = 'https://zippwitch-alt.github.io/zippp/'
     var code = document.getElementById("code").value;
+    let file;
 
     switch (true) {
         case /(портфолио)|(пф)|(portfolio)|(pf)/ui.test(code):

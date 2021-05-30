@@ -21,17 +21,17 @@ function redirectUser() {
     let link = 'https://zippwitch-alt.github.io/zippp/'
     var code = document.getElementById("code").value;
 
-    switch (code) {
-        case /(портфолио)|(пф)|(portfolio)|(pf)/ui:
+    switch (true) {
+        case /(портфолио)|(пф)|(portfolio)|(pf)/ui.test(code):
             file = 'portfolio'
             break
-        case /(новости)|(news)|(события)|(нововведения)/ui:
+        case /(новости)|(news)|(события)|(нововведения)/ui.test(code):
             file = 'news'
             break
-        case /(главная)|(main)|(индекс)|(домашняя)|(home)/ui:
+        case /(главная)|(main)|(индекс)|(домашняя)|(home)/ui.test(code):
             file = 'index'
             break
-        case 'Hello, world!':
+        case 'Hello, world!'.test(code):
             file = 'game3000'
             break
     }

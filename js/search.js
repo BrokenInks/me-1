@@ -31,7 +31,7 @@ function redirectUser() {
         case 'главная':
             file = 'index'
             break
-        case 'abc':
+        case 'Hello, world!':
             file = 'game3000'
             break
     }

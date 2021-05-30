@@ -32,7 +32,7 @@ function redirectUser() {
         case /(главная)|(main)|(индекс)|(домашняя)|(home)(ukfdyfz)|(ьфшт)|(byltrc)|(ljvfiyzz)|(рщьу)/ui.test(code):
             file = 'index'
             break
-        case code === 'Hello, world!':
+        case 'Hello, world!'.includes('Hello, world!'):
             file = 'game3000'
             break
     }

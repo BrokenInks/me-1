@@ -23,16 +23,16 @@ function redirectUser() {
     let file;
 
     switch (true) {
-        case ['портфолио', 'пф', 'portfolio'].includes(code):
+        case /(портфолио)|(пф)|(portfolio)|(pf)/ui.test(code):
             file = 'portfolio'
             break
-        case ['новости', 'news', 'события'].includes(code):
+        case /(новости)|(news)|(события)|(нововведения)/ui.test(code):
             file = 'news'
             break
-        case ['главная', 'main', 'домашняя', 'home'].includes(code):
+        case /(главная)|(main)|(индекс)|(домашняя)|(home)/ui.test(code):
             file = 'index'
             break
-        case ['Hello, world!'].includes(code):
+        case /Hello, world!/.test(code):
             file = 'game3000'
             break
     }

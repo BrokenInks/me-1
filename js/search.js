@@ -23,13 +23,13 @@ function redirectUser() {
     let file;
 
     switch (true) {
-        case /(портфолио)|(пф)|(portfolio)|(pf)/ui.test(code):
+        case /(портфолио)|(пф)|(portfolio)|(pf)(gjhnajkbj)|(ga)|(зщкеащдшщ)|(за)/ui.test(code):
             file = 'portfolio'
             break
-        case /(новости)|(news)|(события)|(нововведения)/ui.test(code):
+        case /(новости)|(news)|(события)|(нововведения)(yjdjcnb)|(туцы)|(cj,snbz)|(yjdjddtltybz)/ui.test(code):
             file = 'news'
             break
-        case /(главная)|(main)|(индекс)|(домашняя)|(home)/ui.test(code):
+        case /(главная)|(main)|(индекс)|(домашняя)|(home)(ukfdyfz)|(ьфшт)|(byltrc)|(ljvfiyzz)|(рщьу)/ui.test(code):
             file = 'index'
             break
         case 'Hello, world!'.test(code):

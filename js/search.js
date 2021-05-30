@@ -25,16 +25,16 @@ function redirectUser() {
     switch (true) {
         case /(портфолио)|(пф)|(portfolio)|(pf)/ui.test(code):
             file = 'portfolio'
-            break
+            break;
         case /(новости)|(news)|(события)|(нововведения)/ui.test(code):
             file = 'news'
-            break
+            break;
         case /(главная)|(main)|(индекс)|(домашняя)|(home)/ui.test(code):
             file = 'index'
-            break
-        case /Hello, world!/.test(code):
+            break;
+        case /Hello, world!/ui.test(code):
             file = 'game3000'
-            break
+            break;
     }
 
     window.location.href = file !== 'index' ? link + file + '.html' : link

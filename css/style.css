@@ -321,7 +321,7 @@ img {
 	pointer-events: auto;
 	display: inline-block;
 	height: 40px;
-	margin: 5px 0px 5px 5px;
+	margin: 5px 0px 0px 5px;
 }
 
 .topLine .logo a:focus img {
@@ -441,7 +441,7 @@ td:last-child {
 	width: 80px;
 	height: 80px;
 	padding: 5px;
-	border-radius: 25%;
+	border-radius: 20%;
 	display: block;
 }
 

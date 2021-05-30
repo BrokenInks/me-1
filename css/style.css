@@ -363,6 +363,7 @@ img {
 /* Стиль окна поиска */
 
 #code {
+	cursor: none;
 	text-align: center;
 	border: 0;
 	border-radius: 5px;
@@ -380,6 +381,7 @@ img {
 /* Стиль меню навигации */
 
 #myMenu {
+	cursor: none;
 	height: 3%;
 	list-style-type: circle;
 	padding: 0px;

@@ -9,7 +9,7 @@ const profile = {
         date: 'Услуга',
         bg: 'bg1.jpg',
         color: '',
-        platform: ['Discord'],
+        platform: [{ name: 'Discord', link: '' }],
         button: [{ buttonName: '499₽', buttonLink: './items/buy-3.html', buttonColor: '' }]
     },
     2: {
@@ -22,7 +22,7 @@ const profile = {
         date: '3/4/2021',
         bg: 'bg1.jpg',
         color: '',
-        platform: ['Github', 'Discord'],
+        platform: [{ name: 'Discord', link: '' }, { name: 'Github', link: 'https://github.com/ZippWitch-alt' }],
         button: [{ buttonName: '2900₽', buttonLink: './items/buy-1.html', buttonColor: '' }]
     },
     3: {
@@ -33,7 +33,7 @@ const profile = {
         date: '7/05/2021',
         bg: 'bg1.jpg',
         color: '',
-        platform: ['Github', 'Discord'],
+        platform: [{ name: 'Discord', link: '' }, { name: 'Github', link: 'https://github.com/ZippWitch-alt' }],
         button: [{ buttonName: '899₽', buttonLink: './items/buy-2.html', buttonColor: '' }]
     },
     4: {
@@ -44,7 +44,7 @@ const profile = {
         date: '23/4/2021',
         bg: 'bg2.jpg',
         color: '',
-        platform: ['YouTube', 'SoundCloud'],
+        platform: [{ name: 'YouTube', link: 'https://www.youtube.com/channel/UCeqXNuOoWvxpEchVO3hbAmg' }, { name: 'SoundCloud', link: 'https://soundcloud.com/valeriy-is-bro-vp/' }],
         button: [{ buttonName: 'YouTube', buttonLink: 'https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ', buttonColor: '' }, { buttonName: 'SoundCloud', buttonLink: 'https://soundcloud.com/valeriy-is-bro-vp/sets/2-1', buttonColor: '' }]
     }
 }
@@ -53,8 +53,8 @@ const profile = {
 let code = '';
 for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
     code = code + `<tbody>
-<tr class="tr"
-style="box-shadow: inset 0px 0px 150px rgba(0,0,0,1); background: url(./img/bgs/${profile[i].bg}) no-repeat #343D46; background-size: cover; background-position: 0px -100px;">
+<tr class="tr bg"
+style="box-shadow: inset 0px 0px 250px rgba(0,0,0,1); background: url(./img/bgs/${profile[i].bg}) no-repeat #343D46; background-size: cover; background-position: 0px -100px;">
 <td style="background: ${profile[i].color !== '' ? profile[i].color : profile.defColor}; border: 5px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};" class=" numSection t3">
 
     <span name="place" value="528509008022208513">${i}</span>
@@ -62,7 +62,9 @@ style="box-shadow: inset 0px 0px 150px rgba(0,0,0,1); background: url(./img/bgs/
     for (let pl = 0; !!profile[i].platform[pl]; pl++) {
         code = code + `
 
-<img class="serverStatus" src="./img/icons/${profile[i].platform[pl]}.svg" width="22px" alt="Сервер на платформе ${profile[i].platform[1]}"><br>`
+<a href="${profile[i].platform[pl].link}">
+        <img class="black serverStatus" src="./img/icons/${profile[i].platform[pl].name}.svg" width="22px" alt="Сервер на платформе ${profile[i].platform[pl].name}"><br>
+        </a>`
     }
 
     code = code + `

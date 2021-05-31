@@ -604,7 +604,7 @@ td:last-child {
 
 .aboutbt:hover {
 	background: #fff;
-	color: #343D46;
+	color: #322a63;
 }
 
 .aboutbt:focus {
@@ -691,6 +691,10 @@ td:hover .description {
 
 .fa-user:before {
 	content: "\f007";
+}
+
+.fa-home:before {
+	content: "\f015";
 }
 
 .fa-info-circle:before {

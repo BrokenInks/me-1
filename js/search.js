@@ -36,7 +36,6 @@ function checkValid() {
     var code = document.getElementById("code").value;
     const regexps = {
         'portfolio': /(портфолио)|(пф)|(portfolio)|(pf)/ui.test(code),
-        'news': /(новости)|(news)|(события)|(нововведения)/ui.test(code),
         'more': /(подробнее)|(ещё)|(больше)|(more)/ui.test(code),
         'index': /(главная)|(main)|(индекс)|(домашняя)|(home)/ui.test(code),
         'game3000': /Hello, world!/.test(code)
@@ -44,11 +43,10 @@ function checkValid() {
     let result = regexps['index'];
 
     if (regexps['portfolio'] ||
-        regexps['news'] ||
         regexps['more'] ||
         regexps['index'] ||
         regexps['game3000']) {
-        document.getElementById("code").style.color = "green"
+        document.getElementById("code").style.color = "#78bd7b"
     } else {
         document.getElementById("code").style.color = "#322a63a4"
     }

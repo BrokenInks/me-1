@@ -72,8 +72,10 @@ background-attachment: fixed;">
                                             <input type="text" id="code" onkeydown="document.getElementById('code').onkeypress = function($) {
                                                 if ($.keyCode === 13) {
                                                     redirectUser();
+                                                } else {
+                                                    checkValid()
                                                 }
-                                              }" placeholder=" Перейти" title="Введи название страницы">
+                                              }" placeholder="Перейти" title="Введи название страницы">
                                         </a>
 
                                     </li>

@@ -1,5 +1,4 @@
 
-
 let canvas = document.createElement('canvas');
 canvas.id = "canvasID"
 canvas.width = 800;

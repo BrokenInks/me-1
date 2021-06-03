@@ -2,20 +2,12 @@
 <html>
 
 <head>
-    </script>
     <link rel="icon" type="image/ico" sizes="32x32" href="./img/favicon.ico">
     <link rel="icon" type="image/ico" sizes="16x16" href="./img/favicon.ico">
     <link rel="shortcut icon" href="./img/favicon.ico">
     <title>Главная</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/page.css">
-    <link rel="stylesheet" href="./css/moon.css">
-    <link rel="stylesheet" href="./css/jquery.fullPage.css">
-    <link rel="stylesheet" media="all" href="./css/animate.css">
-    <script src="./js/parallax.js"></script>
-    <script src="./js/wow.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
 
+    <!-- link preview -->
     <meta name="theme-color" content="#7f78bd">
     <meta property="og:type" content="website">
     <meta property="og:description" content="🎗️ Абоба 🎗️">
@@ -24,11 +16,18 @@
     <meta property="og:site_name" content="ГЛАВНАЯ">
     <meta property="og:title" content="Моё портфолио">
 
-</head>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/page.css">
+    <link rel="stylesheet" href="./css/moon.css">
+    <link rel="stylesheet" href="./css/jquery.fullPage.css">
+    <link rel="stylesheet" media="all" href="./css/animate.css">
 
-<script>
-    new WOW().init();
-</script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+
+
+</head>
 
 <body style="background: url(./img/wallpaper.jpg);
 background-repeat: no-repeat;
@@ -36,7 +35,7 @@ background-position: center;
 background-size: cover;
 background-attachment: fixed;">
 
-    <!-- partial:index.partial.html -->
+    <!-- cursor -->
     <div class="cursor">
         <div class="cursor__ball cursor__ball--big ">
             <svg height="30" width="30">
@@ -51,6 +50,7 @@ background-attachment: fixed;">
         </div>
     </div>
 
+    <!-- topLine -->
     <section class="topLine h" id="topLine">
         <div class="fadeIn wow" alt="Логотип" data-wow-duration="2s" data-wow-delay="0.0s" data-wow-offset="10"
             data-wow-iteration="1">
@@ -94,13 +94,14 @@ background-attachment: fixed;">
         </div>
     </section>
 
+    <!-- content -->
     <div class="fullpage" id="js-fullpage">
         <div class="section">
 
             <header>
 
                 <a href="./portfolio.html">
-                    <button href="./portfolio.html" class="black noselect hoverable">Моё портфолио</button>
+                    <button href="./portfolio.html" class="black noselect hoverable">Portfolio</button>
                 </a>
 
                 <div class="page-num-main-page page-num ">
@@ -126,14 +127,27 @@ background-attachment: fixed;">
 
     </div>
     </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./js/jquery.fullPage.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
-    <script src="./js/parallax.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
-    <script src="./js/common.min.js"></script>
-    <!-- partial -->
+
+    <!-- libraries local -->
+    <!-- <script src="./js/lib/jquery.min.js"></script> -->
+    <!-- <script src="./js/lib/TweenMax.min.js"></script> -->
+    <!-- <script src="./js/lib/anime.min.js"></script> -->
+    <!-- <script src="./js/lib/barba.min.js"></script> -->
+    <script src="./js/lib/wow.min.js"></script>
+
+
+
+    <!-- libraries public -->
+    <script src="https://ajax.googleapis.om/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
+
+    <!-- stock -->
+    <script src="./js/parallax.js"></script>
+    <script src="./js/jquery.fullPage.js"></script>
+    <script src="./js/parallax.js"></script>
+    <script src="./js/common.min.js"></script>
     <script src="./js/cursor.js"></script>
 </body>
 

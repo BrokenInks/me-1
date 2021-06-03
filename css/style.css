@@ -160,7 +160,7 @@ button:focus {
 	align-items: center;
 	justify-content: center;
 	display: flex;
-	height: 500px;
+	height:550px;
 	/* 400px */
 	width: 900px;
 }

@@ -87,8 +87,6 @@
     <div class="wrapper" data-barba="container">
         <div class="page-holder">
             <div class="page-scroller">
-
-
                 <div class="parallaxContainer">
                     <main class="h">
                         <section>
@@ -98,6 +96,8 @@
                                         <table class="table serversList">
 
                                             <script src="./js/loop.js"></script>
+                                            <script>
+                                            </script>
 
                                         </table>
                                     </div>
@@ -105,12 +105,13 @@
                             </div>
                         </section>
                         <script>
-                            function copyLink(e) {
+                            async function copyLink(e) {
                                 let link = e.target.dataset.link;
                                 let tmp = document.createElement('INPUT');
                                 tmp.value = link;
                                 document.body.appendChild(tmp);
                                 tmp.select();
+                                console.log(tmp.value)
                                 document.execCommand('copy');
                                 document.body.removeChild(tmp);
                             }

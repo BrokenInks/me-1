@@ -483,17 +483,16 @@ td:first-child {
 
 .serverStatus {
 	width: 27px;
-	height: 27px;
+	height: 24px;
 	background: #322a63a4;
 	margin: 1px;
 	border-radius: 3px;
-	padding: 3px;
+	padding: 4px;
 	transition: all 0.1s;
 }
 
 td:first-child:hover .serverStatus {
-	border-radius: 10px;
-	padding: 1px;
+	padding: 3px;
 }
 
 td:first-child img {

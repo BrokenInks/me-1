@@ -20,6 +20,7 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" media="all" href="./css/animate.css">
+    <link rel="stylesheet" media="all" href="./css/tl.css">
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
@@ -96,8 +97,6 @@
                                         <table class="table serversList">
 
                                             <script src="./js/loop.js"></script>
-                                            <script>
-                                            </script>
 
                                         </table>
                                     </div>
@@ -105,7 +104,7 @@
                             </div>
                         </section>
                         <script>
-                            async function copyLink(e) {
+                            function copyLink(e) {
                                 let link = e.target.dataset.link;
                                 let tmp = document.createElement('INPUT');
                                 tmp.value = link;
@@ -114,6 +113,8 @@
                                 console.log(tmp.value)
                                 document.execCommand('copy');
                                 document.body.removeChild(tmp);
+
+                                alert('Вы скопировали:\n\n' + tmp.value)
                             }
                         </script>
                     </main>

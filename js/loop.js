@@ -102,7 +102,7 @@ tabindex="0">${profile[i].button[but].buttonName}</a>
 `
     }
     code = code + `
-
+    
 <a onclick=copyLink(event)
 data-link='${profile[i].buttonShare.link === '' ? 'Ссылка приватная, или автор её не добавлял' : profile[i].buttonShare.link}'
 class="aboutbt" rel="noopener" id="copyLink"

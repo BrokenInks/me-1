@@ -13,7 +13,7 @@ const profile = {
         button: [{ buttonName: '499₽', buttonLink: './items/buy-3.html', buttonColor: '' }]
     },
     2: {
-        name: 'New Senpaii#0209',
+        name: 'FN bot#0209',
         description: `New Senpaii — проект мультифункционального, в том числе и развлекательного бота для Вашего сервера в Discord, основанный на желаниях и потребностях пользователей аудитории.
 
         Созданный в 2019 году бот, продолжающий радовать своих пользователей и находящийся в активной разработке будет рад выполнять свои функции и на Вашем сервере.`,
@@ -26,7 +26,7 @@ const profile = {
         button: [{ buttonName: '2900₽', buttonLink: './items/buy-1.html', buttonColor: '' }]
     },
     3: {
-        name: 'Asami#3799',
+        name: 'Slash bot#3799',
         description: 'Slash бот для discord',
         icon: 'https://cdn.discordapp.com/avatars/783995245075103744/405ff76ecd30ee7943f29023d59eea22.webp?size=4096',
         buttonShare: [{ link: '', title: 'Купить скрипт бота' }, ''],

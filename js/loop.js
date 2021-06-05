@@ -106,7 +106,7 @@ tabindex="0">${profile[i].button[but].buttonName}</a>
 <a onclick=copyLink(event)
 data-link='${profile[i].buttonShare.link === '' ? 'Ссылка приватная, или автор её не добавлял' : profile[i].buttonShare.link}'
 class="aboutbt" rel="noopener" id="copyLink"
-title="Скопировать ссылку на ${profile[i].platform.join(' или ')}" tabindex="0">Поделиться</a></td>
+title="Скопировать ссылку на контент" tabindex="0">Поделиться</a></td>
 </tbody>`
 }
 document.write(code)

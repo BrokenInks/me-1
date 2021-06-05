@@ -1,4 +1,4 @@
-DirectoryIndex hello.html
+DirectoryIndex home-page.html
 ErrorDocument 404 /404.html
 RewriteBase /
 RewriteRule (.*)\.html$ $1 [R=301,L]

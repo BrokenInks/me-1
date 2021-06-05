@@ -19,6 +19,19 @@ html {
 	background: #FF0000;
 }
 
+#progress_line {
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 3px;
+	height: 0%;
+	background: #7f78bd9f;
+	background: -moz-linear-gradient(top, #7f78bd 10%, #788abd 30%, #78a7bd 50%, #7abd78 70%, #bcbd78 80%, #bd9978 90%, #bd7878 100%);
+	background: -webkit-linear-gradient(top, #7f78bd 10%, #788abd 30%, #78a7bd 50%, #7abd78 70%, #bcbd78 80%, #bd9978 90%, #bd7878 100%);
+	/* background: -moz-linear-gradient(top, #bd7878 10%, #bd9978 20%, #bcbd78 30%, #7abd78 40%, #78a7bd 50%, #788abd 70%, #7f78bd 100%); */
+	/* background: -webkit-linear-gradient(top, #bd7878 10%, #bd9978 20%, #bcbd78 30%, #7abd78 40%, #78a7bd 50%, #788abd 60%, #7f78bd 100%); */
+}
+
 body {
 	align-items: center;
 	display: flex;

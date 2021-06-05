@@ -1,1 +1,10 @@
+DirectoryIndex hello.html
 ErrorDocument 404 /404.html
+RewriteBase /
+RewriteRule (.*)\.html$ $1 [R=301,L]
+<files game3000="">
+AuthType Basic
+AuthName ""
+AuthUserFile .htpasswd
+Require valid-user
+</files>

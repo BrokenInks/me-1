@@ -515,7 +515,7 @@ button:focus {
     border: 5px solid #7f78bd!important;
     background: url(https://server-discord.com/img/partner_bg.png) repeat;
     box-shadow: inset 0px 0px 134px rgba(0, 0, 0, 1);
-    background: url(../img/testback.png) repeat #3C3D41;
+    background: url(../img/bg.png) repeat #3C3D41;
     background-size: cover;
     background-position: center;
 }

@@ -1,4 +1,4 @@
-/*! CSS Used from: https://server-discord.com/css/all.min.css */
+/*! CSS Used from: https://item-discord.com/css/all.min.css */
 
 .fas {
     -moz-osx-font-smoothing: grayscale;
@@ -26,13 +26,15 @@
     font-weight: 900;
 }
 
-/*! CSS Used from: https://server-discord.com/css/bootstrap-grid.min.css */
+/*! CSS Used from: https://item-discord.com/css/bootstrap-grid.min.css */
 
 *, ::after, ::before {
     box-sizing: inherit;
 }
 
 .container2 {
+    text-align: left;
+    align-items: center;
     width: 100%;
     top: 0;
     padding-right: 15px;
@@ -128,7 +130,7 @@
     }
 }
 
-/*! CSS Used from: https://server-discord.com/css/style.css */
+/*! CSS Used from: https://item-discord.com/css/style.css */
 
 :focus {
     outline: 2px dashed rgba(78, 93, 148, 0.5);
@@ -148,7 +150,7 @@ img {
 }
 
 @media (max-width: 960px) {
-    .serverPersonalPage.bottom {
+    .itemPersonalPage.bottom {
         position: unset!important;
     }
 }
@@ -157,17 +159,17 @@ img {
     .centeredContent {
         justify-content: center;
     }
-    .serverPersonalPage.des {
+    .itemPersonalPage.des {
         padding-bottom: 20px!important;
     }
-    .serverPersonalPage.bottom {
+    .itemPersonalPage.bottom {
         position: unset!important;
     }
-    .serverPersonalPage.name {
+    .itemPersonalPage.name {
         margin-top: 8px;
         margin-bottom: -15px;
     }
-    .serverPersonalPage.des {
+    .itemPersonalPage.des {
         text-align: center;
     }
 }
@@ -213,7 +215,7 @@ button:focus {
     background: #7f78bd;
     border-radius: 5px;
     padding: 6px 24px 6px 24px;
-    cursor: pointer;
+    cursor: none;
     transition: all 0.3s;
     display: block;
     margin-left: 10px;
@@ -246,7 +248,7 @@ button:focus {
     font-size: 12px;
     background: #43B581;
     color: #fff;
-    cursor: help;
+    cursor: none;
     margin-bottom: 5px;
 }
 
@@ -255,7 +257,7 @@ button:focus {
     font-size: 12px;
 }
 
-.addServerForm {
+.additemForm {
     background: #3C3D41;
     padding: 10px;
     border-radius: 20px;
@@ -263,7 +265,7 @@ button:focus {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
 }
 
-.addServerForm.t3 {
+.additemForm.t3 {
     border: 3px solid #7f78bd;
 }
 
@@ -282,7 +284,7 @@ button:focus {
     background: rgba(0, 0, 0, .5);
 }
 
-.serverPersonalPage.reportBtn {
+.itemPersonalPage.reportBtn {
     z-index: 1;
     height: 30px;
     right: 0;
@@ -294,14 +296,14 @@ button:focus {
     border: none;
     background: #7f78bd;
     color: #FFF;
-    cursor: pointer;
+    cursor: none;
 }
 
-.serverPersonalPage.reportBtn.t3 {
+.itemPersonalPage.reportBtn.t3 {
     background: #7f78bd;
 }
 
-.serverPersonalPage.avatar {
+.itemPersonalPage.avatar {
     margin-bottom: 10px;
     margin-top: 10px;
     border-radius: 25px;
@@ -310,29 +312,34 @@ button:focus {
     object-fit: cover;
 }
 
-.serverPersonalPage.name {
+.itemPersonalPage.name {
     margin: 0;
-    font-size: 22px;
+    font-size: 40px;
     text-shadow: 1px 1px 1px #000;
 }
 
-.serverPersonalPage.pinstatus {
+.itemPersonalPage.pinstatus {
     font-size: 12px;
     background: rgba(0, 0, 0, 0.2);
     padding: 5px;
     height: 35px;
     margin-top: 5px;
     border-radius: 5px;
-    cursor: default;
+    cursor: none;
 }
 
-.serverPersonalPage.pinstatus img {
+.itemPersonalPage.pinstatus img {
     height: 23px;
     width: 23px;
 }
 
-.serverPersonalPage.des {
+.itemPersonalPage.des {
+    opacity: 0.6;
     word-break: break-word;
+}
+
+.itemPersonalPage.des:hover {
+    opacity: 1
 }
 
 .pins {
@@ -341,24 +348,24 @@ button:focus {
     width: 85%;
 }
 
-.serverPersonalPage.lang {
+.itemPersonalPage.lang {
     border-radius: 10px;
-    height: 30px;
-    margin-right: 10px;
+    height: 45px;
+    margin-right: 15px;
 }
 
-.serverPersonalPage.statpins {
+.itemPersonalPage.statpins {
     position: absolute;
     margin-top: 4px;
     margin-left: 30px;
 }
 
-.serverPersonalPage.bottom {
+.itemPersonalPage.bottom {
     position: absolute;
     bottom: 0;
 }
 
-.serverPersonalPage.owner {
+.itemPersonalPage.owner {
     padding-bottom: 10px;
 }
 
@@ -368,7 +375,7 @@ button:focus {
     color: #fff;
     background: #F04747;
     font-size: 20px;
-    cursor: pointer;
+    cursor: none;
     height: 24px;
     width: 24px;
 }
@@ -385,19 +392,19 @@ button:focus {
     color: #fff;
     background: #43B581;
     font-size: 20px;
-    cursor: pointer;
+    cursor: none;
     height: 24px;
     width: 24px;
 }
 
 .rating.right:disabled {
-    cursor: not-allowed;
+    cursor: none;
     background: #348D65;
     color: #ccc;
 }
 
 .rating.left:disabled {
-    cursor: not-allowed;
+    cursor: none;
     background: #C83B3B;
     color: #ccc;
 }
@@ -465,7 +472,7 @@ button:focus {
     border-radius: 5px;
     padding: 8px;
     background: #7f78bd;
-    cursor: pointer;
+    cursor: none;
     transition: all 0.3s;
 }
 
@@ -497,7 +504,7 @@ button:focus {
     padding: 6px;
     border: 1px solid #7f78bd;
     background: #282B30;
-    cursor: pointer;
+    cursor: none;
     transition: all 0.3s;
 }
 
@@ -513,9 +520,9 @@ button:focus {
 
 .tempDiv {
     border: 5px solid #7f78bd!important;
-    background: url(https://server-discord.com/img/partner_bg.png) repeat;
-    box-shadow: inset 0px 0px 134px rgba(0, 0, 0, 1);
-    background: url(../img/bg.png) repeat #3C3D41;
+    background: url(https://item-discord.com/img/partner_bg.png) repeat;
+    box-shadow: inset 0px 0px 234px rgba(0, 0, 0, 1);
+    background: url(../img/bgs/bg1.jpg) repeat #3C3D41;
     background-size: cover;
     background-position: center;
 }
@@ -561,8 +568,8 @@ a.tempBtn {
     font-style: normal;
     font-weight: 400;
     font-display: auto;
-    src: url(https://server-discord.com/webfonts/fa-regular-400.eot);
-    src: url(https://server-discord.com/webfonts/fa-regular-400.eot#iefix) format("embedded-opentype"), url(https://server-discord.com/webfonts/fa-regular-400.woff2) format("woff2"), url(https://server-discord.com/webfonts/fa-regular-400.woff) format("woff"), url(https://server-discord.com/webfonts/fa-regular-400.ttf) format("truetype"), url(https://server-discord.com/webfonts/fa-regular-400.svg#fontawesome) format("svg");
+    src: url(https://item-discord.com/webfonts/fa-regular-400.eot);
+    src: url(https://item-discord.com/webfonts/fa-regular-400.eot#iefix) format("embedded-opentype"), url(https://item-discord.com/webfonts/fa-regular-400.woff2) format("woff2"), url(https://item-discord.com/webfonts/fa-regular-400.woff) format("woff"), url(https://item-discord.com/webfonts/fa-regular-400.ttf) format("truetype"), url(https://item-discord.com/webfonts/fa-regular-400.svg#fontawesome) format("svg");
 }
 
 @font-face {
@@ -570,6 +577,6 @@ a.tempBtn {
     font-style: normal;
     font-weight: 900;
     font-display: auto;
-    src: url(https://server-discord.com/webfonts/fa-solid-900.eot);
-    src: url(https://server-discord.com/webfonts/fa-solid-900.eot#iefix) format("embedded-opentype"), url(https://server-discord.com/webfonts/fa-solid-900.woff2) format("woff2"), url(https://server-discord.com/webfonts/fa-solid-900.woff) format("woff"), url(https://server-discord.com/webfonts/fa-solid-900.ttf) format("truetype"), url(https://server-discord.com/webfonts/fa-solid-900.svg#fontawesome) format("svg");
+    src: url(https://item-discord.com/webfonts/fa-solid-900.eot);
+    src: url(https://item-discord.com/webfonts/fa-solid-900.eot#iefix) format("embedded-opentype"), url(https://item-discord.com/webfonts/fa-solid-900.woff2) format("woff2"), url(https://item-discord.com/webfonts/fa-solid-900.woff) format("woff"), url(https://item-discord.com/webfonts/fa-solid-900.ttf) format("truetype"), url(https://item-discord.com/webfonts/fa-solid-900.svg#fontawesome) format("svg");
 }

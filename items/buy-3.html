@@ -59,10 +59,12 @@
                                     <li>
                                         <a>
                                             <script src="../js/search.js"></script>
-                                            <input type="text" id="code" onkeyup="redirectUser()" placeholder="Перейти"
-                                                title="Type in a category">
+                                            <input type="text" id="code" onkeydown="document.getElementById('code').onkeypress = function($) {
+                                                if ($.keyCode === 13) {
+                                                    redirectUser();
+                                                }
+                                              }" placeholder="Перейти" title="Введи название страницы">
                                         </a>
-
                                     </li>
                                     <li itemprop="name">
                                         <a itemprop="url" tabindex="0" class="hoverable" href="../portfolio">
@@ -86,9 +88,9 @@
     <main>
         <section>
             <div class="container2 col-12 col-sm-10 col-md-10 col-xl-7">
-                <div class="row2 addServerForm t3 tempDiv">
+                <div class="row2 additemForm t3 tempDiv">
                     <div class="col-md-4">
-                        <img src="" onerror="this.src='../img/avatars/1.gif'" class="serverPersonalPage avatar">
+                        <img src="" onerror="this.src='../img/avatars/1.gif'" class="itemPersonalPage avatar">
 
 
                         <a href="https://www.donationalerts.com/r/zippwitch" class="tempBtn boost black hoverable"
@@ -99,14 +101,14 @@
                         <div class="container2">
                             <br>
                             <div class="row2 centeredContent">
-                                <img class="serverPersonalPage lang" src="https://server-discord.com/img/ru.svg"
+                                <img class="itemPersonalPage lang" src="https://item-discord.com/img/ru.svg"
                                     alt="Флаг" title="ru">
-                                <h1 class="serverPersonalPage name centeredContent" style="margin: 0;">Discord Music или
+                                <h1 class="itemPersonalPage name centeredContent" style="margin: 0;">Discord Music или
                                     Mod Bot
                                 </h1>
                             </div>
                             <br>
-                            <article class="row2 serverPersonalPage des centeredContent">Основные команды модерации:<br>
+                            <article class="row2 itemPersonalPage des centeredContent">Основные команды модерации:<br>
                                 ban, clear, kick, lock-channel, move, mute, poll, unban, unlock-channel, unmute.
                                 <br>Основные команды музыки:<br>
                                 loop, now-playing, play, queue, resume, shuffle, skip, stop, volume

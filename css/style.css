@@ -751,6 +751,12 @@ td:hover .description {
 }
 
 @font-face {
+	font-family: 'Font-reg';
+	src: url('../fonts/7cH1v4okm5zmbvwkAx_sfcEuiD8jvvKsOdC_ (1).ttf');
+	font-weight: 200;
+}
+
+@font-face {
 	font-family: 'haus';
 	src: url('../fonts/haus.ttf');
 	font-weight: 200;

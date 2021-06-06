@@ -59,10 +59,12 @@
                                     <li>
                                         <a>
                                             <script src="../js/search.js"></script>
-                                            <input type="text" id="code" onkeyup="redirectUser()" placeholder="Перейти"
-                                                title="Type in a category">
+                                            <input type="text" id="code" onkeydown="document.getElementById('code').onkeypress = function($) {
+                                                if ($.keyCode === 13) {
+                                                    redirectUser();
+                                                }
+                                              }" placeholder="Перейти" title="Введи название страницы">
                                         </a>
-
                                     </li>
                                     <li itemprop="name">
                                         <a itemprop="url" tabindex="0" class="hoverable" href="../portfolio">
@@ -86,30 +88,31 @@
     <main>
         <section>
             <div class="container2 col-12 col-sm-10 col-md-10 col-xl-7">
-                <div class="row2 addServerForm t3 tempDiv">
+                <div class="row2 additemForm t3 tempDiv">
                     <div class="col-md-4">
                         <img src=""
                             onerror="this.src='https://cdn.discordapp.com/avatars/783995245075103744/405ff76ecd30ee7943f29023d59eea22.webp?size=4096'"
-                            class="serverPersonalPage avatar">
+                            class="itemPersonalPage avatar">
 
 
                         <a href="https://www.donationalerts.com/r/zippwitch" class="tempBtn boost black hoverable"
                             target="_blank" rel="noopener" title="Оплатить счёт" tabindex="0">Оплатить
-                            499₽</a>
+                            199₽</a>
                     </div>
                     <div class="col-md-8">
                         <div class="container2">
                             <br>
                             <div class="row2 centeredContent">
-                                <img class="serverPersonalPage lang" src="https://server-discord.com/img/ru.svg"
-                                    alt="Флаг" title="ru">
-                                <h1 class="serverPersonalPage name centeredContent" style="margin: 0;">Discord Slash Bot
+                                <img class="itemPersonalPage lang" src="https://item-discord.com/img/ru.svg" alt="Флаг"
+                                    title="ru">
+                                <h1 class="itemPersonalPage name centeredContent" style="margin: 0;">Discord Slash Bot
                                 </h1>
                             </div>
                             <br>
-                            <article class="row2 serverPersonalPage des centeredContent">Основные команды модерации:<br>
-                                ban, clear, kick, lock-channel, move, mute, poll, unban, unlock-channel, unmute.
-                                <br>Дополнительно: help, eval, reload
+                            <article class="row2 itemPersonalPage des centeredContent">Бот, который просто устроен на
+                                Slash командах.
+                                <br> Он небольшой, но всё-же новый. Рекомендуется покупать JS программистам - поняв
+                                документацию и опции к команде можно будет сделать свою команду
 
                             </article>
                         </div>

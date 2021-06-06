@@ -7,7 +7,6 @@ function redirectUser() {
         'news': /(новости)|(news)|(события)|(нововведения)/ui.test(code),
         'more': /(подробнее)|(ещё)|(больше)|(more)/ui.test(code),
         'index': /(главная)|(main)|(индекс)|(домашняя)|(home)/ui.test(code),
-        'game3000': /Hello, world!/.test(code)
     }
 
     switch (true) {
@@ -28,7 +27,7 @@ function redirectUser() {
             break;
     }
 
-    window.location.href = file !== 'index' ? link + file + '.html' : link
+    window.location.href = file !== 'index' ? link + file : link
 }
 
 function checkValid() {
@@ -38,14 +37,12 @@ function checkValid() {
         'portfolio': /(портфолио)|(пф)|(portfolio)|(pf)/ui.test(code),
         'more': /(подробнее)|(ещё)|(больше)|(more)/ui.test(code),
         'index': /(главная)|(main)|(индекс)|(домашняя)|(home)/ui.test(code),
-        'game3000': /Hello, world!/.test(code)
     }
     let result = regexps['index'];
 
     if (regexps['portfolio'] ||
         regexps['more'] ||
-        regexps['index'] ||
-        regexps['game3000']) {
+        regexps['index']) {
         document.getElementById("code").style.color = "#78bd7b"
     } else {
         document.getElementById("code").style.color = "#322a63a4"

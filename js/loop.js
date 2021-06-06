@@ -14,31 +14,29 @@ const profile = {
     },
     2: {
         name: 'FN bot#0209',
-        description: `New Senpaii — проект мультифункционального, в том числе и развлекательного бота для Вашего сервера в Discord, основанный на желаниях и потребностях пользователей аудитории.
-
-Созданный в 2019 году бот, продолжающий радовать своих пользователей и находящийся в активной разработке будет рад выполнять свои функции и на Вашем сервере.`,
+        description: `Мультифункциональный односерверный бот на Node.js, в которого входят: 65+ команд для модерации/музыки/фана/nsfw/розыгрышей/..., несколько глобальных и полезных функций для разработчиков, гибкая настройка конфигурации, большой аудит лог для всего, `,
         icon: 'https://cdn.discordapp.com/avatars/674942800894361611/568429c0828ceabc102df5dd5617d907.webp?size=4096',
         buttonShare: { link: 'https://zippwitch-alt.github.io/zippp/items/buy-1.html', title: 'Купить скрипт бота' },
         date: '3/4/2021',
         bg: 'bg1.jpg',
         color: '',
         platform: [{ name: 'Discord', link: '' }, { name: 'Github', link: 'https://github.com/ZippWitch-alt' }],
-        button: [{ buttonName: '2900₽', buttonLink: './items/buy-1.html', buttonColor: '' }]
+        button: [{ buttonName: '1999₽', buttonLink: './items/buy-1.html', buttonColor: '' }]
     },
     3: {
         name: 'Slash bot#3799',
-        description: 'Slash бот для discord',
+        description: 'Slash бот с глобальными командами на Node.js, который включает в себя несколько команд новейшего хэндлера Slash интеракций и наилучшим взаимодействием с платформой Discord для получения наилучшего впечатления от общения',
         icon: 'https://cdn.discordapp.com/avatars/783995245075103744/405ff76ecd30ee7943f29023d59eea22.webp?size=4096',
         buttonShare: { link: 'https://zippwitch-alt.github.io/zippp/items/buy-2.html', title: 'Купить скрипт бота' },
         date: '7/05/2021',
         bg: 'bg1.jpg',
         color: '',
         platform: [{ name: 'Discord', link: '' }, { name: 'Github', link: 'https://github.com/ZippWitch-alt' }],
-        button: [{ buttonName: '899₽', buttonLink: './items/buy-2.html', buttonColor: '' }]
+        button: [{ buttonName: '199₽', buttonLink: './items/buy-2.html', buttonColor: '' }]
     },
     4: {
         name: 'Zipp Wickness',
-        description: 'Альбом Выва 2 | 2021',
+        description: 'Альбом Выва 2 | 2021, вышедший на площадке YouTube на минимальном монтаже и SoundCloud, после длительного отдыха от канала ... Также ходят слухи, что существовал альбом "Выва 1 | 2020" в тоже разных стилях современной музыки, где каждый трек написан за 5-15 мин. Именно поэтому я его не сохранял.',
         icon: './img/avatars/soundcloud_avatar.jpg',
         buttonShare: { link: 'https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ - YouTube\nhttps://soundcloud.com/valeriy-is-bro-vp/sets/2-1 - SoundCloud', title: 'Перейти на YouTube плейлист' },
         date: '23/4/2021',
@@ -102,10 +100,13 @@ tabindex="0">${profile[i].button[but].buttonName}</a>
 `
     }
     code = code + `
-    
-<a onclick=copyLink(event)
+
+
+    <div id="notify"></div>
+
+<a onclick=copyLink(event);
 data-link='${profile[i].buttonShare.link === '' ? 'Ссылка приватная, или автор её не добавлял' : profile[i].buttonShare.link}'
-class="aboutbt" rel="noopener" id="copyLink"
+class="aboutbt" style="font-family: 'Exo 2', sans-serif" rel="noopener" id="copyLink"
 title="Скопировать ссылку на контент" tabindex="0">Поделиться</a></td>
 </tbody>`
 }

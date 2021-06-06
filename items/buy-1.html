@@ -59,10 +59,12 @@
                                     <li>
                                         <a>
                                             <script src="../js/search.js"></script>
-                                            <input type="text" id="code" onkeyup="redirectUser()" placeholder="Перейти"
-                                                title="Type in a category">
+                                            <input type="text" id="code" onkeydown="document.getElementById('code').onkeypress = function($) {
+                                                if ($.keyCode === 13) {
+                                                    redirectUser();
+                                                }
+                                              }" placeholder="Перейти" title="Введи название страницы">
                                         </a>
-
                                     </li>
                                     <li itemprop="name">
                                         <a itemprop="url" tabindex="0" class="hoverable" href="../portfolio">
@@ -86,16 +88,16 @@
     <main>
         <section>
             <div class="container2 col-12 col-sm-10 col-md-10 col-xl-7">
-                <div class="row2 addServerForm t3 tempDiv">
+                <div class="row2 additemForm t3 tempDiv">
                     <div class="col-md-4">
                         <img src=""
                             onerror="this.src='https://cdn.discordapp.com/avatars/674942800894361611/568429c0828ceabc102df5dd5617d907.webp?size=4096'"
-                            class="serverPersonalPage avatar">
+                            class="itemPersonalPage avatar">
 
 
                         <a href="https://www.donationalerts.com/r/zippwitch" class="tempBtn boost black hoverable"
                             target="_blank" rel="noopener" title="Оплатить счёт" tabindex="0">Оплатить
-                            2900₽</a>
+                            1999₽</a>
                         <a href="https://docs.google.com/document/d/1AELG2HxDKzj3ZrXUpzE4pWD33ng2DHJPLszel29aq_U/edit?usp=sharing"
                             class="tempBtn boost black hoverable" target="_blank" rel="noopener"
                             title="Открыть демо-документацию" tabindex="0">Документация</a>
@@ -104,24 +106,22 @@
                         <div class="container2">
                             <br>
                             <div class="row2 centeredContent">
-                                <img class="serverPersonalPage lang" src="https://server-discord.com/img/ru.svg"
-                                    alt="Флаг" title="ru">
-                                <h1 class="serverPersonalPage name centeredContent" style="margin: 0;">Discord Bot Plus
+                                <img class="itemPersonalPage lang" src="../img/icons/Discord.svg" alt="Флаг" title="ru">
+                                <h1 class="itemPersonalPage name centeredContent" style="margin: 0;">Discord Bot Plus
                                 </h1>
                             </div>
                             <br>
-                            <article class="row2 serverPersonalPage des centeredContent">На данный момент имеется более
-                                65 команд, в планах и в разработке со временем будет добавляться множество новых
-                                возможностей.
+                            <article class="row2 itemPersonalPage des centeredContent">На данный момент имеется более
+                                65 команд, с каждым обновлением их будет больше, а багов меньше.
 
                                 <br><br>Из основных функций можно выделить:
 
-                                <br>Прослушивание музыки без рекламы и ограничений;
-                                <br>широкий спектр встроенной конфигурации;
-                                <br>множество возможностей для модерации Вашего сервера;
-                                <br>множество типов логов для отображения;
-                                <br>создание раздач и дропов;
-                                <br>рисование карточек canvas.
+                                <br> - Прослушивание музыки без рекламы и ограничений;
+                                <br> - широкий спектр встроенной конфигурации;
+                                <br> - множество возможностей для модерации Вашего сервера;
+                                <br> - множество типов логов для отображения;
+                                <br> - создание раздач и дропов;
+                                <br> - рисование карточек canvas.
 
                             </article>
                         </div>

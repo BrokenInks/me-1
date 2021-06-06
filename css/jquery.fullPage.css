@@ -184,6 +184,10 @@ html.fp-enabled, .fp-enabled body {
     border-radius: 100%;
 }
 
+#fp-nav a:focus {
+    outline: none
+}
+
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
     border-radius: 40%;
     position: absolute;
@@ -198,7 +202,7 @@ html.fp-enabled, .fp-enabled body {
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 #fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span {

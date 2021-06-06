@@ -19,6 +19,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="all" href="./css/notifications.css">
     <link rel="stylesheet" media="all" href="./css/animate.css">
     <link rel="stylesheet" media="all" href="./css/tl.css">
 
@@ -53,6 +54,7 @@
                             <a itemprop="url" tabindex="0" href="./" alt="DISCORD" title="На главную"><img
                                     itemprop="logo" class="hoverable" src="./img/logo.svg"></a>
                         </div>
+
                         <div class="topMenu hidden-sm hidden-xs">
                             <nav id="top-menu" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
                                 <ul>
@@ -73,8 +75,16 @@
                                         </a>
                                     </li>
                                     <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable"
-                                            href="https://www.donationalerts.com/r/zippwitch"><i
-                                                class="fas fa-coffee"></i> Пожертвование</a></li>
+                                            href="https://www.donationalerts.com/r/zippwitch">
+                                            <i class="fas fa-coffee"></i> Пожертвование
+                                        </a>
+                                    </li>
+                                    <li itemprop="name"><a itemprop="url" tabindex="0" id="подсказка"
+                                            style="visibility: hidden; border-radius:10px; color:rgb(88, 95, 196); background-color:#fff; "
+                                            class="hoverable">
+                                            <i class="fas fa-info-circle"></i> Ссылка скопирована
+                                        </a>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
@@ -96,7 +106,10 @@
                                     <div class="col-md-12" id="table">
                                         <table class="table serversList">
 
+                                            <script src="./js/lib/esm/index.js"></script>
                                             <script src="./js/loop.js"></script>
+
+
 
                                         </table>
                                     </div>
@@ -114,7 +127,8 @@
                                 document.execCommand('copy');
                                 document.body.removeChild(tmp);
 
-                                alert('Вы скопировали:\n\n' + tmp.value)
+                                Notify({ title: 'Ссылка скопирована!', position: 'bottom left', type: 'success' })
+
                             }
                         </script>
                     </main>
@@ -123,7 +137,6 @@
             </div>
         </div>
     </div>
-
 
     <!DOCTYPE html>
     <html>

@@ -1,6 +1,7 @@
 (() => {
   const cssText = `
   #notify {
+    font-family: 'Exo 2';
     position: relative;
     z-index: 999999;
     display: flex;
@@ -51,7 +52,7 @@
     border-radius: 0.25rem;
     transition: all 300ms ease 0s;
     user-select: none;
-    cursor: pointer;
+    cursor: none;
   }
   #notify .notify__title {
     display: flex;

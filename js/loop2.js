@@ -9,7 +9,7 @@ const profile = {
         date: 'Услуга',
         bg: 'bg1.jpg',
         color: '',
-        button: { title: '499₽', link: './items/buy-3.html' }
+        button: { title: '499₽', link: './items/buy-3.html', buttonColor: '' }
     },
     2: {
         name: 'FN bot#0209',
@@ -19,7 +19,7 @@ const profile = {
         date: '3/4/2021',
         bg: 'bg1.jpg',
         color: '',
-        button: { title: '1999₽', link: './items/buy-1.html' }
+        button: { title: '1999₽', link: './items/buy-1.html', buttonColor: '' }
     },
     3: {
         name: 'Slash bot#3799',
@@ -29,7 +29,7 @@ const profile = {
         date: '7/05/2021',
         bg: 'bg1.jpg',
         color: '',
-        button: { title: '199₽', link: './items/buy-2.html' }
+        button: { title: '199₽', link: './items/buy-2.html', buttonColor: '' }
     },
     4: {
         name: 'Zipp Wickness',
@@ -39,7 +39,7 @@ const profile = {
         date: '23/4/2021',
         bg: 'bg2.jpg',
         color: '',
-        button: { title: 'YouTube', link: 'https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ' }
+        button: { title: 'YouTube', link: 'https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ', buttonColor: '' }
     },
     5: {
         name: 'Zipp Wickness',
@@ -49,7 +49,7 @@ const profile = {
         date: '23/4/2021',
         bg: 'bg2.jpg',
         color: '',
-        button: { title: 'SoundCloud', link: 'https://soundcloud.com/valeriy-is-bro-vp/sets/2-1' }
+        button: { title: 'SoundCloud', link: 'https://soundcloud.com/valeriy-is-bro-vp/sets/2-1', buttonColor: '' }
     }
 }
 
@@ -66,7 +66,7 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                             </div>
                                         </div>
                                         <div class="padd" style="position: relative;">
-                                            <img src="${profile[i].icon}"
+                                            <img src="${profile[i].icon}" onerror="this.src='../img/avatars/avatar.gif'"
                                                 width="110" height="110"
                                                 style="border-radius: 20%; border: 2px solid #fff; margin-bottom: 15px; margin-top: 10px; background-color: rgb(33 37 41);"
                                                 alt="${profile[i].name}" loading="lazy"
@@ -81,13 +81,15 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                         <div class="card-bd">
                                             <p class="card-text">${profile[i].description}</p>
                                             <div class="btn-group-card"
-                                                style="position: absolute; left: 50%; bottom: 15px; transform: translateX(-50%); margin-bottom: 7px;"
+                                                style="position: absolute; left: 50%; bottom: 15px; transform: translateX(-50%); margin-bottom: 1px;"
                                                 role="group" aria-label="Bot Buttons">
-                                                <a style="background-color: ${profile[i].button.buttonColor !== '' ? profile[i].button.buttonColor : profile.defColor}" href="${profile[i].button.link}" target="_blank"
-                                                    id="onhover-element" class="btn-main btn-botcard">${profile[i].button.title}</a>
+                                                <a style="
+                                                border-radius: 10px 0px 0px 10px; background: ${profile[i].button.buttonColor !== '' ? profile[i].button.buttonColor : profile.defColor}" href="${profile[i].button.link}" target="_blank"
+                                                    id="onhover-element" class="black hoverable">${profile[i].button.title}</a>
                                                    
-                                                <a title="${profile[i].buttonShare.title}" onclick="copyLink(event)" id="onhover-element"
-                                                    class="btn-main btn-botcard" data-link="${profile[i].buttonShare.link}">Поделиться</a>
+                                                <a style="
+                                                border-radius: 0px 10px 10px 0px;" title="${profile[i].buttonShare.title}" onclick="copyLink(event)" id="onhover-element"
+                                                    class="btn-main btn-botcard black hoverable" data-link="${profile[i].buttonShare.link}">Поделиться</a>
                                             </div>
                                         </div>
                                     </div>

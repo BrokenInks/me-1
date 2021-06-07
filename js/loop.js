@@ -69,7 +69,7 @@ style="box-shadow: inset 0px 0px 250px rgba(0,0,0,1); background: url(./img/bgs/
 </td >
 <td style="border: 2px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};" class="serverAvatar t3">
 <img class="" src="${profile[i].icon}"
-onerror="this.src='./img/avatars/avatar.gif'" alt="">
+onerror="this.src='../img/avatars/avatar.gif'" alt="">
 </td>
 <td style="border: 2px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};" class="serverDesc t3">
 <div class="row">

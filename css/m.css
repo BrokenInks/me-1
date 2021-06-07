@@ -1,0 +1,41 @@
+/*! CSS Used from: https://kuon.space/assets/css/common.css */
+
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+p {
+    line-height: 2;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.title__lead {
+    color: #fff;
+    font-size: 2.8rem;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+}
+
+@media screen and (max-width:800px) {
+    .title__lead {
+        font-size: 2.4rem;
+        line-height: 1.4;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .title__lead {
+        font-size: 1.2rem;
+    }
+}

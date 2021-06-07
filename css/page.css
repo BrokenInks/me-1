@@ -1,5 +1,6 @@
 /*! CSS Used from: https://kuon.space/assets/css/common.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
 a, div, h2, p, span {
     margin: 0;
     padding: 0;
@@ -25,7 +26,7 @@ p {
 }
 
 a {
-    color: #072142;
+    color: #221d45;
     text-decoration: none;
 }
 
@@ -62,12 +63,13 @@ a:hover {
     }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 .title__text {
     font-size: 8rem;
     line-height: 1;
     letter-spacing: 8px;
     margin-bottom: 1.6rem;
-    font-family: "Exo 2";
+    font-family: 'Montserrat Bold', sans-serif;
     font-weight: normal;
     text-shadow: 0 10px 30px rgba(2, 11, 22, 0.5);
 }
@@ -145,6 +147,7 @@ a:hover {
 }
 
 .title__lead {
+    font-family: 'Monsterrat Light', sans-serif;
     color: #fff;
     font-size: 2.8rem;
     line-height: 1.5;
@@ -170,7 +173,7 @@ a:hover {
     background: #7f78bd;
     text-align: center;
     display: inline-block;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Monsterrat Light', sans-serif;
     width: 140px;
     height: 35px;
     color: #fff;

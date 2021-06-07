@@ -314,7 +314,7 @@ button:focus {
 
 .itemPersonalPage.name {
     margin: 0;
-    font-size: 40px;
+    font-size: 33px;
     text-shadow: 1px 1px 1px #000;
 }
 
@@ -349,8 +349,8 @@ button:focus {
 }
 
 .itemPersonalPage.lang {
-    border-radius: 10px;
-    height: 45px;
+    border-radius: 13px;
+    height: 40px;
     margin-right: 15px;
 }
 

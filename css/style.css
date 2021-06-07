@@ -1,19 +1,9 @@
 /*! CSS Used from: https://zippwitch-alt.github.io/zippp/css/style.css */
 
-html {
-	scroll-behavior: smooth;
-	overflow: scroll;
-	overflow-x: hidden;
-}
-
 ::-webkit-scrollbar {
 	width: 0px;
-	/* remove scrollbar space */
 	background: transparent;
-	/* optional: just make scrollbar invisible */
 }
-
-/* optional: show position indicator in red */
 
 ::-webkit-scrollbar-thumb {
 	background: #FF0000;
@@ -28,8 +18,6 @@ html {
 	background: #7f78bd9f;
 	background: -moz-linear-gradient(top, #7f78bd 10%, #788abd 30%, #78a7bd 50%, #7abd78 70%, #bcbd78 80%, #bd9978 90%, #bd7878 100%);
 	background: -webkit-linear-gradient(top, #7f78bd 10%, #788abd 30%, #78a7bd 50%, #7abd78 70%, #bcbd78 80%, #bd9978 90%, #bd7878 100%);
-	/* background: -moz-linear-gradient(top, #bd7878 10%, #bd9978 20%, #bcbd78 30%, #7abd78 40%, #78a7bd 50%, #788abd 70%, #7f78bd 100%); */
-	/* background: -webkit-linear-gradient(top, #bd7878 10%, #bd9978 20%, #bcbd78 30%, #7abd78 40%, #78a7bd 50%, #788abd 60%, #7f78bd 100%); */
 }
 
 body {
@@ -41,10 +29,10 @@ body {
 	perspective: 1px;
 	height: 100vh;
 	margin: 0;
-	font-family: 'Font-reg', Font-reg;
+	font-family: 'Monsterrat Bold', sans-serif;
 }
 
-body h1, body p, body a {
+body h1, body a {
 	color: #fff;
 }
 
@@ -61,131 +49,13 @@ body .cursor__ball {
 }
 
 body .cursor__ball circle {
-	fill: #f7f8fa
-}
-
-body .left, body .right {
-	height: 100%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-body .right {
-	background: #fff;
-}
-
-body .right a {
-	border-bottom: 2px solid #000;
-}
-
-body .right h1, body .right p, body .right a {
-	color: #000;
-}
-
-header {
-	box-sizing: border-box;
-	min-height: 60vh;
-	color: #fff;
-	position: relative;
-	transform-style: inherit;
-	width: 100vw;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-header h1 {
-	margin: 0;
-	position: absolute;
-	font-size: 100px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	display: inline-block;
-	background: rgba(0, 0, 0, 0.7);
-	color: #fff;
-	margin-bottom: 0;
-	padding: .5rem 10rem .625rem 10rem;
-	font-size: 90px;
-	text-transform: uppercase;
-	border-radius: 15px;
-}
-
-header h1:hover {
-	cursor: none;
-	background-color: rgba(0, 0, 0, 0.479);
-	color: rgb(228, 228, 228);
-	border-radius: 15px;
-}
-
-header, header:before {
-	background: 50% 50% / cover;
-}
-
-header::before {
-	content: "";
-	position: absolute;
-	top: -130px;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	display: block;
-	background-size: cover;
-	transform-origin: center center 0;
-	transform: translateZ(-1px) scale(2);
-	z-index: -1;
-	min-height: 100vh;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
-button {
-	font-family: 'Montserrat', sans-serif;
-	width: 300px;
-	height: 50px;
-	margin: 150px;
-	font-size: 30px;
-	color: #fff;
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-	border: none;
-	border-radius: 5px;
-	transition: 300ms;
+	fill: #f7f8fa;
 }
 
 .black {
 	background: #7f78bd;
 	box-shadow: 0px 5px #332a63, 0px 10px 10px rgba(0, 0, 0, 0.25);
 }
-
-.gradient-text {
-	font-family: 'haus', sans-serif;
-	background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent
-}
-
-button:hover {
-	cursor: none;
-	transform: translateY(5px);
-	box-shadow: 0px 0px transparent, 0px 5px 10px rgba(0, 0, 0, 0.25);
-}
-
-button:focus {
-	outline: none;
-}
-
-.container {
-	align-items: center;
-	justify-content: center;
-	display: flex;
-	height: 550px;
-	/* 400px */
-	width: 900px;
-}
-
-@media screen {}
 
 .row {
 	align-items: center;
@@ -205,7 +75,6 @@ li {
 body {
 	width: 100%;
 	height: 100%;
-	/* background: url(../img/bg.png) repeat; */
 	background-color: #221d45;
 	margin: 0;
 	padding: 135px 0px 0px 0px;
@@ -237,92 +106,11 @@ img {
 	}
 }
 
-@media (max-width: 775px) {
-	tr {
-		background-position: center!important;
-	}
-}
-
-@media (max-width: 992px) {
-	td:first-child {
-		width: 30px!important;
-	}
-	.serverAvatar {
-		width: 100px!important;
-	}
-	.join {
-		width: 130px!important;
-	}
-}
-
 @media (max-width: 603px) {
-	.labelServerText {
-		margin-top: 33px;
-		margin-left: 20px;
-		text-align: left;
-	}
-	.description {
-		margin-top: 0!important;
-	}
 	.topLine .logo img {
 		margin: 0 0px 5px 5px!important;
 		height: 40px!important;
 	}
-	.mobileServerAvatar {
-		border-radius: 10px;
-		width: 100px;
-		height: 100px;
-		margin-top: 5px;
-	}
-	.serverAvatar img {
-		display: none!important;
-	}
-	.serverAvatar {
-		width: 100%!important;
-		border-left: none!important;
-		border-bottom: none!important;
-		display: block;
-		margin: auto;
-	}
-	.serverDesc {
-		border-left: none!important;
-		border-top: none!important;
-		border-bottom: none!important;
-		display: block;
-		text-align: center;
-	}
-	.join {
-		border-radius: 0!important;
-		width: 100%!important;
-		display: block;
-		border-top: none!important;
-		border-left: none!important;
-	}
-}
-
-@media (min-width: 603px) {
-	.hideServerAvatar {
-		display: none;
-	}
-	.numSection {
-		border-right: none!important;
-	}
-	.serverAvatar {
-		border-left: none!important;
-		border-right: none!important;
-	}
-	.serverDesc {
-		border-left: none!important;
-		border-right: none!important;
-	}
-	.join {
-		border-left: none!important;
-	}
-}
-
-.hideServerAvatar {
-	position: relative;
-	left: 22px;
 }
 
 .topMenu {
@@ -398,8 +186,6 @@ img {
 	transform: scale(1.05) translateY(-1px);
 }
 
-/* Стиль окна поиска */
-
 #code {
 	cursor: none;
 	text-align: center;
@@ -416,35 +202,12 @@ img {
 	transition: all .1s ease-in-out;
 }
 
-/* Стиль меню навигации */
-
-#myMenu {
-	cursor: none;
-	height: 3%;
-	list-style-type: circle;
-	padding: 0px;
-	margin: 0;
-}
-
 ::placeholder {
-	color: #322a63a4
+	color: #322a63a4;
 }
 
 input[type="text"] {
-	color: #322a63a4
-}
-
-/* Стиль навигационных ссылок */
-
-#myMenu li a {
-	padding: 0px;
-	text-decoration: none;
-	color: black;
-	display: block
-}
-
-#myMenu li a:hover {
-	background-color: #eee;
+	color: #322a63a4;
 }
 
 main {
@@ -452,87 +215,6 @@ main {
 	position: relative;
 	padding-bottom: 60px;
 	min-height: calc(100vh - 195px);
-}
-
-main.h {
-	color: #fff;
-	position: relative;
-	padding-bottom: 50px;
-	min-height: calc(100vh - 385px);
-}
-
-.tr {
-	border-radius: 20px;
-	background: #343D46;
-}
-
-tr:first-child {
-	border-top-left-radius: 20px;
-}
-
-td:first-child {
-	background: #37404A;
-	width: 20px;
-	text-align: center;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
-	-moz-border-top-left-radius: 10px;
-	-moz-border-bottom-left-radius: 10px;
-	-webkit-border-top-left-radius: 10px;
-	-webkit-border-bottom-left-radius: 10px;
-}
-
-.serverStatus {
-	width: 27px;
-	height: 24px;
-	background: #322a63a4;
-	margin: 1px;
-	border-radius: 3px;
-	padding: 4px;
-	transition: all 0.1s;
-}
-
-td:first-child:hover .serverStatus {
-	padding: 3px;
-}
-
-td:first-child img {
-	pointer-events: none;
-	width: 27px;
-	border-radius: 10px;
-}
-
-td:last-child {
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	-moz-border-top-right-radius: 10px;
-	-moz-border-bottom-right-radius: 10px;
-	-webkit-border-top-right-radius: 10px;
-	-webkit-border-bottom-right-radius: 10px;
-}
-
-.serversList {
-	width: 100%;
-	border-spacing: 0 10px;
-}
-
-.serverAvatar {
-	width: 110px;
-}
-
-.serverAvatar img {
-	object-fit: cover;
-	margin: auto;
-	pointer-events: none;
-	width: 80px;
-	height: 80px;
-	padding: 5px;
-	border-radius: 20%;
-	display: block;
-}
-
-.join {
-	width: 150px;
 }
 
 .boost {
@@ -560,99 +242,6 @@ td:last-child {
 	outline: none;
 }
 
-.boost.t3:hover {
-	transition: .6s linear;
-	background: #7f78bd linear-gradient(-80deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, .5), rgba(255, 255, 255, 0)) no-repeat!important;
-	background-size: 2em 100%!important;
-	background-position: 200% 0%!important;
-}
-
-.boost.t3 {
-	background: #7f78bd;
-}
-
-.numSection {
-	background: #37404A;
-	border: 2px solid #37404A;
-}
-
-.serverAvatar {
-	border: 2px solid #37404A;
-}
-
-.serverDesc {
-	border-top: 2px solid #37404A;
-}
-
-.join {
-	border: 2px solid #37404A;
-}
-
-.numSection.t3 {
-	background: #7f78bd;
-	border: 2px solid #7f78bd;
-}
-
-.serverAvatar.t3 {
-	border: 2px solid #7f78bd;
-}
-
-.serverDesc.t3 {
-	border: 2px solid #7f78bd;
-}
-
-.join.t3 {
-	border: 2px solid #7f78bd;
-}
-
-.aboutbt {
-	background: none;
-	color: #fff;
-	border: 1px solid #fff;
-	padding: 6px 16px 6px 16px;
-	border-radius: 5px;
-	cursor: none;
-	-webkit-transition: all .1s ease-in-out;
-	-moz-transition: all .1s ease-in-out;
-	-ms-transition: all .1s ease-in-out;
-	-o-transition: all .1s ease-in-out;
-	transition: all .1s ease-in-out;
-	display: block;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	text-align: center;
-}
-
-.aboutbt:hover {
-	background: #fff;
-	color: #322a63;
-}
-
-.aboutbt:focus {
-	outline: none;
-}
-
-.serverName {
-	font-size: 18px;
-}
-
-.description {
-	color: #fff;
-	margin-top: -10px;
-	word-break: break-word;
-	opacity: 0.6;
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-ms-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-}
-
-td:hover .description {
-	opacity: 1;
-}
-
 .topLine {
 	box-shadow: 0px -3px 20px 0px rgba(0, 0, 0, .4);
 	position: absolute;
@@ -673,23 +262,7 @@ td:hover .description {
 	z-index: 1;
 }
 
-.rating.all {
-	font-size: 12px;
-	color: #fff;
-	cursor: none;
-	border-radius: 1px;
-	border-bottom: solid 3px rgb(255, 255, 255, 0.6);
-	padding: 6px 24px 6px 24px;
-	display: block;
-	margin-left: 11px;
-	margin-right: 11px;
-	margin-bottom: 10px;
-	text-align: center;
-}
-
-/*! CSS Used from: https://zippwitch-alt.github.io/zippp/css/all.min.css */
-
-.fa, .fas {
+.fas {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	display: inline-block;
@@ -703,58 +276,40 @@ td:hover .description {
 	content: "\f0f4";
 }
 
-.fa-chevron-down:before {
-	content: "\f078";
-}
-
-.fa-cc-visa:before {
-	content: "\f1f0";
-}
-
 .fa-user:before {
 	content: "\f007";
-}
-
-.fa-home:before {
-	content: "\f015";
-}
-
-.fa-info-circle:before {
-	content: "\f129";
 }
 
 .fa-coffee:before {
 	content: "\f0f4";
 }
 
-.fa-info-circle:before {
-	content: "\f05a";
-}
-
-.fa-newspaper:before {
-	content: "\f1ea";
-}
-
-.fa, .fas {
+.fas {
 	font-family: "Font Awesome 5 Free";
 }
 
-.fa, .fas {
+.fas {
 	font-weight: 900;
 }
 
 /*! CSS Used fontfaces */
 
 @font-face {
-	font-family: 'Monsterrat Light';
-	src: url('../fonts/Montserrat-ExtraLight.ttf');
-	font-weight: 200;
+	font-family: "Font Awesome 5 Free";
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: url(https://item-discord.com/webfonts/fa-regular-400.eot);
+	src: url(https://item-discord.com/webfonts/fa-regular-400.eot#iefix) format("embedded-opentype"), url(https://item-discord.com/webfonts/fa-regular-400.woff2) format("woff2"), url(https://item-discord.com/webfonts/fa-regular-400.woff) format("woff"), url(https://item-discord.com/webfonts/fa-regular-400.ttf) format("truetype"), url(https://item-discord.com/webfonts/fa-regular-400.svg#fontawesome) format("svg");
 }
 
 @font-face {
-	font-family: 'Monsterrat Bold';
-	src: url('../fonts/Montserrat-ExtraBold.ttf');
-	font-weight: 200;
+	font-family: "Font Awesome 5 Free";
+	font-style: normal;
+	font-weight: 900;
+	font-display: auto;
+	src: url(https://item-discord.com/webfonts/fa-solid-900.eot);
+	src: url(https://item-discord.com/webfonts/fa-solid-900.eot#iefix) format("embedded-opentype"), url(https://item-discord.com/webfonts/fa-solid-900.woff2) format("woff2"), url(https://item-discord.com/webfonts/fa-solid-900.woff) format("woff"), url(https://item-discord.com/webfonts/fa-solid-900.ttf) format("truetype"), url(https://item-discord.com/webfonts/fa-solid-900.svg#fontawesome) format("svg");
 }
 
 @font-face {
@@ -762,8 +317,8 @@ td:hover .description {
 	font-style: normal;
 	font-weight: 400;
 	font-display: auto;
-	src: url(../fonts/fa-regular-400.eot);
-	src: url(../fonts/fa-regular-400.eot#iefix) format("embedded-opentype"), url(../fonts/fa-regular-400.woff2) format("woff2"), url(../fonts/fa-regular-400.woff) format("woff"), url(../fonts/fa-regular-400.ttf) format("truetype"), url(../fonts/fa-regular-400.svg#fontawesome) format("svg");
+	src: url(https://zippwitch-alt.github.io/zippp/fonts/fa-regular-400.eot);
+	src: url(https://zippwitch-alt.github.io/zippp/fonts/fa-regular-400.eot#iefix) format("embedded-opentype"), url(https://zippwitch-alt.github.io/zippp/fonts/fa-regular-400.woff2) format("woff2"), url(https://zippwitch-alt.github.io/zippp/fonts/fa-regular-400.woff) format("woff"), url(https://zippwitch-alt.github.io/zippp/fonts/fa-regular-400.ttf) format("truetype"), url(https://zippwitch-alt.github.io/zippp/fonts/fa-regular-400.svg#fontawesome) format("svg");
 }
 
 @font-face {
@@ -771,15 +326,97 @@ td:hover .description {
 	font-style: normal;
 	font-weight: 900;
 	font-display: auto;
-	src: url(../fonts/fa-solid-900.eot);
-	src: url(../fonts/fa-solid-900.eot#iefix) format("embedded-opentype"), url(../fonts/fa-solid-900.woff2) format("woff2"), url(../fonts/fa-solid-900.woff) format("woff"), url(../fonts/fa-solid-900.ttf) format("truetype"), url(../fonts/fa-solid-900.svg#fontawesome) format("svg");
+	src: url(https://zippwitch-alt.github.io/zippp/fonts/fa-solid-900.eot);
+	src: url(https://zippwitch-alt.github.io/zippp/fonts/fa-solid-900.eot#iefix) format("embedded-opentype"), url(https://zippwitch-alt.github.io/zippp/fonts/fa-solid-900.woff2) format("woff2"), url(https://zippwitch-alt.github.io/zippp/fonts/fa-solid-900.woff) format("woff"), url(https://zippwitch-alt.github.io/zippp/fonts/fa-solid-900.ttf) format("truetype"), url(https://zippwitch-alt.github.io/zippp/fonts/fa-solid-900.svg#fontawesome) format("svg");
 }
 
-.errorPage {
-	margin-top: -10px;
-	color: #e4a4ad;
-	padding: 5px;
-	border: 5px solid #e4a4ad;
+@font-face {
+	font-family: 'Monsterrat Bold';
+	src: url('https://zippwitch-alt.github.io/zippp/fonts/Montserrat-ExtraBold.ttf');
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/exo2/v10/7cH1v4okm5zmbvwkAx_sfcEuiD8jvvKsNNC_nps.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/exo2/v10/7cH1v4okm5zmbvwkAx_sfcEuiD8jvvKsPdC_nps.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/exo2/v10/7cH1v4okm5zmbvwkAx_sfcEuiD8jvvKsNtC_nps.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/exo2/v10/7cH1v4okm5zmbvwkAx_sfcEuiD8jvvKsN9C_nps.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/exo2/v10/7cH1v4okm5zmbvwkAx_sfcEuiD8jvvKsOdC_.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #FF0000;
+}
+
+button {
+	font-family: 'Montserrat', sans-serif;
+	width: 300px;
+	height: 50px;
+	margin: 150px;
+	font-size: 30px;
+	color: #fff;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+	border: none;
 	border-radius: 5px;
-	background: #23272A;
+	transition: 300ms;
+}
+
+.black {
+	background: #7f78bd;
+	box-shadow: 0px 5px #332a63, 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+	cursor: none;
+	transform: translateY(5px);
+	box-shadow: 0px 0px transparent, 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+button:focus {
+	outline: none;
+}
+
+:focus {
+	outline: 2px dashed #e4a4ad;
+}
+
+::placeholder {
+	color: #322a63a4;
 }

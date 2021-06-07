@@ -53,7 +53,7 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
     code = code + `<tbody>
 <tr class="tr bg"
 style="box-shadow: inset 0px 0px 250px rgba(0,0,0,1); background: url(./img/bgs/${profile[i].bg}) no-repeat #343D46; background-size: cover; background-position: 0px -100px;">
-<td style="background: ${profile[i].color !== '' ? profile[i].color : profile.defColor}; border: 5px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};" class=" numSection t3">
+<td style="background: ${profile[i].color !== '' ? profile[i].color : profile.defColor}; border: 2px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};" class=" numSection t3">
 
 <span name="place" value="528509008022208513">${i}</span>
 `;
@@ -67,17 +67,12 @@ style="box-shadow: inset 0px 0px 250px rgba(0,0,0,1); background: url(./img/bgs/
 
     code = code + `
 </td >
-<td style="border: 5px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};" class="serverAvatar t3">
+<td style="border: 2px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};" class="serverAvatar t3">
 <img class="" src="${profile[i].icon}"
 onerror="this.src='./img/avatars/avatar.gif'" alt="">
 </td>
-<td style="border: 5px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};" class="serverDesc t3">
+<td style="border: 2px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};" class="serverDesc t3">
 <div class="row">
-<div class=" hideServerAvatar">
-<img class="mobileServerAvatar"
-src="${profile[i].icon}"
-onerror="this.src='./img/avatars/avatar.jpg'" alt="">
-</div>
 <p class="col labelServerText">
 <a href="${profile[i].button[0].buttonLink}" class="serverName hoverable">${profile[i].name}</a>
 <br>
@@ -86,7 +81,7 @@ onerror="this.src='./img/avatars/avatar.jpg'" alt="">
 <p class="description">${profile[i].description}
 </p>
 </td>
-<td style="border: 5px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};" class="join t3"><span
+<td style="border: 2px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};" class="join t3"><span
 class="rating all"><b>${profile[i].date}</b></span>
 `;
     for (let but = 0; !!profile[i].button[but]; but++) {

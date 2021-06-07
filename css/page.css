@@ -359,6 +359,16 @@ a:hover {
 }
 
 @font-face {
+    font-family: 'Monsterrat Light';
+    font-style: normal;
+    src: url(../fonts/Montserrat-ExtraLight.ttf);
+}
+@font-face {
+    font-family: 'Monsterrat Bold';
+    font-style: normal;
+    src: url(../fonts/Montserrat-ExtraBold.ttf);
+}
+@font-face {
     font-family: 'Abril Fatface';
     font-style: normal;
     font-weight: 400;

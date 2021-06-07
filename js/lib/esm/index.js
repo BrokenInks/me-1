@@ -2,7 +2,7 @@
   const cssText = `
   #notify {
     font-family: 'Monsterrat Light';
-    position: relative;
+    position: fixed;
     z-index: 999999;
     display: flex;
     flex-direction: column;

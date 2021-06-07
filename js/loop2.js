@@ -59,7 +59,7 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
     code = code + `
     
     <div class="col">
-                                    <div class="card new-card card-bot">
+                                    <div style="box-shadow: inset 0px 0px 250px rgba(0,0,0,1); background: url(./img/bgs/${profile[i].bg}) no-repeat; background-size: cover; border-color: ${profile[i].color ? profile[i].color : profile.defColor}" class="card new-card card-bot">
                                         <div class="card-head">
                                             <div class="card-head-bg card-head-bg-blur"
                                                 style="background-image: url(${profile[i].icon});">
@@ -83,10 +83,9 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                             <div class="btn-group-card"
                                                 style="position: absolute; left: 50%; bottom: 15px; transform: translateX(-50%); margin-bottom: 7px;"
                                                 role="group" aria-label="Bot Buttons">
-                                                <a href="${profile[i].button.link}" target="_blank"
+                                                <a style="background-color: ${profile[i].button.buttonColor !== '' ? profile[i].button.buttonColor : profile.defColor}" href="${profile[i].button.link}" target="_blank"
                                                     id="onhover-element" class="btn-main btn-botcard">${profile[i].button.title}</a>
-                                                    
-                            <div id="notify" style="display: none;"></div>
+                                                   
                                                 <a title="${profile[i].buttonShare.title}" onclick="copyLink(event)" id="onhover-element"
                                                     class="btn-main btn-botcard" data-link="${profile[i].buttonShare.link}">Поделиться</a>
                                             </div>

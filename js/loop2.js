@@ -1,9 +1,15 @@
+const sim = {
+    'js': '<img class="card-text-sim" src="./img/icons/JavaScript.svg" alt=":js:" title=":js:">',
+    'nodejs': '<img class="card-text-sim" src="./img/icons/node-js.svg" alt=":nodejs:" title=":nodejs:">',
+    'discord': '<img class="card-text-sim" src="./img/icons/Discord.svg" alt=":discord:" title=":discord:">',
+}
+
 const profile = {
     defColor: '#7f78bd',
     1: {
         name: 'Music или mod discord бот на заказ',
-        description: `Модератор-бот на JS (ban, clear, kick, lock-channel, move, mute, poll, unban, unlock-channel, unmute)
-<br>Музыкальный-бот на JS (loop, now-playing, play, queue, resume, shuffle, skip, stop, volume)`,
+        description: `Модератор-бот на ${sim['nodejs']}
+<br>Музыкальный-бот на ${sim['nodejs']}`,
         icon: './img/avatars/1.gif',
         buttonShare: { link: 'https://zippwitch-alt.github.io/zippp/items/buy-3.html', title: 'Купить скрипт бота' },
         date: 'Услуга',
@@ -13,7 +19,7 @@ const profile = {
     },
     2: {
         name: 'FN bot#0209',
-        description: `Мультифункциональный односерверный бот на Node.js, в которого входят: 65+ команд для модерации/музыки/фана/nsfw/розыгрышей/..., несколько глобальных и полезных функций для разработчиков, гибкая настройка конфигурации, большой аудит лог для всего, `,
+        description: `Мультифункциональный односерверный бот на ${sim['nodejs']}, в которого входят: 65+ команд для модерации/музыки/фана...`,
         icon: 'https://cdn.discordapp.com/avatars/674942800894361611/568429c0828ceabc102df5dd5617d907.webp?size=4096',
         buttonShare: { link: 'https://zippwitch-alt.github.io/zippp/items/buy-1.html', title: 'Купить скрипт бота' },
         date: '3/4/2021',
@@ -23,7 +29,7 @@ const profile = {
     },
     3: {
         name: 'Slash bot#3799',
-        description: 'Slash бот с глобальными командами на Node.js, который включает в себя несколько команд новейшего хэндлера Slash интеракций и наилучшим взаимодействием с платформой Discord для получения наилучшего впечатления от общения',
+        description: `Slash бот с глобальными командами на ${sim['nodejs']}, который включает в себя несколько команд <br>новейшего хэндлера...`,
         icon: 'https://cdn.discordapp.com/avatars/783995245075103744/405ff76ecd30ee7943f29023d59eea22.webp?size=4096',
         buttonShare: { link: 'https://zippwitch-alt.github.io/zippp/items/buy-2.html', title: 'Купить скрипт бота' },
         date: '7/05/2021',
@@ -52,7 +58,6 @@ const profile = {
         button: { title: 'SoundCloud', link: 'https://soundcloud.com/valeriy-is-bro-vp/sets/2-1', buttonColor: '' }
     }
 }
-
 
 let code = '';
 for (let i = 1; i <= Object.keys(profile).length - 1; i++) {

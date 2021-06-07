@@ -310,7 +310,7 @@ hr {
     background-color: #212529;
     background-clip: border-box;
     border: 3px solid;
-    border-radius: .25rem;
+    border-radius: 30px;
 }
 
 .card-title {
@@ -526,6 +526,11 @@ hr {
 .card:hover .card-text {
     transition: all 0.3s ease;
     opacity: 1
+}
+
+.card:hover .card-head-bg-blur {
+    filter: none;
+    transform: scale(1.1);
 }
 
 .card:hover {

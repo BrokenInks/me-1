@@ -68,13 +68,13 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                         <div class="padd" style="position: relative;">
                                             <img src="${profile[i].icon}"
                                                 width="110" height="110"
-                                                style="border-radius: 20%; margin-bottom: 15px; margin-top: 10px; background-color: rgb(33 37 41);"
+                                                style="border-radius: 20%; border: 2px solid #fff; margin-bottom: 15px; margin-top: 10px; background-color: rgb(33 37 41);"
                                                 alt="${profile[i].name}" loading="lazy"
                                                 onerror="this.src = '../img/avatars/avatar.gif';">
                                             <div class="badge_icon"></div>
                                             <h5 class="card-title">
                                                 <a href="${profile[i].button.link}"
-                                                    class="partner-va">${profile[i].name}</a><br><span style="margin-top: 10px;"
+                                                    class="partner-va">${i}. ${profile[i].name}</a><br><span style="margin-top: 10px;"
                                                     class="status-badge badge badge-success">${profile[i].date}</span>
                                             </h5>
                                         </div>

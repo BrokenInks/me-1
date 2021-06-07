@@ -30,8 +30,6 @@ a {
     background-color: transparent;
 }
 
-
-
 img {
     vertical-align: middle;
     border-style: none;
@@ -378,34 +376,6 @@ hr {
 }
 
 /*! CSS Used from: https://boticord.top/static/earth.css */
-
-::-webkit-scrollbar-button {
-    width: 10px;
-    height: 0;
-}
-
-::-webkit-scrollbar-track {
-    background-color: #23272a;
-}
-
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    background-color: #2e3136;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: #35383c;
-}
-
-::-webkit-resizer {
-    width: 10px;
-    height: 0;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
 
 #onhover-element:hover {
     color: #000;

@@ -101,7 +101,7 @@ img {
 }
 
 @media (max-width: 900px) {
-	#top-menu {
+	#hide {
 		display: none;
 	}
 }
@@ -332,7 +332,13 @@ main {
 
 @font-face {
 	font-family: 'Monsterrat Bold';
-	src: url('https://zippwitch-alt.github.io/zippp/fonts/Montserrat-ExtraBold.ttf');
+	src: url('../fonts/Montserrat-ExtraBold.ttf');
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: 'Monsterrat Light';
+	src: url('../fonts/Montserrat-ExtraLight.ttf');
 	font-weight: 200;
 }
 

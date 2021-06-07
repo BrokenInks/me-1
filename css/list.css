@@ -298,6 +298,10 @@ hr {
 }
 
 .card {
+    transition: all 0.3s ease;
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    transform: scale(1.0);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -520,6 +524,13 @@ hr {
 
 .card:hover .card-text {
     opacity: 1
+}
+
+.card:hover {
+    transition: all 0.3s ease;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .btn-primary:focus {

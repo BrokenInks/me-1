@@ -341,8 +341,8 @@ hr {
 }
 
 .badge-success {
-    color: #ced4da;
-    background-color: #28a745;
+    color: #fff;
+    background-color: #5865F2;
 }
 
 .mt-5 {
@@ -790,7 +790,7 @@ hr {
 }
 
 .status-badge {
-    border-radius: 15px;
+    border-radius: 5px;
     padding-right: 8px;
     padding-left: 8px;
 }

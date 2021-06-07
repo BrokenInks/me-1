@@ -347,6 +347,10 @@ main {
 	content: "\f0f4";
 }
 
+.fa-chevron-down:before {
+	content: "\f078"
+}
+
 .fa-user:before {
 	content: "\f007";
 }

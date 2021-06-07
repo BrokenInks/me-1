@@ -185,6 +185,8 @@ button:focus {
 	width: 900px;
 }
 
+@media screen {}
+
 .row {
 	align-items: center;
 	display: flex;

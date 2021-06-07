@@ -15,12 +15,14 @@
     <link rel="icon" type="image/ico" sizes="32x32" href="./img/favicon.ico">
     <link rel="icon" type="image/ico" sizes="16x16" href="./img/favicon.ico">
     <link rel="shortcut icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио Валерия</title>
 
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" media="all" href="./css/notifications.css">
     <link rel="stylesheet" media="all" href="./css/animate.css">
+    <link rel="stylesheet" media="all" href="./css/m.css">
     <link rel="stylesheet" media="all" href="./css/tl.css">
 
     <!-- fonts -->
@@ -94,49 +96,38 @@
         </div>
     </section>
     <div id="progress_line"></div>
+    <main class="h">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12" id="table">
+                        <table class="table serversList">
 
-    <div class="wrapper" data-barba="container">
-        <div class="page-holder">
-            <div class="page-scroller">
-                <div class="parallaxContainer">
-                    <main class="h">
-                        <section>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12" id="table">
-                                        <table class="table serversList">
+                            <script src="./js/lib/esm/index.js"></script>
+                            <script src="./js/loop.js"></script>
 
-                                            <script src="./js/lib/esm/index.js"></script>
-                                            <script src="./js/loop.js"></script>
+                            <script>
+                                function copyLink(e) {
+                                    let link = e.target.dataset.link;
+                                    let tmp = document.createElement('INPUT');
+                                    tmp.value = link;
+                                    document.body.appendChild(tmp);
+                                    tmp.select();
+                                    console.log(tmp.value)
+                                    document.execCommand('copy');
+                                    document.body.removeChild(tmp);
+
+                                    Notify({ title: 'Ссылка скопирована!', position: 'bottom center', type: 'success' })
+
+                                }
+                            </script>
 
 
-
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <script>
-                            function copyLink(e) {
-                                let link = e.target.dataset.link;
-                                let tmp = document.createElement('INPUT');
-                                tmp.value = link;
-                                document.body.appendChild(tmp);
-                                tmp.select();
-                                console.log(tmp.value)
-                                document.execCommand('copy');
-                                document.body.removeChild(tmp);
-
-                                Notify({ title: 'Ссылка скопирована!', position: 'bottom center', type: 'success' })
-
-                            }
-                        </script>
-                    </main>
-
+                        </table>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <!DOCTYPE html>
     <html>

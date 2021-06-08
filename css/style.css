@@ -360,6 +360,10 @@ main {
 	content: "\f0f4";
 }
 
+.fa-home:before {
+	content: "\f015";
+}
+
 .fas {
 	font-family: "Font Awesome 5 Free";
 }

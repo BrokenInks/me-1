@@ -2,6 +2,8 @@ const sim = {
     'js': '<img class="card-text-sim" src="./img/icons/JavaScript.svg" alt=":js:" title=":js:">',
     'nodejs': '<img class="card-text-sim" src="./img/icons/node-js.svg" alt=":nodejs:" title=":nodejs:">',
     'discord': '<img class="card-text-sim" src="./img/icons/Discord.svg" alt=":discord:" title=":discord:">',
+    'youtube': '<img class="card-text-sim" src="./img/icons/YouTube.svg" alt=":youtube:" title=":youtube:">',
+    'soundcloud': '<img class="card-text-sim" src="./img/icons/SoundCloud.svg" alt=":soundcloud:" title=":soundcloud:">',
 }
 
 const profile = {
@@ -22,7 +24,7 @@ const profile = {
         description: `Мультифункциональный односерверный бот на ${sim['nodejs']}, в которого входят: 65+ команд для модерации/музыки/фана...`,
         icon: 'https://cdn.discordapp.com/avatars/674942800894361611/568429c0828ceabc102df5dd5617d907.webp?size=4096',
         buttonShare: { link: 'https://zippwitch-alt.github.io/zippp/items/buy-1.html', title: 'Купить скрипт бота' },
-        date: '3/4/2021',
+        date: 'Дата: 3/4/2021',
         bg: 'bg1.jpg',
         color: '',
         button: { title: '1999₽', link: './items/buy-1.html', buttonColor: '' }
@@ -32,27 +34,27 @@ const profile = {
         description: `Slash бот с глобальными командами на ${sim['nodejs']}, который включает в себя несколько команд <br>новейшего хэндлера...`,
         icon: 'https://cdn.discordapp.com/avatars/783995245075103744/405ff76ecd30ee7943f29023d59eea22.webp?size=4096',
         buttonShare: { link: 'https://zippwitch-alt.github.io/zippp/items/buy-2.html', title: 'Купить скрипт бота' },
-        date: '7/05/2021',
+        date: 'Дата: 7/05/2021',
         bg: 'bg1.jpg',
         color: '',
         button: { title: '199₽', link: './items/buy-2.html', buttonColor: '' }
     },
     4: {
-        name: 'Zipp Wickness',
-        description: 'Альбом Выва 2 | 2021, вышедший на площадке YouTube на минимальном монтаже и SoundCloud, после длительного отдыха от канала ... Также ходят слухи, что существовал альбом "Выва 1 | 2020" в тоже разных стилях современной музыки, где каждый трек написан за 5-15 мин. Именно поэтому я его не сохранял.',
+        name: 'Альбом Выва | 2021',
+        description: `4 трека;<br>площадка ${sim['youtube']}`,
         icon: './img/avatars/soundcloud_avatar.jpg',
         buttonShare: { link: 'https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ - YouTube\nhttps://soundcloud.com/valeriy-is-bro-vp/sets/2-1 - SoundCloud', title: 'Перейти на YouTube плейлист' },
-        date: '23/4/2021',
+        date: 'Дата: 23/4/2021',
         bg: 'bg2.jpg',
         color: '',
         button: { title: 'YouTube', link: 'https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ', buttonColor: '' }
     },
     5: {
         name: 'Zipp Wickness',
-        description: 'Альбом Выва 2 | 2021, вышедший на площадке YouTube на минимальном монтаже и SoundCloud, после длительного отдыха от канала ... Также ходят слухи, что существовал альбом "Выва 1 | 2020" в тоже разных стилях современной музыки, где каждый трек написан за 5-15 мин. Именно поэтому я его не сохранял.',
+        description: `4 трека; <br>площадка: ${sim['soundcloud']}`,
         icon: './img/avatars/soundcloud_avatar.jpg',
         buttonShare: { link: 'https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ - YouTube\nhttps://soundcloud.com/valeriy-is-bro-vp/sets/2-1 - SoundCloud', title: 'Перейти на YouTube плейлист' },
-        date: '23/4/2021',
+        date: 'Дата: 23/4/2021',
         bg: 'bg2.jpg',
         color: '',
         button: { title: 'SoundCloud', link: 'https://soundcloud.com/valeriy-is-bro-vp/sets/2-1', buttonColor: '' }

@@ -32,7 +32,8 @@ body {
 	padding: 70px 0px 0px 0px;
 }
 
-.area {position: absolute;
+.area {
+	position: absolute;
 	background: transparent;
 	background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
 	width: 100%;
@@ -482,7 +483,6 @@ main {
 }
 
 .errorPage {
-	margin-top: -10px;
 	color: #e4a4ad;
 	padding: 5px;
 	border: 5px solid #e4a4ad;

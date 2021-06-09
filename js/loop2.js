@@ -47,7 +47,7 @@ const profile = {
         date: 'Дата: 23/4/2021',
         bg: 'bg2.jpg',
         color: '',
-        button: { title: 'YouTube', link: 'https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ', buttonColor: '' }
+        button: { title: 'YouTube', link: 'https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ', color: '#ff0000' }
     },
     5: {
         name: 'Альбом Выва | 2021',
@@ -57,7 +57,7 @@ const profile = {
         date: 'Дата: 23/4/2021',
         bg: 'bg2.jpg',
         color: '',
-        button: { title: 'SoundCloud', link: 'https://soundcloud.com/valeriy-is-bro-vp/sets/2-1', buttonColor: '' }
+        button: { title: 'SoundCloud', link: 'https://soundcloud.com/valeriy-is-bro-vp/sets/2-1', color: '#ff7400' }
     }
 }
 
@@ -72,7 +72,7 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                                 style="background-image: url(${profile[i].icon});">
                                             </div>
                                         </div>
-                                        <div style="background: ${profile[i].color !== '' ? profile[i].color : profile.defColor}" class="serverPersonalPage reportBtn">${i}</div>
+                                        <div style="background: ${profile[i].color !== '' ? profile[i].color : profile.defColor}" class="card-num">${i}</div>
                                         <div class="padd" style="position: relative;">
                                             <img src="${profile[i].icon}" onerror="this.src='../img/avatars/avatar.gif'"
                                                 width="110" height="110"

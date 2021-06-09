@@ -298,12 +298,8 @@ hr {
     text-decoration: none;
 }
 
-/* фыа */
-
-/*! CSS Used from: https://server-discord.com/css/bootstrap-grid.min.css */
-
-.serverPersonalPage.reportBtn {
-    padding: 5px 6px;
+.card-num {
+    padding-top: 3px;
     z-index: 1;
     height: 35px;
     left: 0;
@@ -311,16 +307,12 @@ hr {
     top: 0;
     font-size: 20px;
     width: 35px;
-    border-radius: 0 0 10px 0px;
+    border-radius: 0 0 15px 0px;
     border: none;
     color: #FFF;
 }
 
 /*! CSS Used from: Embedded */
-
-.tempBtn {
-    background: #f04337!important;
-}
 
 .card {
     transition: all 0.3s ease;

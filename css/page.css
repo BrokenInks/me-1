@@ -63,13 +63,12 @@ a:hover {
     }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 .title__text {
     font-size: 8rem;
     line-height: 1;
     letter-spacing: 8px;
     margin-bottom: 1.6rem;
-    font-family: 'Montserrat Bold', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     font-weight: normal;
     text-shadow: 0 10px 30px rgba(2, 11, 22, 0.5);
 }
@@ -358,15 +357,17 @@ a:hover {
 }
 
 @font-face {
-    font-family: 'Monsterrat Light';
-    font-style: normal;
-    src: url(../fonts/Montserrat-ExtraLight.ttf);
-}
-@font-face {
     font-family: 'Monsterrat Bold';
-    font-style: normal;
-    src: url(../fonts/Montserrat-ExtraBold.ttf);
+    src: url('../fonts/Montserrat-ExtraBold.ttf');
+    font-weight: 200;
 }
+
+@font-face {
+    font-family: 'Monsterrat Light';
+    src: url('../fonts/Montserrat-ExtraLight.ttf');
+    font-weight: 200;
+}
+
 @font-face {
     font-family: 'Abril Fatface';
     font-style: normal;

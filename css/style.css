@@ -1,4 +1,4 @@
-/*! CSS Used from: https://zippwitch-alt.github.io/zippp/css/style.css */
+/*! CSS Used from: ../css/style.css */
 
 ::-webkit-scrollbar {
 	width: 0px;
@@ -220,7 +220,6 @@ header::before {
 	z-index: -1;
 	min-height: 100vh;
 }
-
 
 button:hover {
 	cursor: none;
@@ -515,8 +514,8 @@ main {
 	font-style: normal;
 	font-weight: 400;
 	font-display: auto;
-	src: url(https://zippwitch-alt.github.io/zippp/fonts/fa-regular-400.eot);
-	src: url(https://zippwitch-alt.github.io/zippp/fonts/fa-regular-400.eot#iefix) format("embedded-opentype"), url(https://zippwitch-alt.github.io/zippp/fonts/fa-regular-400.woff2) format("woff2"), url(https://zippwitch-alt.github.io/zippp/fonts/fa-regular-400.woff) format("woff"), url(https://zippwitch-alt.github.io/zippp/fonts/fa-regular-400.ttf) format("truetype"), url(https://zippwitch-alt.github.io/zippp/fonts/fa-regular-400.svg#fontawesome) format("svg");
+	src: url(../fonts/fa-regular-400.eot);
+	src: url(../fonts/fa-regular-400.eot#iefix) format("embedded-opentype"), url(../fonts/fa-regular-400.woff2) format("woff2"), url(../fonts/fa-regular-400.woff) format("woff"), url(../fonts/fa-regular-400.ttf) format("truetype"), url(../fonts/fa-regular-400.svg#fontawesome) format("svg");
 }
 
 @font-face {
@@ -524,8 +523,8 @@ main {
 	font-style: normal;
 	font-weight: 900;
 	font-display: auto;
-	src: url(https://zippwitch-alt.github.io/zippp/fonts/fa-solid-900.eot);
-	src: url(https://zippwitch-alt.github.io/zippp/fonts/fa-solid-900.eot#iefix) format("embedded-opentype"), url(https://zippwitch-alt.github.io/zippp/fonts/fa-solid-900.woff2) format("woff2"), url(https://zippwitch-alt.github.io/zippp/fonts/fa-solid-900.woff) format("woff"), url(https://zippwitch-alt.github.io/zippp/fonts/fa-solid-900.ttf) format("truetype"), url(https://zippwitch-alt.github.io/zippp/fonts/fa-solid-900.svg#fontawesome) format("svg");
+	src: url(../fonts/fa-solid-900.eot);
+	src: url(../fonts/fa-solid-900.eot#iefix) format("embedded-opentype"), url(../fonts/fa-solid-900.woff2) format("woff2"), url(../fonts/fa-solid-900.woff) format("woff"), url(../fonts/fa-solid-900.ttf) format("truetype"), url(../fonts/fa-solid-900.svg#fontawesome) format("svg");
 }
 
 @font-face {
@@ -600,7 +599,6 @@ button {
 
 .black:hover {
 	cursor: none;
-	transform: translateY(5px);
 	box-shadow: 0px 0px transparent, 0px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -613,7 +611,7 @@ button {
 	line-height: 1.5;
 	text-align: center;
 	background: #7f78bd;
-	box-shadow: 0px 5px #332a63, 0px 10px 10px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 5px #332a63, 0px
 }
 
 button:hover {

@@ -298,6 +298,30 @@ hr {
     text-decoration: none;
 }
 
+/* фыа */
+
+/*! CSS Used from: https://server-discord.com/css/bootstrap-grid.min.css */
+
+.serverPersonalPage.reportBtn {
+    padding: 5px 6px;
+    z-index: 1;
+    height: 35px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    font-size: 20px;
+    width: 35px;
+    border-radius: 0 0 10px 0px;
+    border: none;
+    color: #FFF;
+}
+
+/*! CSS Used from: Embedded */
+
+.tempBtn {
+    background: #f04337!important;
+}
+
 .card {
     transition: all 0.3s ease;
     -webkit-transform: scale(1.0);
@@ -381,22 +405,6 @@ hr {
 
 /*! CSS Used from: https://boticord.top/static/earth.css */
 
-#onhover-element:hover {
-    color: #000;
-    background-color: #f5f5f0;
-    text-decoration: none;
-}
-
-#onhover-element:active {
-    color: #000;
-    background-color: #bfbfbe;
-    text-decoration: none;
-}
-
-#onhover-element:focus {
-    outline: none;
-}
-
 .padd {
     padding: 8.5px;
 }
@@ -412,7 +420,7 @@ hr {
 .card-bot {
     min-height: 410px;
     margin: 10px 10px 25px;
-    border-radius: 25px;
+    border-radius: 0px 25px 25px 25px;
     width: 290px;
 }
 
@@ -481,7 +489,6 @@ hr {
 
 .btn-botcard {
     color: #fff;
-    margin-left: 5px;
     margin-right: 5px;
 }
 
@@ -501,7 +508,22 @@ hr {
     font-size: 1rem;
     line-height: 1.5;
     border-radius: .25rem;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-main:hover {
+    background: red;
+}
+
+.btn-l {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    padding: .375rem .95rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
 }
 
 .container {
@@ -592,7 +614,7 @@ hr {
 }
 
 .partner-va:hover {
-    font-size: 22px;
+    color: #58f2e5;
     transition: .25s
 }
 

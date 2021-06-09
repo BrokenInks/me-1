@@ -17,7 +17,7 @@ const profile = {
         date: 'Услуга',
         bg: 'bg1.jpg',
         color: '',
-        button: { title: '499₽', link: './items/buy-3.html', buttonColor: '' }
+        button: { title: '499₽', link: './items/buy-3.html', color: '#3ba55c' }
     },
     2: {
         name: 'FN bot#0209',
@@ -27,7 +27,7 @@ const profile = {
         date: 'Дата: 3/4/2021',
         bg: 'bg1.jpg',
         color: '',
-        button: { title: '1999₽', link: './items/buy-1.html', buttonColor: '' }
+        button: { title: '1999₽', link: './items/buy-1.html', color: '#3ba55c' }
     },
     3: {
         name: 'Slash bot#3799',
@@ -37,7 +37,7 @@ const profile = {
         date: 'Дата: 7/05/2021',
         bg: 'bg1.jpg',
         color: '',
-        button: { title: '199₽', link: './items/buy-2.html', buttonColor: '' }
+        button: { title: '199₽', link: './items/buy-2.html', color: '#3ba55c' }
     },
     4: {
         name: 'Альбом Выва | 2021',
@@ -72,6 +72,7 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                                 style="background-image: url(${profile[i].icon});">
                                             </div>
                                         </div>
+                                        <div style="background: ${profile[i].color !== '' ? profile[i].color : profile.defColor}" class="serverPersonalPage reportBtn">${i}</div>
                                         <div class="padd" style="position: relative;">
                                             <img src="${profile[i].icon}" onerror="this.src='../img/avatars/avatar.gif'"
                                                 width="110" height="110"
@@ -81,7 +82,7 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                             <div class="badge_icon"></div>
                                             <h5 class="card-title">
                                                 <a href="${profile[i].button.link}"
-                                                    class="hoverable partner-va">${i}. ${profile[i].name}</a><br><span style="margin-top: 10px;"
+                                                    class="hoverable partner-va">${profile[i].name}</a><br><span style="margin-top: 10px;"
                                                     class="status-badge badge badge-success">${profile[i].date}</span>
                                             </h5>
                                         </div>
@@ -90,13 +91,22 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                             <div class="btn-group-card"
                                                 style="position: absolute; left: 50%; bottom: 15px; transform: translateX(-50%); margin-bottom: 1px;"
                                                 role="group" aria-label="Bot Buttons">
-                                                <a style="
-                                                border-radius: 10px 0px 0px 10px; background: ${profile[i].button.buttonColor !== '' ? profile[i].button.buttonColor : profile.defColor}" href="${profile[i].button.link}" target="_blank"
-                                                    id="onhover-element" class="black hoverable">${profile[i].button.title}</a>
+                                                <a onmouseover="this.style.transition='.3s'; this.style.backgroundColor='${profile[i].button.color ? profile[i].button.color : profile.defColor}';" onmouseout="this.style.backgroundColor='transparent';" style="
+                                                border-left: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
+                                                border-right: 0.5px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
+                                                border-top: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
+                                                border-bottom: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
+                                                border-radius: 10px 0px 0px 10px;" href="${profile[i].button.link}" target="_blank"
+                                                    id="onhover-element" class="btn-l hoverable">${profile[i].button.title}</a>
                                                    
-                                                <a style="
-                                                border-radius: 0px 10px 10px 0px;" title="${profile[i].buttonShare.title}" onclick="copyLink(event)" id="onhover-element"
-                                                    class="btn-main btn-botcard black hoverable" data-link="${profile[i].buttonShare.link}">Поделиться</a>
+                                                <a onmouseover="this.style.transition='.3s'; this.style.backgroundColor='${profile[i].color !== '' ? profile[i].color : profile.defColor}';" onmouseout="this.style.backgroundColor='transparent';"
+                                                style="
+                                                border-left: 0.5px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
+                                                border-right: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
+                                                border-top: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
+                                                border-bottom: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
+                                                border-radius: 0px 10px 10px 0px;" title="${profile[i].buttonShare.title}" onclick="copyLink(event)"
+                                                    class="btn-main btn-botcard hoverable" data-link="${profile[i].buttonShare.link}">Поделиться</a>
                                             </div>
                                         </div>
                                     </div>

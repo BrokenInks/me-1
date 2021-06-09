@@ -243,10 +243,6 @@ button:focus {
 	height: 50px;
 }
 
-:focus {
-	outline: 2px dashed #e4a4ad;
-}
-
 li {
 	cursor: none;
 }

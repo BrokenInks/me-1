@@ -1,5 +1,5 @@
 function redirectUser() {
-    let link = 'https://zippw.github.io/zippp/'
+    let link = 'https://zippw.github.io/me/'
     let file;
     var code = document.getElementById("code").value;
     const regexps = {

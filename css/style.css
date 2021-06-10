@@ -21,15 +21,18 @@ body {
 	background-color: #202230;
 	align-items: center;
 	display: flex;
-	cursor: none;
+	cursor: default;
 	font-family: sans-serif;
 	justify-content: center;
-	perspective: 1px;
 	margin: 0;
 	font-family: 'Monsterrat Bold', sans-serif;
 	width: 100%;
 	height: 100%;
 	padding: 70px 0px 0px 0px;
+}
+
+.pers {
+	perspective: 1px;
 }
 
 .area {
@@ -222,7 +225,7 @@ header::before {
 }
 
 button:hover {
-	cursor: none;
+	cursor: pointer;
 	transform: translateY(5px);
 	box-shadow: 0px 0px transparent, 0px 5px 10px rgba(0, 0, 0, 0.25);
 }
@@ -245,11 +248,11 @@ button:focus {
 }
 
 li {
-	cursor: none;
+	cursor: pointer;
 }
 
 a {
-	cursor: none;
+	cursor: pointer;
 	color: #fff;
 	text-decoration: none;
 }
@@ -309,7 +312,7 @@ img {
 
 .topLine .logo img {
 	border-radius: 15px;
-	cursor: none;
+	cursor: pointer;
 	pointer-events: auto;
 	display: inline-block;
 	height: 40px;
@@ -338,7 +341,7 @@ img {
 	min-height: 100%;
 	line-height: 1;
 	text-decoration: none;
-	cursor: none;
+	cursor: pointer;
 	opacity: 0.8;
 	transition: all 0.3s;
 }
@@ -389,7 +392,7 @@ main {
 	background: #7f78bd;
 	border-radius: 5px;
 	padding: 6px 24px 6px 24px;
-	cursor: none;
+	cursor: pointer;
 	transition: all 0.3s;
 	display: block;
 	margin-left: 10px;
@@ -399,7 +402,7 @@ main {
 }
 
 .boost:hover {
-	cursor: none;
+	cursor: pointer;
 	transform: translateY(5px);
 	box-shadow: 0px 0px transparent, 0px 5px 10px rgba(0, 0, 0, 0.25);
 }
@@ -595,7 +598,7 @@ button {
 }
 
 .black:hover {
-	cursor: none;
+	cursor: pointer;
 	box-shadow: 0px 0px transparent, 0px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -612,7 +615,7 @@ button {
 }
 
 button:hover {
-	cursor: none;
+	cursor: pointer;
 	transform: translateY(5px);
 	box-shadow: 0px 0px transparent, 0px 5px 10px rgba(0, 0, 0, 0.25);
 }

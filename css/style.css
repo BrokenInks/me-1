@@ -273,7 +273,7 @@ img {
 .menu__btn {
 	display: flex;
 	align-items: center;
-	position: fixed;
+	position: absolute;
 	top: 13px;
 	left: 13px;
 	width: 26px;

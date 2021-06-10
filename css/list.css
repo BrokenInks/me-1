@@ -358,7 +358,6 @@ hr {
 
 .badge-success {
     color: #fff;
-    background-color: #5865F2;
 }
 
 .mt-5 {
@@ -806,6 +805,11 @@ hr {
     border-radius: 5px;
     padding-right: 8px;
     padding-left: 8px;
+    border-bottom: solid 2px #fff;
+    padding: 6px 24px 6px 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 /*! CSS Used from: https://boticord.top/static/donate-colors.css */

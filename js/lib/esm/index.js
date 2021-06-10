@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     width: 10vw;
+    transition: all 0.2s ease;
   }
   #notify [data-notify] {
     position: fixed;
@@ -52,7 +53,7 @@
     border-radius: 0.25rem;
     transition: all 300ms ease 0s;
     user-select: none;
-    cursor: none;
+    cursor: pointer;
   }
   #notify .notify__title {
     display: flex;
@@ -120,7 +121,7 @@ function Notify(
     html = null,
     type = "success",
     position = "bottom center",
-    duration = 3000,
+    duration = 1400,
   },
   callback
 ) {
@@ -139,7 +140,7 @@ function Notify(
   notifyContent.setAttribute("class", `notify notify--${type}`);
 
   notifyContent.classList.add("animate");
-  setTimeout(() => notifyContent.classList.remove("animate"), 300);
+  setTimeout(() => notifyContent.classList.remove("animate"), 100);
 
   notifyContent.innerHTML = `
         <div class="notify__title" style="font-weight: 700;color: #0b2e13;">${title}</div>
@@ -186,11 +187,17 @@ function Notify(
   if (duration * 1 > 0) {
     setTimeout(() => {
       if (typeof callback === "function") callback();
-      notifyContent.remove();
+      notifyContent.style.opacity = 0
+      setTimeout(() => {
+        notifyContent.remove();
+      }, 200)
     }, duration);
   }
 
   notifyContent.addEventListener("click", function () {
-    this.remove();
+    this.style.opacity = 0;
+    setTimeout(() => {
+      this.remove();
+    }, 200)
   });
 }

@@ -97,7 +97,6 @@
                                 </div>
                                 <script>
                                     function copyLink(e) {
-                                        Notify({ title: 'Ссылка скопирована!', position: 'bottom center', type: 'success' })
                                         let link = e.target.dataset.link;
                                         let tmp = document.createElement('INPUT');
                                         tmp.value = link;
@@ -106,7 +105,8 @@
                                         console.log(tmp.value)
                                         document.execCommand('copy');
                                         document.body.removeChild(tmp);
-
+                                        
+                                        Notify({ title: 'Ссылка скопирована!', position: 'bottom center', type: 'success' })
                                     }
                                 </script>
 

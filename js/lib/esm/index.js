@@ -120,7 +120,7 @@ function Notify(
     html = null,
     type = "success",
     position = "top right",
-    duration = 3000 * 1000,
+    duration = 3000,
   },
   callback
 ) {

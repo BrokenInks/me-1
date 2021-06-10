@@ -119,7 +119,7 @@ function Notify(
     title,
     html = null,
     type = "success",
-    position = "top right",
+    position = "bottom center",
     duration = 3000,
   },
   callback

@@ -101,8 +101,7 @@
             height: 300px;
             width: 600px;
             top: 250px;
-            left: calc(50% - 270px);
-            /* -300px */
+            left: calc(50% - 300px);
             display: flex;
         }
 
@@ -246,6 +245,7 @@
         }
     </script>
 
+    <h1>Мои скиллы и хобби</h1>
     <div class="container">
         <div onmouseover="document.getElementsByClassName('filledbar')[0].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[0].style.width =`${150 * scheme['html'] / 100}px`"
             onmouseout="document.getElementsByClassName('filledbar')[0].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[0].style.width ='0px'"
@@ -292,7 +292,24 @@
                 <div class="emptybar"></div>
                 <div class="filledbar"></div>
             </div>
-            <div class="lead">Знание 70%<br>Начал изучать:<br>6 . 02 . 2019</div>
+            <div class="lead">Знание 70%<br>Сертификат;<br>Начал изучать:<br>6 . 02 . 2019</div>
+            <div id="picture" class="pic"></div>
+            <div id="picture" class="pic1"></div>
+            <div id="picture" class="pic2"></div>
+            <div id="picture" class="pic3"></div>
+        </div>
+        <div onmouseover="document.getElementsByClassName('filledbar')[2].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[2].style.width =`${150 * scheme['js'] / 100}px`"
+            onmouseout="document.getElementsByClassName('filledbar')[2].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[2].style.width ='0px'"
+            class="card">
+            <h3 class="title">
+                <img style="height: 22px;" src="./img/icons/Music.svg" alt="ЯП" title="ru">
+                Музыка
+            </h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <div class="lead">Знание 100%<br>Фортепиано;<br>Начал изучать:<br>6 . 02 . 2019</div>
             <div id="picture" class="pic"></div>
             <div id="picture" class="pic1"></div>
             <div id="picture" class="pic2"></div>

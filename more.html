@@ -20,6 +20,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/list.css">
     <link rel="stylesheet" media="all" href="./css/animate.css">
 
     <!-- fonts -->
@@ -72,7 +73,7 @@
     </section>
 
     <!-- bg effects -->
-    <div class="area">
+    <div style="height: 100vh;" class="area">
         <ul class="circles">
             <li></li>
             <li></li>
@@ -166,11 +167,57 @@
             transition: 0.6s ease-out;
         }
 
-
-        .circle {
-            position: absolute;
+        .pic {
             top: 150px;
             left: calc(50% - 60px);
+            width: 120px;
+        }
+
+        .pic1 {
+            top: 175px;
+            left: calc(50% - 30px);
+            width: 90px;
+        }
+
+        .pic2 {
+            top: 200px;
+            left: calc(50% - 40px);
+            width: 100px;
+        }
+
+        .pic3 {
+            top: 225px;
+            left: calc(50% - 53px);
+            width: 113px;
+        }
+
+        #picture {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.4);
+            height: 11px;
+            border-radius: 20px;
+            transition: .5s
+        }
+
+        .lead {
+            position: absolute;
+            color: #fff;
+            text-align: right;
+            line-height: 25px;
+            right: none;
+            top: 145px;
+            left: calc(50% - 60px);
+            background: transparent;
+            opacity: 0;
+            transition: .4s;
+        }
+
+        .card:hover .lead {
+            opacity: 1
+        }
+
+        .card:hover #picture {
+            opacity: 0
         }
 
         .stroke {
@@ -192,61 +239,64 @@
     </style>
 
     <script>
-        const cheme = {
-            'js': '120',
-            'html': '135',
-            'css': '90'
+        const scheme = {
+            'js': 70,
+            'html': 85,
+            'css': 43
         }
     </script>
 
     <div class="container">
-        <div onmouseover="document.getElementsByClassName('filledbar')[0].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[0].style.width =`${cheme['html']}px`"
+        <div onmouseover="document.getElementsByClassName('filledbar')[0].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[0].style.width =`${150 * scheme['html'] / 100}px`"
             onmouseout="document.getElementsByClassName('filledbar')[0].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[0].style.width ='0px'"
             class="card">
             <h3 class="title">
                 <img style="height: 22px;" src="./img/icons/HTML.svg" alt="ЯП" title="ru">
-                HTML</h3>
+                HTML
+            </h3>
             <div class="bar">
                 <div class="emptybar"></div>
                 <div class="filledbar"></div>
             </div>
-            <div class="circle">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <circle class="stroke" cx="60" cy="60" r="50" />
-                </svg>
-            </div>
+            <div class="lead">Знание 85%<br>Начал изучать:<br>13 . 05 . 2021</div>
+            <div id="picture" class="pic"></div>
+            <div id="picture" class="pic1"></div>
+            <div id="picture" class="pic2"></div>
+            <div id="picture" class="pic3"></div>
         </div>
-        <div onmouseover="document.getElementsByClassName('filledbar')[1].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[1].style.width =`${cheme['css']}px`"
-            onmouseout="document.getElementsByClassName('filledbar')[1].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[1].style.width ='0px'"
-            class="card">
+        <div onmouseover="document.getElementsByClassName('filledbar')[1].style.transition='0.4s ease-out'; 
+        document.getElementsByClassName('filledbar')[1].style.width =`${150 * scheme['css'] / 100}px`" onmouseout="document.getElementsByClassName('filledbar')[1].style.transition='0.4s ease-out';
+             document.getElementsByClassName('filledbar')[1].style.width ='0px'" class="card">
             <h3 class="title">
                 <img style="height: 22px;" src="./img/icons/CSS.svg" alt="ЯП" title="ru">
-                CSS</h3>
+                CSS
+            </h3>
             <div class="bar">
                 <div class="emptybar"></div>
                 <div class="filledbar"></div>
             </div>
-            <div class="circle">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <circle class="stroke" cx="60" cy="60" r="50" />
-                </svg>
-            </div>
+            <div class="lead">Знание 43%<br>Начал изучать:<br>18 . 05 . 2021</div>
+            <div id="picture" class="pic"></div>
+            <div id="picture" class="pic1"></div>
+            <div id="picture" class="pic2"></div>
+            <div id="picture" class="pic3"></div>
         </div>
-        <div onmouseover="document.getElementsByClassName('filledbar')[2].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[2].style.width =`${cheme['js']}px`"
+        <div onmouseover="document.getElementsByClassName('filledbar')[2].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[2].style.width =`${150 * scheme['js'] / 100}px`"
             onmouseout="document.getElementsByClassName('filledbar')[2].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[2].style.width ='0px'"
             class="card">
             <h3 class="title">
                 <img style="height: 22px;" src="./img/icons/JavaScript.svg" alt="ЯП" title="ru">
-                JavaScript</h3>
+                JavaScript
+            </h3>
             <div class="bar">
                 <div class="emptybar"></div>
                 <div class="filledbar"></div>
             </div>
-            <div class="circle">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <circle class="stroke" cx="60" cy="60" r="50" />
-                </svg>
-            </div>
+            <div class="lead">Знание 70%<br>Начал изучать:<br>6 . 02 . 2019</div>
+            <div id="picture" class="pic"></div>
+            <div id="picture" class="pic1"></div>
+            <div id="picture" class="pic2"></div>
+            <div id="picture" class="pic3"></div>
         </div>
     </div>
 

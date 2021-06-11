@@ -19,6 +19,7 @@
 body {
 	background: url(../img/bg.png) repeat;
 	background-color: #202230;
+	background-attachment : fixed;
 	align-items: center;
 	display: flex;
 	cursor: default;

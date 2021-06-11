@@ -18,7 +18,8 @@
 
 body {
 	background: url(../img/bg.png) repeat;
-	background-color: #202230;
+	/* background-color: #202230; */
+	background-color: #100e17;
 	background-attachment : fixed;
 	align-items: center;
 	display: flex;

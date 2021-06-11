@@ -76,72 +76,70 @@
         </div>
     </section>
 
-    <div class="pers">
-        <!-- bg effects -->
-        <div style="  position: fixed;
+    <!-- bg effects -->
+    <div style="  position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;" class="area">
-            <ul class="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <div id="progress_line"></div>
-
-        <!-- content -->
-        <main class="h">
-            <section>
-                <div class="container">
-                    <div class="row2">
-                        <div class="col-md-12" id="table">
-                            <table class="table serversList">
-
-                                <script src="./js/lib/esm/index.js"></script>
-                                <div class="row2" id="all-bots">
-                                    <script src="js/loop2.js"></script>
-                                </div>
-                                <script>
-                                    function copyLink(e) {
-                                        let link = e.target.dataset.link;
-                                        let tmp = document.createElement('INPUT');
-                                        tmp.value = link;
-                                        document.body.appendChild(tmp);
-                                        tmp.select();
-                                        console.log(tmp.value)
-                                        document.execCommand('copy');
-                                        document.body.removeChild(tmp);
-
-                                        Notify({ title: 'Ссылка скопирована!', position: 'bottom center', type: 'success' })
-                                    }
-                                </script>
-
-
-                            </table>
-                        </div>
-                    </div>
-            </section>
-        </main>
-
-        <!-- libraries local -->
-        <script src="./js/lib/jquery.min.js"></script>
-        <script src="./js/lib/TweenMax.min.js"></script>
-        <!-- libraries  public -->
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-        <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script> -->
-
-        <!-- stock -->
-
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
     </div>
+    <div id="progress_line"></div>
+
+    <!-- content -->
+    <main class="h">
+        <section>
+            <div class="container">
+                <div class="row2">
+                    <div class="col-md-12" id="table">
+                        <table class="table serversList">
+
+                            <script src="./js/lib/esm/index.js"></script>
+                            <div class="row2" id="all-bots">
+                                <script src="js/loop2.js"></script>
+                            </div>
+                            <script>
+                                function copyLink(e) {
+                                    let link = e.target.dataset.link;
+                                    let tmp = document.createElement('INPUT');
+                                    tmp.value = link;
+                                    document.body.appendChild(tmp);
+                                    tmp.select();
+                                    console.log(tmp.value)
+                                    document.execCommand('copy');
+                                    document.body.removeChild(tmp);
+
+                                    Notify({ title: 'Ссылка скопирована!', position: 'bottom center', type: 'success' })
+                                }
+                            </script>
+
+
+                        </table>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <!-- libraries local -->
+    <script src="./js/lib/jquery.min.js"></script>
+    <script src="./js/lib/TweenMax.min.js"></script>
+    <!-- libraries  public -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script> -->
+
+    <!-- stock -->
+
 </body>
 
 

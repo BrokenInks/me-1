@@ -105,6 +105,7 @@
             display: flex;
         }
 
+
         .card {
             display: flex;
             height: 280px;
@@ -209,6 +210,12 @@
             background: transparent;
             opacity: 0;
             transition: .4s;
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                transform: scale(0.5) translateY(-200px)
+            }
         }
 
         .card:hover .lead {

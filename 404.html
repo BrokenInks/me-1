@@ -20,22 +20,6 @@
 </head>
 
 <body>
-    <script>console.clear()
-        let keyCode = [38, 40, 38, 40, 32, 37, 39, 37, 39];
-        console.warn('Код пасхалки:'); console.warn(keyCode.join(', '))</script>
-    <script>
-        var keyLog = [];
-        document.body.onkeydown = function (e) {
-            const k = e.keyCode || e.which;
-            keyLog.push(k);
-            console.clear();
-            console.error(keyCode.join(', '));
-            console.warn(keyLog.join(', '));
-            if (keyLog.toString() == keyCode) {
-                window.location.href = "https://zippw.github.io/me/game3000";
-            }
-        };
-    </script>
 
     <!-- top-line -->
     <section class="top-line h" id="top-line">
@@ -68,7 +52,8 @@
                         <li><a class="menu__item" href="https://zippw.github.io/me/"><i class="fas fa-home"> </i>
                                 Главная</a></li>
                         <li><a class="menu__item" href="https://zippw.github.io/me/portfolio"><i
-                                    class="fas fa-user"> </i> Портфолио</a>
+                                    class="fas fa-user"></i>
+                                </i> Портфолио</a>
                         </li>
                         <li><a class="menu__item" href="https://www.donationalerts.com/r/zippwitch"><i
                                     class="fas fa-coffee"> </i> Донат</a></li>
@@ -96,6 +81,22 @@
     <div id="progress_line"></div>
 
     <!-- content -->
+    <script>console.clear()
+        let keyCode = [38, 40, 38, 40, 32, 37, 39, 37, 39];
+        console.warn('Код пасхалки:'); console.warn(keyCode.join(', '));</script>
+    <script>
+        var keyLog = [];
+        document.body.onkeydown = function (e) {
+            const k = e.keyCode || e.which;
+            keyLog.push(k);
+            console.clear();
+            console.error(keyCode.join(', '));
+            console.warn(keyLog.join(', '));
+            if (keyLog.toString() == keyCode) {
+                window.location.href = "https://zippw.github.io/me/game3000";
+            }
+        };
+    </script>
     <section id="error">
         <div class="hit-the-floor">404</div>
         <div class="container">
@@ -125,6 +126,8 @@
     <!-- <script src="./js/lib/TweenMax.min.js"></script> -->
 
     <!-- libraries public -->
+    <script src='./js/lib/console.min.js'></script>
+    <script>console.image("https://cdn.discordapp.com/attachments/785141845402583053/853368754800295956/e18d7188f042e37b542b5974c5f2ba21.webp");</script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
 
     <!-- stock -->

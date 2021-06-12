@@ -11,8 +11,8 @@
     <title>Страница не найдена</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/list.css">
+    <link rel="stylesheet" href="https://zippw.github.io/me/css/style.css">
+    <link rel="stylesheet" href="https://zippw.github.io/me/css/list.css">
     <link rel="stylesheet" media="all" href="https://zippw.github.io/me/css/animate.css">
 
     <!-- fonts -->
@@ -20,56 +20,59 @@
 </head>
 
 <body>
+    <script>console.clear()
+        let keyCode = [38, 40, 38, 40, 32, 37, 39, 37, 39];
+        console.warn('Код пасхалки:'); console.warn(keyCode.join(', '))</script>
     <script>
         var keyLog = [];
         document.body.onkeydown = function (e) {
             const k = e.keyCode || e.which;
             keyLog.push(k);
-            console.log(keyLog.toString() + ` | ${e.which}`)
-            if (keyLog.toString() == [38, 40, 38, 40, 32, 37, 39, 37, 39]) {
-                console.log('a')
-                window.location.href = "https://zippw.github.io/me/game3000"
+            console.clear();
+            console.error(keyCode.join(', '));
+            console.warn(keyLog.join(', '));
+            if (keyLog.toString() == keyCode) {
+                window.location.href = "https://zippw.github.io/me/game3000";
             }
         };
     </script>
 
-    <!-- topLine -->
-    <section class="topLine h" id="topLine">
-        <div class="fadeIn wow" alt="Логотип" data-wow-duration="2" data-wow-delay="0.0s" data-wow-offset="10"
-            data-wow-iteration="1">
-
-            <div class=" container-fluid">
-                <div class="row">
-                    <div class="col-md-12" style="padding-right: 0">
-                        <div id="hide" class="logo" alt="">
-                            <a itemprop="url" tabindex="0" href="https://zippw.github.io/me/" alt="DISCORD"
-                                title="На главную"><img itemprop="logo"
-                                    src="https://zippw.github.io/me/img/logo.svg"></a>
-                        </div>
-                        <div class="topMenu hidden-sm hidden-xs">
-                            <nav id="top-menu" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
-                                <ul id="hide">
-                                    <li itemprop="name"><a itemprop="url" tabindex="0"
-                                            href="https://zippw.github.io/me/portfolio"><i class="fas fa-user"></i>
-                                            Портфолио</a></li>
-                                    <li itemprop="name"><a itemprop="url" tabindex="0"
-                                            href="https://www.donationalerts.com/r/zippwitch"><i
-                                                class="fas fa-coffee"></i> Донат</a></li>
-                                </ul>
-                            </nav>
-                        </div>
+    <!-- top-line -->
+    <section class="top-line h" id="top-line">
+        <div class=" container-fluid">
+            <div class="row">
+                <div class="col-md-12" style="padding-right: 0">
+                    <div id="hide" class="logo" alt="">
+                        <a itemprop="url" tabindex="0" href="https://zippw.github.io/me/" alt="DISCORD"
+                            title="На главную"><img itemprop="logo" src="https://zippw.github.io/me/img/logo.svg"></a>
                     </div>
-                    <div id="hamburger" class="hamburger-menu">
-                        <input id="menu__toggle" type="checkbox" />
-                        <label class="menu__btn" for="menu__toggle">
-                            <span></span>
-                        </label>
-                        <ul class="menu__box">
-                            <li><a class="menu__item" href="https://zippw.github.io/me">Главная</a></li>
-                            <li><a class="menu__item" href="https://zippw.github.io/me/portfolio">Портфолио</a></li>
-                            <li><a class="menu__item" href="https://www.donationalerts.com/r/zippwitch">Донат</a></li>
-                        </ul>
+                    <div class="menu-head hidden-sm hidden-xs">
+                        <nav id="top-menu" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                            <ul id="hide">
+                                <li itemprop="name"><a itemprop="url" tabindex="0"
+                                        href="https://zippw.github.io/me/portfolio"><i class="fas fa-user"></i>
+                                        Портфолио</a></li>
+                                <li itemprop="name"><a itemprop="url" tabindex="0"
+                                        href="https://www.donationalerts.com/r/zippwitch"><i class="fas fa-coffee"></i>
+                                        Донат</a></li>
+                            </ul>
+                        </nav>
                     </div>
+                </div>
+                <div id="hamburger" class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="https://zippw.github.io/me/"><i class="fas fa-home"> </i>
+                                Главная</a></li>
+                        <li><a class="menu__item" href="https://zippw.github.io/me/portfolio"><i
+                                    class="fas fa-user"> </i> Портфолио</a>
+                        </li>
+                        <li><a class="menu__item" href="https://www.donationalerts.com/r/zippwitch"><i
+                                    class="fas fa-coffee"> </i> Донат</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

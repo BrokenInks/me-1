@@ -50,6 +50,7 @@ a:hover {
     .title {
         margin-left: 40px;
     }
+    ;
 }
 
 @media screen and (max-width:420px) {
@@ -273,9 +274,9 @@ a:hover {
 @media screen and (max-width:420px) {
     .image {
         width: 80%;
-        height: 55.633%;
+        height: 40.633%;
         margin: 0 10%;
-        top: 9.859%;
+        top: 25.859%;
     }
 }
 

@@ -1,9 +1,9 @@
 const sim = {
-    'js': '<img class="card-text-sim" src="./img/icons/JavaScript.svg" alt=":js:" title=":js:">',
-    'nodejs': '<img class="card-text-sim" src="./img/icons/node-js.svg" alt=":nodejs:" title=":nodejs:">',
-    'discord': '<img class="card-text-sim" src="./img/icons/Discord.svg" alt=":discord:" title=":discord:">',
-    'youtube': '<img class="card-text-sim" src="./img/icons/YouTube.svg" alt=":youtube:" title=":youtube:">',
-    'soundcloud': '<img class="card-text-sim" src="./img/icons/SoundCloud.svg" alt=":soundcloud:" title=":soundcloud:">',
+    'js': '<img class="portfolio__card-text-sim" src="./img/icons/JavaScript.svg" alt=":js:" title=":js:">',
+    'nodejs': '<img class="portfolio__card-text-sim" src="./img/icons/node-js.svg" alt=":nodejs:" title=":nodejs:">',
+    'discord': '<img class="portfolio__card-text-sim" src="./img/icons/Discord.svg" alt=":discord:" title=":discord:">',
+    'youtube': '<img class="portfolio__card-text-sim" src="./img/icons/YouTube.svg" alt=":youtube:" title=":youtube:">',
+    'soundcloud': '<img class="portfolio__card-text-sim" src="./img/icons/SoundCloud.svg" alt=":soundcloud:" title=":soundcloud:">',
 }
 
 const profile = {
@@ -65,13 +65,13 @@ let code = '';
 for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
     code = code + `
     <div class="col">
-                                    <div style="box-shadow: inset 0px 0px 250px rgba(0,0,0,1); background: url(./img/bgs/${profile[i].bg}) no-repeat; background-size: cover; border-color: ${profile[i].color ? profile[i].color : profile.defColor}" class="card new-card card-bot">
-                                        <div class="card-head">
-                                            <div class="card-head-bg card-head-bg-blur"
+                                    <div style="box-shadow: inset 0px 0px 250px rgba(0,0,0,1); background: url(./img/bgs/${profile[i].bg}) no-repeat; background-size: cover; border-color: ${profile[i].color ? profile[i].color : profile.defColor}" class="portfolio__card new-portfolio__card card__portfolio">
+                                        <div class="portfolio__card-head">
+                                            <div class="portfolio__card-head-bg portfolio__card-head-bg-blur"
                                                 style="background-image: url(${profile[i].icon});">
                                             </div>
                                         </div>
-                                        <div style="background: ${profile[i].color !== '' ? profile[i].color : profile.defColor}" class="card-num">${i}</div>
+                                        <div style="background: ${profile[i].color !== '' ? profile[i].color : profile.defColor}" class="portfolio__card-num">${i}</div>
                                         <div class="padd" style="position: relative;">
                                             <img src="${profile[i].icon}" onerror="this.src='../img/avatars/avatar.gif'"
                                                 width="110" height="110"
@@ -79,17 +79,17 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                                 alt="${profile[i].name}" loading="lazy"
                                                 onerror="this.src = '../img/avatars/avatar.gif';">
                                             <div class="badge_icon"></div>
-                                            <h5 class="card-title">
+                                            <h5 class="portfolio__card-title">
                                                 <a href="${profile[i].button.link}"
                                                     class="hoverable partner-va">${profile[i].name}</a><br><span style="margin-top: 10px;"
                                                     class="status-badge badge badge-success">${profile[i].date}</span>
                                             </h5>
                                         </div>
-                                        <div class="card-bd">
-                                            <p class="card-text">${profile[i].description}</p>
-                                            <div class="btn-group-card"
+                                        <div class="portfolio__card-bd">
+                                            <p class="portfolio__card-text">${profile[i].description}</p>
+                                            <div class="btn-group-portfolio__card"
                                                 style="position: absolute; left: 50%; bottom: 15px; transform: translateX(-50%); margin-bottom: 1px;"
-                                                role="group" aria-label="Bot Buttons">
+                                                role="group" aria-label="Buttons">
                                                 <a onmouseover="this.style.transition='.3s'; this.style.backgroundColor='${profile[i].button.color ? profile[i].button.color : profile.defColor}';" onmouseout="this.style.backgroundColor='transparent';" style="
                                                 border-left: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
                                                 border-right: 0.5px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
@@ -105,7 +105,7 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                                 border-top: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
                                                 border-bottom: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
                                                 border-radius: 0px 10px 10px 0px;" title="${profile[i].buttonShare.title}" onclick="copyLink(event)"
-                                                    class="btn-main btn-botcard hoverable" data-link="${profile[i].buttonShare.link}">Поделиться</a>
+                                                    class="btn-main hoverable" data-link="${profile[i].buttonShare.link}">Поделиться</a>
                                             </div>
                                         </div>
                                     </div>

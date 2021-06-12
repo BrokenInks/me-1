@@ -122,6 +122,12 @@ html.fp-enabled, .fp-enabled body {
     -webkit-transform: translate3d(0, 0, 0);
 }
 
+@media screen and (max-width: 900px) {
+    #fp-nav {
+        display: none
+    }
+}
+
 #fp-nav.right {
     right: 17px;
 }

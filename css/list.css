@@ -298,7 +298,7 @@ hr {
     text-decoration: none;
 }
 
-.card-num {
+.portfolio__card-num {
     padding-top: 3px;
     z-index: 1;
     height: 35px;
@@ -314,7 +314,7 @@ hr {
 
 /*! CSS Used from: Embedded */
 
-.card {
+.portfolio__card {
     transition: all 0.3s ease;
     -webkit-transform: scale(1.0);
     -ms-transform: scale(1.0);
@@ -329,7 +329,7 @@ hr {
     border: 3px solid;
 }
 
-.card-title {
+.portfolio__card-title {
     margin-bottom: .75rem;
 }
 
@@ -400,7 +400,7 @@ hr {
     padding: 8.5px;
 }
 
-.new-card {
+.new-portfolio__card {
     display: inline-block;
     width: auto;
     margin: 0;
@@ -408,7 +408,7 @@ hr {
     vertical-align: middle;
 }
 
-.card-bot {
+.card__portfolio {
     min-height: 410px;
     margin: 10px 10px 25px;
     border-radius: 0px 25px 25px 25px;
@@ -465,7 +465,7 @@ hr {
     left: 175px;
 }
 
-.card-bd {
+.portfolio__card-bd {
     flex: 1 1 auto;
     min-height: 1px;
     padding-left: 1.25rem;
@@ -478,12 +478,12 @@ hr {
     border-radius: 50%;
 }
 
-.btn-botcard {
+.btn-botportfolio__card {
     color: #fff;
     margin-right: 5px;
 }
 
-.btn-group-card {
+.btn-group-portfolio__card {
     position: relative;
     display: inline-flex;
     vertical-align: middle;
@@ -521,7 +521,7 @@ hr {
     min-height: calc(100vh - 375px);
 }
 
-.card-text {
+.portfolio__card-text {
     transition: all 0.3s ease;
     opacity: 0.6;
     height: 100px;
@@ -532,21 +532,21 @@ hr {
     -webkit-box-orient: vertical;
 }
 
-.card-text-sim {
+.portfolio__card-text-sim {
     height: 20px;
 }
 
-.card:hover .card-text {
+.portfolio__card:hover .portfolio__card-text {
     transition: all 0.3s ease;
     opacity: 1
 }
 
-.card:hover .card-head-bg-blur {
+.portfolio__card:hover .portfolio__card-head-bg-blur {
     filter: none;
     transform: scale(1.1);
 }
 
-.card:hover {
+.portfolio__card:hover {
     transition: all 0.3s ease;
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -624,7 +624,7 @@ hr {
 }
 
 @media (max-width:711px) {
-    .card-bot {
+    .portfolio__card__portfolio {
         width: 490px;
     }
     .badge_icon {
@@ -633,7 +633,7 @@ hr {
 }
 
 @media (max-width:576px) {
-    .card-bot {
+    .portfolio__card__portfolio {
         width: 390px;
     }
     .badge_icon {
@@ -642,7 +642,7 @@ hr {
 }
 
 @media (max-width:463px) {
-    .card-bot {
+    .portfolio__card__portfolio {
         width: 290px;
     }
     .badge_icon {
@@ -764,7 +764,7 @@ hr {
     outline: none;
 }
 
-.card-head {
+.portfolio__card-head {
     position: absolute;
     overflow: hidden;
     width: 100%;
@@ -773,14 +773,14 @@ hr {
     border-top-right-radius: 20px;
 }
 
-.card-head-bg {
+.portfolio__card-head-bg {
     background-size: 100%;
     height: 100%;
     background-position: center;
     transition: .5s;
 }
 
-.card-head-bg-blur {
+.portfolio__card-head-bg-blur {
     filter: blur(10px);
     transform: scale(1.1);
 }

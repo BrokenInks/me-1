@@ -20,7 +20,7 @@ body {
 	background: url(../img/bg.png) repeat;
 	/* background-color: #202230; */
 	background-color: #100e17;
-	background-attachment : fixed;
+	background-attachment: fixed;
 	align-items: center;
 	display: flex;
 	cursor: default;
@@ -293,6 +293,7 @@ img {
 	width: 100%;
 	height: 2px;
 	background-color: #fff;
+	transition: .5s;
 }
 
 .menu__btn>span::before {
@@ -321,6 +322,7 @@ img {
 	text-align: center;
 	background-color: #7f78bd;
 	box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+	transition: .5s
 }
 
 /* элементы меню */
@@ -328,15 +330,17 @@ img {
 .menu__item {
 	display: block;
 	padding: 12px 24px;
-	color: #333;
+	color: #fff;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 	font-weight: 600;
 	text-decoration: none;
+	transition: all 0.3s
 }
 
 .menu__item:hover {
-	background-color: #CFD8DC;
+	opacity: 1;
+	transform: scale(1.05) translateY(-1px);
 }
 
 #menu__toggle:checked~.menu__btn>span {
@@ -378,13 +382,13 @@ img {
 }
 
 @media (max-width: 603px) {
-	.topLine .logo img {
+	.top-line .logo img {
 		margin: 0 0px 5px 5px!important;
 		height: 40px!important;
 	}
 }
 
-.topMenu {
+.menu-head {
 	float: left;
 	font-size: 12pt;
 	margin: -2px;
@@ -392,14 +396,14 @@ img {
 	height: 100%;
 }
 
-.topLine .logo {
+.top-line .logo {
 	display: inline-block;
 	float: left;
 	position: relative;
 	text-align: left;
 }
 
-.topLine .logo ::after {
+.top-line .logo ::after {
 	display: inline-block;
 	color: #ffffff;
 	font-size: 17pt;
@@ -412,7 +416,7 @@ img {
 	box-sizing: border-box;
 }
 
-.topLine .logo img {
+.top-line .logo img {
 	border-radius: 15px;
 	cursor: pointer;
 	pointer-events: auto;
@@ -421,22 +425,22 @@ img {
 	margin: 2px 0px 0px 5px;
 }
 
-.topLine .logo a:focus img {
+.top-line .logo a:focus img {
 	box-shadow: 0px 0px 0px 2px #fff;
 	outline: none;
 }
 
-.topLine .logo a:focus {
+.top-line .logo a:focus {
 	box-shadow: none;
 	outline: none;
 }
 
-.topMenu ul {
+.menu-head ul {
 	padding: 0;
 	margin: 0;
 }
 
-.topMenu li {
+.menu-head li {
 	padding-top: 16px;
 	display: inline-block;
 	color: black;
@@ -448,11 +452,11 @@ img {
 	transition: all 0.3s;
 }
 
-.topMenu li a {
+.menu-head li a {
 	padding: 16px;
 }
 
-.topMenu li:hover {
+.menu-head li:hover {
 	opacity: 1;
 	transform: scale(1.05) translateY(-1px);
 }
@@ -513,7 +517,7 @@ main {
 	outline: none;
 }
 
-.topLine {
+.top-line {
 	box-shadow: 0px -3px 20px 0px rgba(0, 0, 0, .4);
 	position: absolute;
 	top: 0px;
@@ -523,7 +527,7 @@ main {
 	z-index: 1;
 }
 
-.topLine.h {
+.top-line.h {
 	box-shadow: 0px -3px 20px 0px rgba(0, 0, 0, .4);
 	position: absolute;
 	top: 0px;

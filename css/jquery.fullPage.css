@@ -34,7 +34,7 @@ html.fp-enabled, .fp-enabled body {
 
 .fp-slides {
     z-index: 1;
-    height: 100%;
+    height: 50%;
     overflow: hidden;
     position: relative;
     -webkit-transition: all 0.3s ease-out;

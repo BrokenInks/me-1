@@ -45,6 +45,16 @@ const profile = {
         color: '#5c456d',
         button: { title: 'Портфолио', link: './portfolio', color: '#5c456d' }
     },
+    5: {
+        name: 'Kiriz#4456',
+        description: `Я пишу на Lua, помогите`,
+        icon: 'https://cdn.discordapp.com/avatars/646718665559113759/ef735ebde92348f0202d23b6bf861cac.png?size=2048',
+        buttonShare: { link: 'Kiriz#4456', title: 'Скопировать Discord тег' },
+        date: 'Дружище',
+        bg: '#202230',
+        color: '#8b8b8b',
+        button: { title: 'Github', link: 'https://github.com/Kiriz01', color: '' }
+    },
 }
 
 let code = '';

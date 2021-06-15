@@ -18,11 +18,21 @@ const profile = {
         name: 'FexHub',
         description: `FexHub - сервер твоей мечты`,
         icon: 'https://cdn.discordapp.com/icons/714911198306369566/a_22a87c9a5b8c4a6ba0e21cc1a30d9345.gif?size=1024',
-        buttonShare: { link: 'https://discord.gg/fexhub', title: 'Скопировать ссылку на сервер Discord' },
+        buttonShare: { link: 'https://discord.gg/fexhub', title: 'Скопировать ссылку на Discord сервер' },
         date: 'Дружище',
         bg: '#202230',
         color: '#00e8ff',
         button: { title: 'Вступить', link: 'https://discord.gg/fexhub', color: '#0097ff' }
+    },
+    3: {
+        name: 'Yakov Helper Community',
+        description: `Сервер технической поддержки Yakov Helper'a`,
+        icon: 'https://cdn.discordapp.com/attachments/792456475217362964/854438186310828082/ae19fc21f642edeca5586b98831743e4.jpg',
+        buttonShare: { link: 'https://discord.gg/poland', title: 'Скопировать ссылку на Discord сервер' },
+        date: 'Дружище',
+        bg: '#202230',
+        color: 'rainbow',
+        button: { title: 'Вступить', link: 'https://discord.gg/poland', color: '#ff0a25' }
     },
 }
 

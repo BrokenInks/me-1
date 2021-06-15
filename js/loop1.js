@@ -1,5 +1,6 @@
 const sim = {
     'dance': '<img class="portfolio__card-text-sim" src="./img/icons/dance.gif" alt=":dance:" title=":dance:">',
+    'kaif': '<img class="portfolio__card-text-sim" src="./img/icons/kaif.png" alt=":kaif:" title=":kaif:">',
 }
 
 const profile = {
@@ -33,6 +34,16 @@ const profile = {
         bg: '#202230',
         color: 'rainbow',
         button: { title: 'Вступить', link: 'https://discord.gg/poland', color: '#ff0a25' }
+    },
+    4: {
+        name: 'ZippWitch',
+        description: `Разработчик сайта ${sim['kaif']}`,
+        icon: './img/avatars/zippwitch.gif',
+        buttonShare: { link: 'https://zippw.github.io/me/portfolio', title: 'Скопировать ссылку на портфолио' },
+        date: 'Адмен',
+        bg: 'url(https://di.gameres.com/attachment/forum/201812/14/175034osk95a36f3a6u53f.jpg)',
+        color: '#5c456d',
+        button: { title: 'Портфолио', link: './portfoliio', color: '#5c456d' }
     },
 }
 

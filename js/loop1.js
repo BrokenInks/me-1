@@ -10,7 +10,7 @@ const profile = {
         icon: './img/avatars/geger.gif',
         buttonShare: { link: 'https://twitch.tv/geger', title: 'Скопировать ссылку на twitch' },
         date: 'Дружище',
-        bg: '',
+        bg: '#202230',
         color: 'rainbow',
         button: { title: 'Twitch', link: 'https://twitch.tv/geger', color: '#8161db' }
     },
@@ -21,7 +21,7 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
     code = code + `
     <div class="col">
                                     <div style="${profile[i].color != 'rainbow' ? `border-color: ${profile[i].color !== '' ? profile[i].color : profile.defColor}; ` : ` animation: rainbow-border 5s linear;
-                                    animation-iteration-count: infinite;`} box-shadow: inset 0px 0px 250px rgba(0,0,0,1); background: url(./img/bgs/${profile[i].bg}) no-repeat; background-size: cover;" class="portfolio__card new-portfolio__card card__portfolio ${profile[i].color == 'rainbow' ? 'rainbow-border' : ''}">
+                                    animation-iteration-count: infinite;`} box-shadow: inset 0px 0px 250px rgba(0,0,0,1); background: ${profile[i].bg} no-repeat; background-size: cover;" class="portfolio__card new-portfolio__card card__portfolio ${profile[i].color == 'rainbow' ? 'rainbow-border' : ''}">
                                         <div class="portfolio__card-head">
                                             <div class="portfolio__card-head-bg portfolio__card-head-bg-blur"
                                                 style="background-image: url(${profile[i].icon});">

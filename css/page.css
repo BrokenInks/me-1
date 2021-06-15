@@ -311,6 +311,12 @@ a:hover {
     background-size: cover;
 }
 
+.image--friends {
+    background: url(https://cdn.discordapp.com/attachments/828167622314688542/854414429085237288/1623778634298.png);
+    background-color: #202230;
+    background-size: cover;
+}
+
 .image .page-num {
     position: fixed;
     overflow-y: hidden;

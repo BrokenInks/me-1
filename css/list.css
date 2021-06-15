@@ -329,6 +329,84 @@ hr {
     border: 3px solid;
 }
 
+@keyframes rainbow-border {
+    100%, 0% {
+        border-color: rgb(255, 0, 0);
+    }
+    8% {
+        border-color: rgb(255, 127, 0);
+    }
+    16% {
+        border-color: rgb(255, 255, 0);
+    }
+    25% {
+        border-color: rgb(127, 255, 0);
+    }
+    33% {
+        border-color: rgb(0, 255, 0);
+    }
+    41% {
+        border-color: rgb(0, 255, 127);
+    }
+    50% {
+        border-color: rgb(0, 255, 255);
+    }
+    58% {
+        border-color: rgb(0, 127, 255);
+    }
+    66% {
+        border-color: rgb(0, 0, 255);
+    }
+    75% {
+        border-color: rgb(127, 0, 255);
+    }
+    83% {
+        border-color: rgb(255, 0, 255);
+    }
+    91% {
+        border-color: rgb(255, 0, 127);
+    }
+}
+
+@keyframes rainbow-bg {
+    100%, 0% {
+        background: rgb(255, 0, 0);
+    }
+    8% {
+        background: rgb(255, 127, 0);
+    }
+    16% {
+        background: rgb(255, 255, 0);
+    }
+    25% {
+        background: rgb(127, 255, 0);
+    }
+    33% {
+        background: rgb(0, 255, 0);
+    }
+    41% {
+        background: rgb(0, 255, 127);
+    }
+    50% {
+        background: rgb(0, 255, 255);
+    }
+    58% {
+        background: rgb(0, 127, 255);
+    }
+    66% {
+        background: rgb(0, 0, 255);
+    }
+    75% {
+        background: rgb(127, 0, 255);
+    }
+    83% {
+        background: rgb(255, 0, 255);
+    }
+    91% {
+        background: rgb(255, 0, 127);
+    }
+}
+
 .portfolio__card-title {
     margin-bottom: .75rem;
 }
@@ -501,9 +579,6 @@ hr {
     border-radius: .25rem;
 }
 
-.btn-main:hover {
-    background: red;
-}
 
 .btn-l {
     display: inline-block;

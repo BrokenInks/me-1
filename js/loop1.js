@@ -43,7 +43,7 @@ const profile = {
         date: 'Адмен',
         bg: 'url(https://di.gameres.com/attachment/forum/201812/14/175034osk95a36f3a6u53f.jpg)',
         color: '#5c456d',
-        button: { title: 'Портфолио', link: './portfoliio', color: '#5c456d' }
+        button: { title: 'Портфолио', link: './portfolio', color: '#5c456d' }
     },
 }
 

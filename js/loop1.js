@@ -55,6 +55,16 @@ const profile = {
         color: '#8b8b8b',
         button: { title: 'Github', link: 'https://github.com/Kiriz01', color: '' }
     },
+    6: {
+        name: 'Luminity',
+        description: `Лучший сервер`,
+        icon: './img/avatars/radeon.png',
+        buttonShare: { link: 'https://discord.gg/radeon', title: 'Скопировать ссылку на Discord сервер' },
+        date: 'Дружище',
+        bg: 'url(./img/avatars/radeon.png)',
+        color: 'red',
+        button: { title: 'Вступить', link: 'https://discord.gg/radeon', color: 'red' }
+    },
 }
 
 let code = '';

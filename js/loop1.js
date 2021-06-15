@@ -41,7 +41,7 @@ const profile = {
         icon: './img/avatars/zippwitch.gif',
         buttonShare: { link: 'https://zippw.github.io/me/portfolio', title: 'Скопировать ссылку на портфолио' },
         date: 'Адмен',
-        bg: 'url(https://di.gameres.com/attachment/forum/201812/14/175034osk95a36f3a6u53f.jpg)',
+        bg: 'url(./img/bgs/ZippWitch.jpg)',
         color: '#5c456d',
         button: { title: 'Портфолио', link: './portfolio', color: '#5c456d' }
     },

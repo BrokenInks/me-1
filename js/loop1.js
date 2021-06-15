@@ -22,7 +22,7 @@ const profile = {
         date: 'Дружище',
         bg: '#202230',
         color: '#00e8ff',
-        button: { title: 'Вступить', link: 'https://twitch.tv/geger', color: '#0097ff' }
+        button: { title: 'Вступить', link: 'https://discord.gg/fexhub', color: '#0097ff' }
     },
 }
 
@@ -66,7 +66,7 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                                 border-radius: 10px 0px 0px 10px;" href="${profile[i].button.link}" target="_blank"
                                                     id="onhover-element" class="btn-l ${profile[i].button.color === 'rainbow' ? `rainbow-border` : ''}">${profile[i].button.title}</a>
                                                    
-                                                <a onmouseover="this.style.transition='.3s'; this.style;" onmouseout="this.style.backgroundColor='transparent';"
+                                                <a onmouseover="this.style.transition='.3s'; this.style${profile[i].color != 'rainbow' ? '' : ''};" onmouseout="this.style.backgroundColor='transparent';"
                                                 style="${profile[i].color !== 'rainbow' ? '' : ` animation: rainbow-border 5s linear;
                                                 animation-iteration-count: infinite;`}
                                                 border-left: 0.5px solid ${profile[i].color != '' ? profile[i].color != 'rainbow' ? profile[i].color : '' : profile.defColor};

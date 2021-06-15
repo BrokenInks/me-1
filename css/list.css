@@ -579,6 +579,22 @@ hr {
     border-radius: .25rem;
 }
 
+.btn-main-rgb {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    padding: .375rem .95rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+.btn-main-rgb:hover {
+    animation: rainbow-border 5s linear;
+    animation-iteration-count: infinite;
+}
 
 .btn-l {
     display: inline-block;

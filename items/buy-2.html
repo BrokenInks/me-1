@@ -21,6 +21,7 @@
     <!-- css -->
     <link rel="stylesheet" href="../css/details.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/list.css">
     <link rel="stylesheet" media="all" href="../css/animate.css">
 
     <!-- fonts -->
@@ -28,33 +29,50 @@
 </head>
 
 <body>
-    <!-- top-line  -->
+    <!-- top-line -->
     <section class="top-line h" id="top-line">
-        <div class="fadeIn wow" alt="Логотип" data-wow-duration="2s" data-wow-delay="0.0s" data-wow-offset="10"
-            data-wow-iteration="1">
-
-            <div class=" container-fluid">
-                <div class="row">
-                    <div class="col-md-12" style="padding-right: 0">
-                        <div class="logo" alt="">
-                            <a itemprop="url" tabindex="0" href="../" alt="DISCORD" title="На главную"><img
-                                    itemprop="logo" class="hoverable" src="../img/logo.svg"></a>
-                        </div>
-                        <div class="topMenu hidden-sm hidden-xs">
-                            <nav id="top-menu" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
-                                <ul>
-                                    <li itemprop="name">
-                                        <a itemprop="url" tabindex="0" class="hoverable" href="../portfolio">
-                                            <i class="fas fa-user"></i> Портфолио
-                                        </a>
-                                    </li>
-                                    <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable"
-                                            href="https://www.donationalerts.com/r/zippwitch"><i
-                                                class="fas fa-coffee"></i> Донат</a></li>
-                                </ul>
-                            </nav>
-                        </div>
+        <div class=" container-fluid">
+            <div class="row">
+                <div class="col-md-12" style="padding-right: 0">
+                    <div id="hide" class="logo" alt="">
+                        <a itemprop="url" tabindex="0" href="../" alt="DISCORD" title="На главную"><img itemprop="logo"
+                                class="hoverable" src="../img/logo.svg"></a>
                     </div>
+
+                    <div class="menu-head hidden-sm hidden-xs">
+                        <nav itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                            <ul id="hide">
+                                <li itemprop="name">
+                                    <a itemprop="url" tabindex="0" class="hoverable" href="../portfolio">
+                                        <i class="fas fa-user"></i> Портфолио
+                                    </a>
+                                </li>
+                                <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable" href="../team">
+                                        <i class="fas fa-handshake"></i> Команда
+                                    </a>
+                                </li>
+                                <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable"
+                                        href="https://www.donationalerts.com/r/zippwitch"><i class="fas fa-coffee"></i>
+                                        Донат</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div id="hamburger" class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu__box" onkeydown="(e) => { 
+                        if (e.keyCode || e.which == 27) { this.style.display='none'}
+                    };">
+                        <li><a class=" menu__item" href="../"><i class="fas fa-home"> </i> Главная</a></li>
+                        <li><a class="menu__item" href="../portfolio"><i class="fas fa-user"> </i> Портфолио</a>
+                        <li><a class="menu__item" href="../team"><i class="fas fa-handshake"> </i> Команда</a></li>
+                        </li>
+                        <li><a class="menu__item" href="https://www.donationalerts.com/r/zippwitch"><i
+                                    class="fas fa-coffee"> </i> Донат</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -104,9 +122,9 @@
                             <br>
                             <script>
                                 const sim = {
-                                    'js': '<img class="card-text-sim" src="./img/icons/JavaScript.svg" alt=":js:" title=":js:">',
-                                    'nodejs': '<img class="card-text-sim" src="./img/icons/node-js.svg" alt=":nodejs:" title=":nodejs:">',
-                                    'discord': '<img class="card-text-sim" src="./img/icons/Discord.svg" alt=":discord:" title=":discord:">',
+                                    'js': '<img class="card-text-sim" src="../img/icons/JavaScript.svg" alt=":js:" title=":js:">',
+                                    'nodejs': '<img class="card-text-sim" src="../img/icons/node-js.svg" alt=":nodejs:" title=":nodejs:">',
+                                    'discord': '<img class="card-text-sim" src="../img/icons/Discord.svg" alt=":discord:" title=":discord:">',
                                 }
                             </script>
                             <article class="row2 itemPersonalPage des centeredContent">Бот, который просто устроен на

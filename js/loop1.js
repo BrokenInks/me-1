@@ -1,6 +1,7 @@
 const sim = {
     'dance': '<img class="portfolio__card-text-sim" src="./img/icons/dance.gif" alt=":dance:" title=":dance:">',
     'kaif': '<img class="portfolio__card-text-sim" src="./img/icons/kaif.png" alt=":kaif:" title=":kaif:">',
+    'ringed_planet': '<img class="portfolio__card-text-sim" src="./img/icons/ringed_planet.png" alt=":ringed_planet:" title=":ringed_planet:">',
 }
 
 const profile = {
@@ -64,6 +65,16 @@ const profile = {
         bg: 'url(./img/avatars/radeon.png)',
         color: 'red',
         button: { title: 'Вступить', link: 'https://discord.gg/radeon', color: 'red' }
+    },
+    7: {
+        name: 'List&ltDemetry>🐾',
+        description: `${sim['ringed_planet']} Сатурн-шиза`,
+        icon: 'https://cdn.discordapp.com/avatars/641299259747991592/df0bdc3881921bfcf94ddc7ffeab1421.png?size=2048',
+        buttonShare: { link: 'https://discord.gg/radeon', title: 'Скопировать ссылку на Discord сервер' },
+        date: 'Дружище',
+        bg: '#202230',
+        color: '#3395db',
+        button: { title: 'Вступить', link: 'https://discord.gg/radeon', color: '#3395db' }
     },
 }
 

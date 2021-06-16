@@ -15,7 +15,7 @@ const profile = {
         icon: './img/avatars/1.gif',
         buttonShare: { link: 'https://zippw.github.io/me/items/buy-3.html', title: 'Купить скрипт бота' },
         date: 'Услуга',
-        bg: 'bg1.jpg',
+        bg: 'url(./img/bgs/bg1.jpg)',
         color: '',
         button: { title: '499₽', link: './items/buy-3.html', color: '#3ba55c' }
     },
@@ -25,7 +25,7 @@ const profile = {
         icon: 'https://cdn.discordapp.com/avatars/674942800894361611/568429c0828ceabc102df5dd5617d907.webp?size=4096',
         buttonShare: { link: 'https://zippw.github.io/me/items/buy-1.html', title: 'Купить скрипт бота' },
         date: 'Дата: 3/4/2021',
-        bg: 'bg1.jpg',
+        bg: 'url(./img/bgs/bg1.jpg)',
         color: '',
         button: { title: '1999₽', link: './items/buy-1.html', color: '#3ba55c' }
     },
@@ -35,7 +35,7 @@ const profile = {
         icon: 'https://cdn.discordapp.com/avatars/783995245075103744/405ff76ecd30ee7943f29023d59eea22.webp?size=4096',
         buttonShare: { link: 'https://zippw.github.io/me/items/buy-2.html', title: 'Купить скрипт бота' },
         date: 'Дата: 7/05/2021',
-        bg: 'bg1.jpg',
+        bg: 'url(./img/bgs/bg1.jpg)',
         color: '',
         button: { title: '199₽', link: './items/buy-2.html', color: '#3ba55c' }
     },
@@ -45,7 +45,7 @@ const profile = {
         icon: './img/avatars/soundcloud_avatar.jpg',
         buttonShare: { link: 'https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ', title: 'Перейти на YouTube плейлист' },
         date: 'Дата: 23/4/2021',
-        bg: 'bg2.jpg',
+        bg: 'url(./img/bgs/bg2.jpg)',
         color: '',
         button: { title: 'YouTube', link: 'https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ', color: '#ff0000' }
     },
@@ -55,17 +55,18 @@ const profile = {
         icon: './img/avatars/soundcloud_avatar.jpg',
         buttonShare: { link: 'https://soundcloud.com/valeriy-is-bro-vp/sets/2-1', title: 'Перейти на SoundCloud плейлист' },
         date: 'Дата: 23/4/2021',
-        bg: 'bg2.jpg',
+        bg: 'url(./img/bgs/bg2.jpg)',
         color: '',
         button: { title: 'SoundCloud', link: 'https://soundcloud.com/valeriy-is-bro-vp/sets/2-1', color: '#ff7400' }
     }
 }
 
+
 let code = '';
 for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
     code = code + `
     <div class="col">
-                                    <div style="box-shadow: inset 0px 0px 250px rgba(0,0,0,1); background: url(./img/bgs/${profile[i].bg}) no-repeat; background-size: cover; border-color: ${profile[i].color ? profile[i].color : profile.defColor}" class="portfolio__card new-portfolio__card card__portfolio">
+                                    <div style="border-color: ${profile[i].color !== '' ? profile[i].color : profile.defColor}; box-shadow: inset 0px 0px 250px rgba(0,0,0,1); background: ${profile[i].bg} no-repeat; background-size: cover;" class="portfolio__card new-portfolio__card card__portfolio">
                                         <div class="portfolio__card-head">
                                             <div class="portfolio__card-head-bg portfolio__card-head-bg-blur"
                                                 style="background-image: url(${profile[i].icon});">
@@ -96,7 +97,7 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                                 border-top: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
                                                 border-bottom: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
                                                 border-radius: 10px 0px 0px 10px;" href="${profile[i].button.link}" target="_blank"
-                                                    id="onhover-element" class="btn-l hoverable">${profile[i].button.title}</a>
+                                                    id="onhover-element" class="btn-l">${profile[i].button.title}</a>
                                                    
                                                 <a onmouseover="this.style.transition='.3s'; this.style.backgroundColor='${profile[i].color !== '' ? profile[i].color : profile.defColor}';" onmouseout="this.style.backgroundColor='transparent';"
                                                 style="
@@ -105,7 +106,7 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                                 border-top: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
                                                 border-bottom: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
                                                 border-radius: 0px 10px 10px 0px;" title="${profile[i].buttonShare.title}" onclick="copyLink(event)"
-                                                    class="btn-main hoverable" data-link="${profile[i].buttonShare.link}">Поделиться</a>
+                                                    class="btn-main" data-link="${profile[i].buttonShare.link}">Поделиться</a>
                                             </div>
                                         </div>
                                     </div>

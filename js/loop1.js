@@ -40,7 +40,7 @@ const profile = {
         name: 'ZippWitch',
         description: `Разработчик сайта ${sim['kaif']}`,
         icon: './img/avatars/zippwitch.gif',
-        buttonShare: { link: 'https://zippw.github.io/me/portfolio', title: 'Скопировать ссылку на портфолио' },
+        buttonShare: { link: 'https://learn.javascript.ru', title: 'Скопировать ссылку на @&%' },
         date: 'Адмен',
         bg: 'url(./img/bgs/ZippWitch.jpg)',
         color: '#5c456d',
@@ -70,11 +70,11 @@ const profile = {
         name: 'List&ltDemetry>🐾',
         description: `${sim['ringed_planet']} Сатурн-шиза`,
         icon: 'https://cdn.discordapp.com/avatars/641299259747991592/df0bdc3881921bfcf94ddc7ffeab1421.png?size=2048',
-        buttonShare: { link: 'https://discord.gg/radeon', title: 'Скопировать ссылку на Discord сервер' },
+        buttonShare: { link: 'https://discord.gg/T8we7sYnCN', title: 'Скопировать ссылку на Discord сервер' },
         date: 'Дружище',
         bg: '#202230',
         color: '#3395db',
-        button: { title: 'Вступить', link: 'https://discord.gg/radeon', color: '#3395db' }
+        button: { title: 'Вступить', link: 'https://discord.gg/T8we7sYnCN', color: '#3395db' }
     },
 }
 

@@ -82,14 +82,14 @@ let code = '';
 for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
     code = code + `
     <div class="col">
-                                    <div style="${profile[i].color != 'rainbow' ? `border-color: ${profile[i].color !== '' ? profile[i].color : profile.defColor}; ` : ` animation: rainbow-border 5s linear;
+                                    <div style="${profile[i].color != 'rainbow' ? `border-color: ${profile[i].color !== '' ? profile[i].color : profile.defColor}; ` : ` animation: rainbow-border 10s linear;
                                     animation-iteration-count: infinite;`} box-shadow: inset 0px 0px 250px rgba(0,0,0,1); background: ${profile[i].bg} no-repeat; background-size: cover;" class="portfolio__card new-portfolio__card card__portfolio ${profile[i].color == 'rainbow' ? 'rainbow-border' : ''}">
                                         <div class="portfolio__card-head">
                                             <div class="portfolio__card-head-bg portfolio__card-head-bg-blur"
                                                 style="background-image: url(${profile[i].icon});">
                                             </div>
                                         </div>
-                                        <div style="${profile[i].color != 'rainbow' ? `background: ${profile[i].color !== '' ? profile[i].color : profile.defColor}; ` : ` animation: rainbow-bg 5s linear;
+                                        <div style="${profile[i].color != 'rainbow' ? `background: ${profile[i].color !== '' ? profile[i].color : profile.defColor}; ` : ` animation: rainbow-bg 10s linear;
                                         animation-iteration-count: infinite;`}" class="portfolio__card-num">${i}</div>
                                         <div class="padd" style="position: relative;">
                                             <img src="${profile[i].icon}" onerror="this.src='../img/avatars/avatar.gif'"
@@ -109,7 +109,7 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                             <div class="btn-group-portfolio__card"
                                                 style="position: absolute; left: 50%; bottom: 15px; transform: translateX(-50%); margin-bottom: 1px;"
                                                 role="group" aria-label="Buttons">
-                                                <a onmouseover="this.style.transition='.3s'; this.style.backgroundColor='${profile[i].button.color ? profile[i].button.color : profile.defColor}';" onmouseout="this.style.backgroundColor='transparent';" style="${profile[i].color !== 'rainbow' ? '' : ` animation: rainbow-border 5s linear;
+                                                <a onmouseover="this.style.transition='.3s'; this.style.backgroundColor='${profile[i].button.color ? profile[i].button.color : profile.defColor}';" onmouseout="this.style.backgroundColor='transparent';" style="${profile[i].color !== 'rainbow' ? '' : ` animation: rainbow-border 10s linear;
                                                 animation-iteration-count: infinite;`}
                                                 border-left: 3px solid ${profile[i].color != '' ? profile[i].color != 'rainbow' ? profile[i].color : '' : profile.defColor};
                                                 border-right: 0.5px solid ${profile[i].color != '' ? profile[i].color != 'rainbow' ? profile[i].color : '' : profile.defColor};
@@ -119,7 +119,7 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                                     id="onhover-element" class="btn-l ${profile[i].button.color === 'rainbow' ? `rainbow-border` : ''}">${profile[i].button.title}</a>
                                                    
                                                 <a onmouseover="this.style.transition='.3s'; this.style.backgroundColor='${profile[i].color !== '' ? profile[i].color : profile.defColor}';" onmouseout="this.style.backgroundColor='transparent';"
-                                                style="${profile[i].color !== 'rainbow' ? '' : ` animation: rainbow-border 5s linear;
+                                                style="${profile[i].color !== 'rainbow' ? '' : ` animation: rainbow-border 10s linear;
                                                 animation-iteration-count: infinite;`}
                                                 border-left: 0.5px solid ${profile[i].color != '' ? profile[i].color != 'rainbow' ? profile[i].color : '' : profile.defColor};
                                                 border-right: 3px solid ${profile[i].color != '' ? profile[i].color != 'rainbow' ? profile[i].color : '' : profile.defColor};

@@ -13,7 +13,7 @@ const profile = {
         buttonShare: { link: 'https://twitch.tv/geger', title: 'Скопировать ссылку на twitch' },
         date: 'Дружище',
         bg: '#202230',
-        color: 'violet',
+        color: '#f8a532',
         button: { title: 'Twitch', link: 'https://twitch.tv/geger', color: '#8161db' }
     },
     2: {
@@ -44,7 +44,7 @@ const profile = {
         date: 'Адмен',
         bg: 'url(./img/bgs/ZippWitch.jpg)',
         color: '#5c456d',
-        button: { title: 'Портфолио', link: './portfolio', color: '#5c456d' }
+        button: { title: 'Портфолио', link: './portfolio', color: '#5c456d70' }
     },
     5: {
         name: 'Kiriz#4456',

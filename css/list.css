@@ -329,36 +329,6 @@ hr {
     border: 3px solid;
 }
 
-@keyframes rainbow-border {
-    0% {
-        border-color: orange;
-    }
-    33% {
-        border-color: red;
-    }
-    66% {
-        border-color: blue;
-    }
-    100% {
-        border-color: orange;
-    }
-}
-
-@keyframes rainbow-bg {
-    0% {
-        background-color: orange;
-    }
-    33% {
-        background-color: red;
-    }
-    66% {
-        background-color: blue;
-    }
-    100% {
-        background-color: orange;
-    }
-}
-
 .portfolio__card-title {
     margin-bottom: .75rem;
 }

@@ -13,7 +13,7 @@ const profile = {
         buttonShare: { link: 'https://twitch.tv/geger', title: 'Скопировать ссылку на twitch' },
         date: 'Дружище',
         bg: '#202230',
-        color: 'rainbow',
+        color: 'violet',
         button: { title: 'Twitch', link: 'https://twitch.tv/geger', color: '#8161db' }
     },
     2: {
@@ -33,7 +33,7 @@ const profile = {
         buttonShare: { link: 'https://discord.gg/poland', title: 'Скопировать ссылку на Discord сервер' },
         date: 'Дружище',
         bg: '#202230',
-        color: 'rainbow',
+        color: '#ff0a25',
         button: { title: 'Вступить', link: 'https://discord.gg/poland', color: '#ff0a25' }
     },
     4: {
@@ -63,8 +63,8 @@ const profile = {
         buttonShare: { link: 'https://discord.gg/radeon', title: 'Скопировать ссылку на Discord сервер' },
         date: 'Дружище',
         bg: 'url(./img/avatars/radeon.png)',
-        color: 'red',
-        button: { title: 'Вступить', link: 'https://discord.gg/radeon', color: 'red' }
+        color: '#dd3f55',
+        button: { title: 'Вступить', link: 'https://discord.gg/radeon', color: '#dd3f55' }
     },
     7: {
         name: 'List&ltDemetry>🐾',
@@ -82,15 +82,13 @@ let code = '';
 for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
     code = code + `
     <div class="col">
-                                    <div style="${profile[i].color != 'rainbow' ? `border-color: ${profile[i].color !== '' ? profile[i].color : profile.defColor}; ` : ` animation: rainbow-border 10s linear;
-                                    animation-iteration-count: infinite;`} box-shadow: inset 0px 0px 250px rgba(0,0,0,1); background: ${profile[i].bg} no-repeat; background-size: cover;" class="portfolio__card new-portfolio__card card__portfolio ${profile[i].color == 'rainbow' ? 'rainbow-border' : ''}">
+                                    <div style="border-color: ${profile[i].color !== '' ? profile[i].color : profile.defColor}; box-shadow: inset 0px 0px 250px rgba(0,0,0,1); background: ${profile[i].bg} no-repeat; background-size: cover;" class="portfolio__card new-portfolio__card card__portfolio">
                                         <div class="portfolio__card-head">
                                             <div class="portfolio__card-head-bg portfolio__card-head-bg-blur"
                                                 style="background-image: url(${profile[i].icon});">
                                             </div>
                                         </div>
-                                        <div style="${profile[i].color != 'rainbow' ? `background: ${profile[i].color !== '' ? profile[i].color : profile.defColor}; ` : ` animation: rainbow-bg 10s linear;
-                                        animation-iteration-count: infinite;`}" class="portfolio__card-num">${i}</div>
+                                        <div style="background: ${profile[i].color !== '' ? profile[i].color : profile.defColor}" class="portfolio__card-num">${i}</div>
                                         <div class="padd" style="position: relative;">
                                             <img src="${profile[i].icon}" onerror="this.src='../img/avatars/avatar.gif'"
                                                 width="110" height="110"
@@ -109,22 +107,20 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                             <div class="btn-group-portfolio__card"
                                                 style="position: absolute; left: 50%; bottom: 15px; transform: translateX(-50%); margin-bottom: 1px;"
                                                 role="group" aria-label="Buttons">
-                                                <a onmouseover="this.style.transition='.3s'; this.style.backgroundColor='${profile[i].button.color ? profile[i].button.color : profile.defColor}';" onmouseout="this.style.backgroundColor='transparent';" style="${profile[i].color !== 'rainbow' ? '' : ` animation: rainbow-border 10s linear;
-                                                animation-iteration-count: infinite;`}
-                                                border-left: 3px solid ${profile[i].color != '' ? profile[i].color != 'rainbow' ? profile[i].color : '' : profile.defColor};
-                                                border-right: 0.5px solid ${profile[i].color != '' ? profile[i].color != 'rainbow' ? profile[i].color : '' : profile.defColor};
-                                                border-top: 3px solid ${profile[i].color != '' ? profile[i].color != 'rainbow' ? profile[i].color : '' : profile.defColor};
-                                                border-bottom: 3px solid ${profile[i].color != '' ? profile[i].color != 'rainbow' ? profile[i].color : '' : profile.defColor};
+                                                <a onmouseover="this.style.transition='.3s'; this.style.backgroundColor='${profile[i].button.color ? profile[i].button.color : profile.defColor}';" onmouseout="this.style.backgroundColor='transparent';" style="
+                                                border-left: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
+                                                border-right: 0.5px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
+                                                border-top: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
+                                                border-bottom: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
                                                 border-radius: 10px 0px 0px 10px;" href="${profile[i].button.link}" target="_blank"
-                                                    id="onhover-element" class="btn-l ${profile[i].button.color === 'rainbow' ? `rainbow-border` : ''}">${profile[i].button.title}</a>
+                                                    id="onhover-element" class="btn-l">${profile[i].button.title}</a>
                                                    
                                                 <a onmouseover="this.style.transition='.3s'; this.style.backgroundColor='${profile[i].color !== '' ? profile[i].color : profile.defColor}';" onmouseout="this.style.backgroundColor='transparent';"
-                                                style="${profile[i].color !== 'rainbow' ? '' : ` animation: rainbow-border 10s linear;
-                                                animation-iteration-count: infinite;`}
-                                                border-left: 0.5px solid ${profile[i].color != '' ? profile[i].color != 'rainbow' ? profile[i].color : '' : profile.defColor};
-                                                border-right: 3px solid ${profile[i].color != '' ? profile[i].color != 'rainbow' ? profile[i].color : '' : profile.defColor};
-                                                border-top: 3px solid ${profile[i].color != '' ? profile[i].color != 'rainbow' ? profile[i].color : '' : profile.defColor};
-                                                border-bottom: 3px solid ${profile[i].color != '' ? profile[i].color != 'rainbow' ? profile[i].color : '' : profile.defColor};
+                                                style="
+                                                border-left: 0.5px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
+                                                border-right: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
+                                                border-top: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
+                                                border-bottom: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
                                                 border-radius: 0px 10px 10px 0px;" title="${profile[i].buttonShare.title}" onclick="copyLink(event)"
                                                     class="btn-main" data-link="${profile[i].buttonShare.link}">Поделиться</a>
                                             </div>

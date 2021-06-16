@@ -535,6 +535,7 @@ hr {
 }
 
 .portfolio__card-text {
+    font-family: 'Monsterrat Light';
     transition: all 0.3s ease;
     opacity: 0.6;
     height: 100px;

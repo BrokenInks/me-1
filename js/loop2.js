@@ -74,20 +74,21 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                         </div>
                                         <div style="background: ${profile[i].color !== '' ? profile[i].color : profile.defColor}" class="portfolio__card-num">${i}</div>
                                         <div class="padd" style="position: relative;">
-                                            <img src="${profile[i].icon}" onerror="this.src='../img/avatars/avatar.gif'"
+                                            <img id="portfolio__card-icon" src="${profile[i].icon}" onerror="this.src='../img/avatars/avatar.gif'"
                                                 width="110" height="110"
-                                                style="border-radius: 20%; border: 2px solid #fff; margin-bottom: 15px; margin-top: 10px; background-color: rgb(33 37 41);"
+                                                style="
+                                                transition: .3s; border-radius: 20%; border: 2px solid #fff; margin-bottom: 15px; margin-top: 10px; background-color: rgb(33 37 41);"
                                                 alt="${profile[i].name}" loading="lazy"
                                                 onerror="this.src = '../img/avatars/avatar.gif';">
                                             <div class="badge_icon"></div>
                                             <h5 class="portfolio__card-title">
                                                 <a href="${profile[i].button.link}"
-                                                    class="hoverable partner-va">${profile[i].name}</a><br><span style="margin-top: 10px;"
-                                                    class="status-badge badge badge-success">${profile[i].date}</span>
+                                                    id="portfolio__card-hide" class="partner-va">${profile[i].name}</a><br><span style="margin-top: 10px;"
+                                                    id="portfolio__card-hide" class="status-badge badge badge-success">${profile[i].date}</span>
                                             </h5>
                                         </div>
                                         <div class="portfolio__card-bd">
-                                            <p class="portfolio__card-text">${profile[i].description}</p>
+                                            <p id="hidden" class="portfolio__card-text">${profile[i].description}</p>
                                             <div class="btn-group-portfolio__card"
                                                 style="position: absolute; left: 50%; bottom: 15px; transform: translateX(-50%); margin-bottom: 1px;"
                                                 role="group" aria-label="Buttons">

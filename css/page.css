@@ -1,5 +1,3 @@
-/*! CSS Used from: https://kuon.space/assets/css/common.css */
-
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
 a, div, h2, p, span {
     margin: 0;
@@ -356,8 +354,6 @@ a:hover {
         text-shadow: 0 3px 10px rgba(2, 11, 22, 0.5);
     }
 }
-
-/*! CSS Used fontfaces */
 
 @font-face {
     font-family: 'Abril Fatface';

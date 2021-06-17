@@ -1,5 +1,3 @@
-/*! CSS Used from: https://boticord.top/bootstrap-static/css/bootstrap-dark.css */
-
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -71,8 +69,6 @@ img {
         min-width: 992px!important;
     }
 }
-
-/*! CSS Used from: https://boticord.top/static/earth.css */
 
 ::-webkit-scrollbar-button {
     width: 10px;

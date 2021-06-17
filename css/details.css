@@ -1,5 +1,3 @@
-/*! CSS Used from: https://item-discord.com/css/all.min.css */
-
 .fas {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -25,8 +23,6 @@
 .fas {
     font-weight: 900;
 }
-
-/*! CSS Used from: https://item-discord.com/css/bootstrap-grid.min.css */
 
 *, ::after, ::before {
     box-sizing: inherit;
@@ -129,8 +125,6 @@
         max-width: 58.333333%;
     }
 }
-
-/*! CSS Used from: https://item-discord.com/css/style.css */
 
 :focus {
     outline: 2px dashed rgba(78, 93, 148, 0.5);
@@ -516,7 +510,6 @@ button:focus {
     text-align: center;
 }
 
-/*! CSS Used from: Embedded */
 
 .tempDiv {
     border: 5px solid #7f78bd!important;
@@ -536,8 +529,6 @@ a.tempBtn {
     border: none;
     margin-left: 0!important;
 }
-
-/*! CSS Used keyframes */
 
 @-webkit-keyframes animatetop {
     from {
@@ -560,8 +551,6 @@ a.tempBtn {
         opacity: 1;
     }
 }
-
-/*! CSS Used fontfaces */
 
 @font-face {
     font-family: "Font Awesome 5 Free";

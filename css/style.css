@@ -1,5 +1,3 @@
-/*! CSS Used from: ../css/style.css */
-
 ::-webkit-scrollbar {
 	width: 0px;
 	background: transparent;
@@ -605,8 +603,6 @@ main {
 .hit-the-floor {
 	text-align: center;
 }
-
-/*! CSS Used fontfaces */
 
 @font-face {
 	font-family: "Font Awesome 5 Free";

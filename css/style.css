@@ -399,7 +399,7 @@ img {
 .top-line .logo {
 	display: inline-block;
 	float: left;
-	position: fixed;
+	position: relative;
 	text-align: left;
 }
 

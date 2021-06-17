@@ -2,6 +2,9 @@ const sim = {
     'dance': '<img class="portfolio__card-text-sim" src="./img/icons/dance.gif" alt=":dance:" title=":dance:">',
     'kaif': '<img class="portfolio__card-text-sim" src="./img/icons/kaif.png" alt=":kaif:" title=":kaif:">',
     'ringed_planet': '<img class="portfolio__card-text-sim" src="./img/icons/ringed_planet.png" alt=":ringed_planet:" title=":ringed_planet:">',
+    'dog1': '<img class="portfolio__card-text-sim" src="./img/icons/dog1.gif" alt=":dog1:" title=":dog1:">',
+    'dog2': '<img class="portfolio__card-text-sim" src="./img/icons/dog2.gif" alt=":dog2:" title=":dog2:">',
+    'dog3': '<img class="portfolio__card-text-sim" src="./img/icons/dog3.gif" alt=":dog3:" title=":dog3:">',
 }
 
 const profile = {
@@ -38,7 +41,7 @@ const profile = {
     },
     4: {
         name: 'ZippWitch',
-        description: `Разработчик сайта <br>${sim['kaif']}${sim['kaif']}${sim['kaif']}${sim['kaif']}${sim['kaif']}${sim['kaif']}${sim['kaif']}`,
+        description: `Разработчик сайта <br>${sim['dog1']}${sim['dog2']}${sim['dog2']}${sim['dog2']}${sim['dog2']}${sim['dog2']}${sim['dog3']}`,
         icon: './img/avatars/zippwitch.gif',
         buttonShare: { link: 'https://learn.javascript.ru', title: 'Скопировать ссылку на @&%' },
         date: 'Адмен',

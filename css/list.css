@@ -543,11 +543,6 @@ hr {
     -webkit-box-orient: vertical;
 }
 
-.portfolio__card:hover #portfolio__card-icon {
-    transition: .3s;
-    transform: translateY(-20px) scale(0.8)
-}
-
 #hidden {
     visibility: hidden;
     opacity: 0;
@@ -557,6 +552,11 @@ hr {
     visibility: visible;
     opacity: 1;
     transform: translateY(-120px)
+}
+
+.portfolio__card:hover #portfolio__card-icon {
+    transition: .3s;
+    transform: translateY(-20px) scale(0.8)
 }
 
 .portfolio__card-text-sim {
@@ -584,12 +584,11 @@ hr {
 #portfolio__card-hide {
     visibility: visible;
     opacity: 1;
-    transition: visibility 0s, opacity 0.5s, transform 0.3s linear;
+    transition: visibility 0s, opacity 0.5s linear;
 }
 
 .portfolio__card:hover #portfolio__card-hide {
-    transform: translateY(-90px);
-     visibility: hidden;
+    visibility: hidden;
     opacity: 0;
 }
 

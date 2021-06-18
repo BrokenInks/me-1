@@ -1,13 +1,18 @@
 const sim = {
-    'dance': '<img class="portfolio__card-text-sim" src="./img/icons/dance.gif" alt=":dance:" title=":dance:">',
-    'kaif': '<img class="portfolio__card-text-sim" src="./img/icons/kaif.png" alt=":kaif:" title=":kaif:">',
-    'ringed_planet': '<img class="portfolio__card-text-sim" src="./img/icons/ringed_planet.png" alt=":ringed_planet:" title=":ringed_planet:">',
-    'dog1': '<img class="portfolio__card-text-sim" src="./img/icons/dog1.gif" alt=":dog1:" title=":dog1:">',
-    'dog2': '<img class="portfolio__card-text-sim" src="./img/icons/dog2.gif" alt=":dog2:" title=":dog2:">',
-    'dog3': '<img class="portfolio__card-text-sim" src="./img/icons/dog3.gif" alt=":dog3:" title=":dog3:">',
+    'dance': '<img class="portfolio__card-text-sim" src="./img/icons/emojis/dance.gif" alt=":dance:" title=":dance:">',
+    'kaif': '<img class="portfolio__card-text-sim" src="./img/icons/emojis/kaif.png" alt=":kaif:" title=":kaif:">',
+    'ringed_planet': '<img class="portfolio__card-text-sim" src="./img/icons/emojis/ringed_planet.png" alt=":ringed_planet:" title=":ringed_planet:">',
+    'dog1': '<img class="portfolio__card-text-sim" src="./img/icons/emojis/dog1.gif" alt=":dog1:" title=":dog1:">',
+    'dog2': '<img class="portfolio__card-text-sim" src="./img/icons/emojis/dog2.gif" alt=":dog2:" title=":dog2:">',
+    'dog3': '<img class="portfolio__card-text-sim" src="./img/icons/emojis/dog3.gif" alt=":dog3:" title=":dog3:">',
+    'cryrage': '<img class="portfolio__card-text-sim" src="./img/icons/emojis/cryrage.png" alt=":cryrage:" title=":cryrage:">',
+    'russianbaby': '<img class="portfolio__card-text-sim" src="./img/icons/emojis/russianbaby.png" alt=":russianbaby:" title=":russianbaby:">',
+    'flushed': '<img class="portfolio__card-text-sim" src="./img/icons/emojis/flushed.png" alt=":flushed:" title=":flushed:">',
+    'smirk': '<img class="portfolio__card-text-sim" src="./img/icons/emojis/smirk.png" alt=":smirk:" title=":dogsmirk3:">',
     'owner': '<div class="tooltip"><img class="portfolio__card-text-sim" src="./img/icons/badges/owner.png" alt=":owner:" title=":owner:"><span class="tooltiptext">Владелец сайта</span></div>',
     'bug-hunter': '<div class="tooltip"><img class="portfolio__card-text-sim" src="./img/icons/badges/bug-hunter.png" alt=":bug-hunter:" title=":bug-hunter:"><span class="tooltiptext">Искатель багов</span></div>',
-    'customer': '<div class="tooltip"><img class="portfolio__card-text-sim" src="./img/icons/badges/customer.png" alt=":customer:" title=":owner:"><span class="tooltiptext">Покупатель</span></div>',
+    'customer': '<div class="tooltip"><img class="portfolio__card-text-sim" src="./img/icons/badges/customer.png" alt=":customer:" title=":customer:"><span class="tooltiptext">Покупатель</span></div>',
+    'banana': '<div class="tooltip"><img class="portfolio__card-text-sim" src="./img/icons/badges/banana.png" alt=":customer:" title=":banana:"><span class="tooltiptext">Уник ёмаё</span></div>',
 }
 
 const profile = {
@@ -81,6 +86,14 @@ const profile = {
         date: 'Дружище',
         bg: '',
         color: '#3395db',
+        button: { title: 'Вступить', link: 'https://discord.gg/T8we7sYnCN', color: '#3395db' }
+    },
+    8: {
+        name: `${sim['banana']} алех даббер`,
+        description: `Сильная${sim['russianbaby']}независимая${sim['flushed']}женщина${sim['cryrage']}с_прекрасным_голосом${sim['smirk']}`,
+        icon: './img/avatars/алех.gif',
+        bg: '',
+        color: '',
         button: { title: 'Вступить', link: 'https://discord.gg/T8we7sYnCN', color: '#3395db' }
     },
 }

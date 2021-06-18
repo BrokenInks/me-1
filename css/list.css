@@ -459,8 +459,8 @@ hr {
 
 .badge_icon {
     position: absolute;
-    top: 105px;
-    left: 175px;
+    top: 35%;
+    left: 27%
 }
 
 .portfolio__card-bd {

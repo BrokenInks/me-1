@@ -5,6 +5,7 @@ const sim = {
     'dog1': '<img class="portfolio__card-text-sim" src="./img/icons/dog1.gif" alt=":dog1:" title=":dog1:">',
     'dog2': '<img class="portfolio__card-text-sim" src="./img/icons/dog2.gif" alt=":dog2:" title=":dog2:">',
     'dog3': '<img class="portfolio__card-text-sim" src="./img/icons/dog3.gif" alt=":dog3:" title=":dog3:">',
+    'owner': '<img class="portfolio__card-text-sim" src="./img/icons/badges/owner.png" alt=":owner:" title=":owner:">',
 }
 
 const profile = {
@@ -40,8 +41,8 @@ const profile = {
         button: { title: 'Вступить', link: 'https://discord.gg/poland', color: '#ff0a25' }
     },
     4: {
-        name: 'ZippWitch',
-        description: `Разработчик сайта <br>${sim['dog1']}${sim['dog2']}${sim['dog2']}${sim['dog2']}${sim['dog2']}${sim['dog2']}${sim['dog3']}`,
+        name: `${sim['owner']} ZippWitch `,
+        description: `опятьходятчтотомутят<br>${sim['dog1']}${sim['dog2']}${sim['dog2']}${sim['dog2']}${sim['dog2']}${sim['dog2']}${sim['dog3']}`,
         icon: './img/avatars/zippwitch.gif',
         buttonShare: { link: 'https://learn.javascript.ru', title: 'Скопировать ссылку на @&%' },
         date: 'Адмен',
@@ -93,8 +94,7 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                             <img src="${profile[i].icon}" onerror="this.src='./img/avatars/avatar.gif'"
                                                 width="110" height="110"
                                                 style="border-radius: 20%; border: 2px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor}; margin-bottom: 15px; margin-top: 10px; background-color: rgb(33 37 41);"
-                                                alt="${profile[i].name}" loading="lazy">
-                                            <div class="badge_icon"></div>
+                                                loading="lazy">
                                             <h5 class="portfolio__card-title">
                                                 <a href="${profile[i].button.link}"
                                                     class="hoverable partner-va">${profile[i].name}</a><br><span style="margin-top: 10px;"

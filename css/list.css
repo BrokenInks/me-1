@@ -463,6 +463,35 @@ hr {
     left: 27%
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    opacity: 0;
+    font-size: 13px;
+    width: 120px;
+    height: 24px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 2px;
+    top: -30px;
+    left: -50px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.12s linear;
+}
+
 .portfolio__card-bd {
     flex: 1 1 auto;
     min-height: 1px;

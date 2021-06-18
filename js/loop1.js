@@ -5,13 +5,15 @@ const sim = {
     'dog1': '<img class="portfolio__card-text-sim" src="./img/icons/dog1.gif" alt=":dog1:" title=":dog1:">',
     'dog2': '<img class="portfolio__card-text-sim" src="./img/icons/dog2.gif" alt=":dog2:" title=":dog2:">',
     'dog3': '<img class="portfolio__card-text-sim" src="./img/icons/dog3.gif" alt=":dog3:" title=":dog3:">',
-    'owner': '<img class="portfolio__card-text-sim" src="./img/icons/badges/owner.png" alt=":owner:" title=":owner:">',
+    'owner': '<div class="tooltip"><img class="portfolio__card-text-sim" src="./img/icons/badges/owner.png" alt=":owner:" title=":owner:"><span class="tooltiptext">Владелец сайта</span></div>',
+    'bug-hunter': '<div class="tooltip"><img class="portfolio__card-text-sim" src="./img/icons/badges/bug-hunter.png" alt=":bug-hunter:" title=":bug-hunter:"><span class="tooltiptext">Искатель багов</span></div>',
+    'customer': '<div class="tooltip"><img class="portfolio__card-text-sim" src="./img/icons/badges/customer.png" alt=":customer:" title=":owner:"><span class="tooltiptext">Покупатель</span></div>',
 }
 
 const profile = {
     defColor: '#7f78bd',
     1: {
-        name: 'Geger 🏳️‍🌈',
+        name: `${sim['customer']} Geger 🏳️‍🌈`,
         description: `Хочу тульский пряник <br>${sim['dance']}`,
         icon: './img/avatars/geger.gif',
         buttonShare: { link: 'https://twitch.tv/geger', title: 'Скопировать ссылку на twitch' },
@@ -21,7 +23,7 @@ const profile = {
         button: { title: 'Twitch', link: 'https://twitch.tv/geger', color: '#8161db' }
     },
     2: {
-        name: 'FexHub',
+        name: `${sim['bug-hunter']} FexHub`,
         description: `FexHub - сервер твоей мечты`,
         icon: 'https://cdn.discordapp.com/icons/714911198306369566/a_22a87c9a5b8c4a6ba0e21cc1a30d9345.gif?size=1024',
         buttonShare: { link: 'https://discord.gg/fexhub', title: 'Скопировать ссылку на Discord сервер' },
@@ -62,7 +64,7 @@ const profile = {
         button: { title: 'Github', link: 'https://github.com/Kiriz01', color: '' }
     },
     6: {
-        name: 'Luminity',
+        name: `${sim['bug-hunter']} Luminity`,
         description: `Лучший сервер`,
         icon: './img/avatars/radeon.png',
         buttonShare: { link: 'https://discord.gg/radeon', title: 'Скопировать ссылку на Discord сервер' },

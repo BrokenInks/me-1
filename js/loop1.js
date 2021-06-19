@@ -17,85 +17,15 @@ const sim = {
 
 const profile = {
     defColor: '#7f78bd',
-    1: {
-        name: `${sim['customer']} Geger 🏳️‍🌈`,
-        description: `Хочу тульский пряник <br>${sim['dance']}`,
-        icon: './img/avatars/geger.gif',
-        buttonShare: { link: 'https://twitch.tv/geger', title: 'Скопировать ссылку на twitch' },
-        date: 'Дружище',
-        bg: '',
-        color: 'violet',
-        button: { title: 'Twitch', link: 'https://twitch.tv/geger', color: '#8161db' }
-    },
-    2: {
-        name: `${sim['bug-hunter']} FexHub`,
-        description: `FexHub - сервер твоей мечты`,
-        icon: 'https://cdn.discordapp.com/icons/714911198306369566/a_22a87c9a5b8c4a6ba0e21cc1a30d9345.gif?size=1024',
-        buttonShare: { link: 'https://discord.gg/fexhub', title: 'Скопировать ссылку на Discord сервер' },
-        date: 'Дружище',
-        bg: '',
-        color: '#00e8ff',
-        button: { title: 'Вступить', link: 'https://discord.gg/fexhub', color: '#0097ff' }
-    },
-    3: {
-        name: 'Yakov Helper Community',
-        description: `Сервер технической поддержки Yakov Helper'a`,
-        icon: 'https://cdn.discordapp.com/attachments/792456475217362964/854438186310828082/ae19fc21f642edeca5586b98831743e4.jpg',
-        buttonShare: { link: 'https://discord.gg/poland', title: 'Скопировать ссылку на Discord сервер' },
-        date: 'Дружище',
-        bg: '',
-        color: '#ff0a25',
-        button: { title: 'Вступить', link: 'https://discord.gg/poland', color: '#ff0a25' }
-    },
-    4: {
-        name: `${sim['owner']} ZippWitch `,
-        description: `опятьходятчтотомутят<br>${sim['dog1']}${sim['dog2']}${sim['dog2']}${sim['dog2']}${sim['dog2']}${sim['dog2']}${sim['dog3']}`,
-        icon: './img/avatars/zippwitch.gif',
-        buttonShare: { link: 'https://learn.javascript.ru', title: 'Скопировать ссылку на @&%' },
-        date: 'Адмен',
-        bg: 'url(./img/bgs/ZippWitch.jpg)',
-        bgHead: '',
-        color: '#5c456d',
-        button: { title: 'Портфолио', link: './portfolio', color: '#5c456d70' }
-    },
-    5: {
-        name: 'Kiriz#4456',
-        description: `Я пишу на Lua, помогите`,
-        icon: 'https://cdn.discordapp.com/avatars/646718665559113759/ef735ebde92348f0202d23b6bf861cac.png?size=2048',
-        buttonShare: { link: 'Kiriz#4456', title: 'Скопировать Discord тег' },
-        date: 'Дружище',
-        bg: '',
-        color: '#8b8b8b',
-        button: { title: 'Github', link: 'https://github.com/Kiriz01', color: '' }
-    },
-    6: {
-        name: `${sim['bug-hunter']} Luminity`,
-        description: `Лучший сервер`,
-        icon: './img/avatars/radeon.png',
-        buttonShare: { link: 'https://discord.gg/radeon', title: 'Скопировать ссылку на Discord сервер' },
-        date: 'Дружище',
-        bg: 'url(./img/avatars/radeon.png)',
-        color: '#dd3f55',
-        button: { title: 'Вступить', link: 'https://discord.gg/radeon', color: '#dd3f55' }
-    },
-    7: {
-        name: 'List&ltDemetry>🐾',
-        description: `${sim['ringed_planet']} Сатурн-шиза`,
-        icon: 'https://cdn.discordapp.com/avatars/641299259747991592/df0bdc3881921bfcf94ddc7ffeab1421.png?size=2048',
-        buttonShare: { link: 'https://discord.gg/T8we7sYnCN', title: 'Скопировать ссылку на Discord сервер' },
-        date: 'Дружище',
-        bg: '',
-        color: '#3395db',
-        button: { title: 'Вступить', link: 'https://discord.gg/T8we7sYnCN', color: '#3395db' }
-    },
-    8: {
-        name: `${sim['banana']} алех даббер`,
-        description: `Сильная${sim['russianbaby']}независимая${sim['flushed']}женщина${sim['cryrage']}с_прекрасным_голосом${sim['smirk']}`,
-        icon: './img/avatars/алех.gif',
-        bg: '',
-        color: '',
-        button: { title: 'Вступить', link: 'https://discord.gg/T8we7sYnCN', color: '#3395db' }
-    },
+    1: { name: `${sim['customer']} Geger 🏳️‍🌈`, description: `Хочу тульский пряник <br>${sim['dance']}`, icon: './img/avatars/geger.gif', bg: '', color: 'violet', link: 'https://twitch.tv/geger' },
+    2: { name: `${sim['bug-hunter']} FexHub`, description: `FexHub - сервер твоей мечты`, icon: 'https://cdn.discordapp.com/icons/714911198306369566/a_22a87c9a5b8c4a6ba0e21cc1a30d9345.gif?size=1024', bg: '', color: '#00e8ff', link: 'https://discord.gg/fexhub' },
+    3: { name: 'Yakov Helper Community', description: `Сервер технической поддержки Yakov Helper'a`, icon: 'https://cdn.discordapp.com/attachments/792456475217362964/854438186310828082/ae19fc21f642edeca5586b98831743e4.jpg', bg: '', color: '#ff0a25', link: 'https://discord.gg/poland' },
+    4: { name: `${sim['owner']} ZippWitch `, description: `опятьходятчтотомутят<br>${sim['dog1']}${sim['dog2']}${sim['dog2']}${sim['dog2']}${sim['dog2']}${sim['dog2']}${sim['dog3']}`, icon: './img/avatars/zippwitch.gif', bg: 'url(./img/bgs/ZippWitch.jpg)', color: '#5c456d', link: './portfolio' },
+    5: { name: 'Kiriz#4456', description: `Я пишу на Lua, помогите`, icon: 'https://cdn.discordapp.com/avatars/646718665559113759/ef735ebde92348f0202d23b6bf861cac.png?size=2048', bg: '', color: '#8b8b8b', link: 'https://github.com/Kiriz01' },
+    6: { name: `${sim['bug-hunter']} Luminity`, description: `Лучший сервер`, icon: './img/avatars/radeon.png', bg: 'url(./img/avatars/radeon.png)', color: '#dd3f55', link: 'https://discord.gg/radeon' },
+    7: { name: 'List&ltDemetry>🐾', description: `${sim['ringed_planet']} Сатурн-шиза`, icon: 'https://cdn.discordapp.com/avatars/641299259747991592/df0bdc3881921bfcf94ddc7ffeab1421.png?size=2048', buttonShare: { link: 'https://discord.gg/T8we7sYnCN', title: 'Скопировать ссылку на Discord сервер' }, date: 'Дружище', bg: '', color: '#3395db', link: 'https://discord.gg/T8we7sYnCN' },
+    8: { name: `${sim['banana']} алех даббер`, description: `Сильная${sim['russianbaby']}независимая${sim['flushed']}женщина${sim['cryrage']}с_прекрасным_голосом${sim['smirk']}`, icon: './img/avatars/алех.gif', bg: '', color: '', link: './team' },
+
 }
 
 let code = '';
@@ -111,7 +41,7 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                                 style="border-radius: 20%; border: 2px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor}; margin-bottom: 15px; margin-top: 10px; background-color: rgb(33 37 41);"
                                                 loading="lazy">
                                             <h5 class="portfolio__card-title">
-                                                <a href="${profile[i].button.link}"
+                                                <a href="${profile[i].link}" target="_blank" 
                                                     class="hoverable partner-va">${profile[i].name}</a><br><span style="margin-top: 10px;"
                                             </h5>
                                         </div>

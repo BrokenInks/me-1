@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="./css/list.css">
     <link rel="stylesheet" href="./css/page.css">
     <link rel="stylesheet" href="./css/jquery.fullPage.css">
+    <link href="./css/twemoji.min.css" rel="stylesheet">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
 </head>
@@ -126,7 +127,8 @@
         input {
             width: 100%;
             font-size: 15px;
-            transition: transform .5s, border-radius .2s
+            transition: transform .5s, border-radius .2s;
+            padding: 3px;
         }
 
         input:hover {
@@ -221,8 +223,10 @@
                         <div class="col">
                             <div class="main">
                                 <div class="field">
-                                    <input oninput="oninputFn(prev)" style="border-radius: 8px 8px 0 0" id="title"
-                                        type="text" name="quantity" class="input" placeholder="Заголовок (ник)">
+                                    <input oninput="oninputFn(prev)" onmouseover="this.style.borderRadius='8px'"
+                                        onmouseout="this.style.borderRadius='8px 8px 0 0'"
+                                        style="border-radius: 8px 8px 0 0" id="title" type="text" name="quantity"
+                                        class="input" placeholder="Заголовок (ник)">
                                 </div>
                                 <div class="field">
                                     <input oninput="oninputFn()" id="bg" type="text" name="quantity" class="input"
@@ -284,8 +288,9 @@
                                     document.getElementById('color/bg').style.color = document.getElementById('bg').value || '#202230';
                                     document.getElementById('color/bg').style.borderColor = document.getElementById('color').value || '#7f78bd';
                                     document.getElementById('teamTitle').innerHTML = document.getElementById('title').value;
-                                    document.getElementById('teamDescription').innerHTML = document.getElementById('description').value;
+                                    document.getElementById('teamDescription').innerHTML = document.getElementById('description').value.replace(/:\w+:/g, (i) => `<i class="twa twa-${i.replaceAll(':', '').replaceAll('_', '-')}"></i>`)
                                     document.getElementById('teamLink')
+
                                 }
 
                                 // generator
@@ -319,10 +324,10 @@
                                             </h5>
                                         </div>
                                         <div class="portfolio__card-bd">
-                                            <p id="teamDescription" class="portfolio__card-text">${profile[i].description}</p>
-                                        </div>
-                                    </div>
-                                </div>`
+                                            <p id="teamDescription" class="portfolio__card-text">${profile[i].description.replace(/:\w+:/g, (i) => `<i class="twa twe-${i.replaceAll(':', '')}"></i>`)}</p >
+                                        </div >
+                                    </div >
+                                </div >`
                                 document.write(prev)
                             </script>
                         </div>

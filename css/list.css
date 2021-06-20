@@ -474,6 +474,7 @@ hr {
     font-size: 13px;
     width: 120px;
     height: 24px;
+    border: 1px solid #343a40;
     background-color: black;
     color: #fff;
     text-align: center;
@@ -484,12 +485,13 @@ hr {
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
+    transition: .2s
 }
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-    transition: visibility 0s, opacity 0.12s linear;
+    transition: visibility 0s, opacity 0.18s linear;
 }
 
 .portfolio__card-bd {

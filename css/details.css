@@ -525,7 +525,7 @@ button:focus {
 }
 
 a.tempBtn {
-    width: 80%;
+    width: 100%;
     border: none;
     margin-left: 0!important;
 }

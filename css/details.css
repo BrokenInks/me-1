@@ -297,6 +297,7 @@ button:focus {
 }
 
 .itemPersonalPage.avatar {
+    background-color: #7f78bd;
     margin-bottom: 10px;
     margin-top: 10px;
     border-radius: 10px 10px 0 0;

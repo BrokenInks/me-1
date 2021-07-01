@@ -176,7 +176,7 @@ img {
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 button {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Bold', sans-serif;
     width: 300px;
     height: 50px;
     margin: 150px;
@@ -204,10 +204,9 @@ button:focus {
 }
 
 .boost {
-    width: 80%;
     color: #fff;
     background: #7f78bd;
-    border-radius: 5px;
+    border-radius: 0 0 10px 10px;
     padding: 6px 24px 6px 24px;
     cursor: none;
     transition: all 0.3s;
@@ -300,7 +299,7 @@ button:focus {
 .itemPersonalPage.avatar {
     margin-bottom: 10px;
     margin-top: 10px;
-    border-radius: 25px;
+    border-radius: 10px 10px 0 0;
     width: 100%;
     pointer-events: none;
     object-fit: cover;
@@ -463,7 +462,6 @@ button:focus {
     font-size: 16px;
     color: #fff;
     border: none;
-    border-radius: 5px;
     padding: 8px;
     background: #7f78bd;
     cursor: none;

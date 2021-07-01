@@ -493,20 +493,6 @@ main {
 	min-height: calc(100vh - 195px);
 }
 
-.boost {
-	font-family: 'Exo 2';
-	color: #fff;
-	background: #7f78bd;
-	border-radius: 5px;
-	padding: 6px 24px 6px 24px;
-	cursor: pointer;
-	transition: all 0.3s;
-	display: block;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	text-align: center;
-}
 
 .boost:hover {
 	cursor: pointer;

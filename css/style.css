@@ -25,7 +25,7 @@ body {
 	font-family: sans-serif;
 	justify-content: center;
 	margin: 0;
-	font-family: 'Monsterrat Bold', sans-serif;
+	font-family: 'Montserrat Bold', sans-serif;
 	width: 100%;
 	height: 100%;
 	padding: 70px 0px 0px 0px;
@@ -218,14 +218,14 @@ header::before {
 	content: "";
 	position: absolute;
 	top: -150px;
-	background: url(../img/wave.png);
+	background: url(https://cdn.discordapp.com/attachments/858706428645474345/859760268515344404/653411_AmorphousBlobBackgrounds_Left-White2_021720-768x402.png);
 	left: 0;
 	right: 0;
 	bottom: 0;
 	display: block;
 	background-size: cover;
 	transform-origin: center center 0;
-	transform: translateZ(-1px) scale(2);
+	transform: translateZ(-1px) scale(1);
 	z-index: -1;
 	min-height: 100%;
 }
@@ -241,7 +241,7 @@ header::before {
 }
 
 .black2 {
-	font-family: 'Monsterrat Bold', sans-serif;
+	font-family: 'Montserrat Bold', sans-serif;
 	background: #7f78bd;
 	box-shadow: 0px 5px #332a63, 0px 10px 10px rgba(0, 0, 0, 0.25);
 }
@@ -582,7 +582,7 @@ main {
 }
 
 .errorPage {
-	font-family: 'Monsterrat Light', sans-serif;
+	font-family: 'Montserrat Light', sans-serif;
 	color: #e4a4ad;
 	padding: 5px;
 	border: 5px solid #e4a4ad;
@@ -591,7 +591,7 @@ main {
 }
 
 .errorPage b {
-	font-family: 'Monsterrat Bold', sans-serif;
+	font-family: 'Montserrat Bold', sans-serif;
 }
 
 .hit-the-floor {
@@ -643,13 +643,13 @@ main {
 }
 
 @font-face {
-	font-family: 'Monsterrat Bold';
+	font-family: 'Montserrat Bold';
 	src: url('../fonts/Montserrat-ExtraBold.ttf');
 	font-weight: 200;
 }
 
 @font-face {
-	font-family: 'Monsterrat Light';
+	font-family: 'Montserrat Light';
 	src: url('../fonts/Montserrat-ExtraLight.ttf');
 	font-weight: 200;
 }
@@ -699,7 +699,7 @@ main {
 }
 
 .button {
-	font-family: 'Monsterrat Bold', sans-serif;
+	font-family: 'Montserrat Bold', sans-serif;
 	width: 300px;
 	height: 50px;
 	margin-bottom: 150px;
@@ -741,4 +741,73 @@ main {
 
 ::placeholder {
 	color: #322a63a4;
+}
+
+/* preloader */
+
+.preloader {
+	/*фиксированное позиционирование*/
+	position: fixed;
+	/* координаты положения */
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	/* фоновый цвет элемента */
+	background: #100e17;
+	/* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+	z-index: 1001;
+}
+
+.preloader__row {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	width: 70px;
+	height: 70px;
+	margin-top: -35px;
+	margin-left: -35px;
+	text-align: center;
+	animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	background-color: #7f78bd;
+	border-radius: 100%;
+	width: 35px;
+	height: 35px;
+	animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+	top: auto;
+	bottom: 0;
+	animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes preloader-bounce {
+	0%, 100% {
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(1);
+	}
+}
+
+.loaded_hiding .preloader {
+	transition: 0.3s opacity;
+	opacity: 0;
+}
+
+.loaded .preloader {
+	display: none;
 }

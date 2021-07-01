@@ -30,6 +30,22 @@
 
 
 <body>
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
     <div id="notify"></div>
 
     <!-- top-line -->
@@ -105,7 +121,7 @@
     <main class="h">
 
         <h1 style="text-align: center;">Лучшие</h1>
-        <h3 style="font-family: 'Monsterrat Light', sans-serif; text-align: center; color: rgb(228, 228, 228)">Друзья,
+        <h3 style="font-family: 'Montserrat Light', sans-serif; text-align: center; color: rgb(228, 228, 228)">Друзья,
             сотрудники
             проекта<br> и поддерживающие <img src="./img/icons/emojis/moloric.gif" alt=":dog3:" title=":dog3:">
         </h3>

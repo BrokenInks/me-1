@@ -28,6 +28,24 @@
 </head>
 
 <body style="cursor: row-resize">
+
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+
     <!-- top-line -->
     <section class="top-line h" id="top-line">
         <div class=" container-fluid">
@@ -45,8 +63,7 @@
                                         <i class="fas fa-user"></i> Портфолио
                                     </a>
                                 </li>
-                                <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable"
-                                        href="./team">
+                                <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable" href="./team">
                                         <i class="fas fa-handshake"></i> Лучшие
                                     </a>
                                 </li>
@@ -66,7 +83,8 @@
                         <li><a class="menu__item" href="./"><i class="fas fa-home"> </i> Главная</a></li>
                         <li><a class="menu__item" href="./portfolio"><i class="fas fa-user"> </i> Портфолио</a></li>
                         <li><a class="menu__item" href="./team"><i class="fas fa-handshake"> </i> Лучшие</a></li>
-                        <li><a class="menu__item" href="https://www.donationalerts.com/r/zippwitch"><i class="fas fa-coffee"> </i> Донат</a></li>
+                        <li><a class="menu__item" href="https://www.donationalerts.com/r/zippwitch"><i
+                                    class="fas fa-coffee"> </i> Донат</a></li>
                     </ul>
                 </div>
             </div>

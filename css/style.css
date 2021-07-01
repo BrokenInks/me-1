@@ -218,7 +218,6 @@ header::before {
 	content: "";
 	position: absolute;
 	top: -150px;
-	background: url();
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -797,9 +796,11 @@ main {
 @keyframes preloader-bounce {
 	0%, 100% {
 		transform: scale(0);
+		background-color: #7f78bd80
 	}
 	50% {
 		transform: scale(1);
+		background-color: #7f78bd
 	}
 }
 

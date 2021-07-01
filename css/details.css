@@ -207,7 +207,7 @@ button:focus {
     color: #fff;
     background: #7f78bd;
     border-radius: 0 0 10px 10px;
-    padding: 6px 24px 6px 24px;
+    padding: 6px 0 6px 0;
     cursor: none;
     transition: all 0.3s;
     display: block;
@@ -509,12 +509,12 @@ button:focus {
     text-align: center;
 }
 
-
 .tempDiv {
     border: 5px solid #7f78bd!important;
     background: url(https://item-discord.com/img/partner_bg.png) repeat;
     box-shadow: inset 0px 0px 234px rgba(0, 0, 0, 1);
-    background: url(../img/bgs/bg1.jpg) repeat #3C3D41;
+    background-color: #3C3D41;
+    background-repeat: repeat;
     background-size: cover;
     background-position: center;
 }

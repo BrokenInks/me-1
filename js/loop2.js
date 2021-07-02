@@ -8,7 +8,7 @@ const sim = {
 
 const profile = {
     defColor: '#7f78bd',
-    1: { name: 'Приложение с ботом', description: `Бэкенд: !=#2988`, icon: './img/avatars/pr.gif', buttonShare: { link: 'https://zippw.github.io/items/program', title: 'Перейди на страницу скачивания бота-программы' }, date: 'Дата: 26/6/2021', bg: 'url(./img/bgs/bg3.jpg)', color: '', button: { title: 'Скачать', link: './items/program', color: '' } },
+    1: { new: true, name: 'Приложение с ботом', description: `Бэкенд: !=#2988`, icon: './img/avatars/pr.gif', buttonShare: { link: 'https://zippw.github.io/items/program', title: 'Перейди на страницу скачивания бота-программы' }, date: 'Дата: 26/6/2021', bg: 'url(./img/bgs/bg3.jpg)', color: '', button: { title: 'Скачать', link: './items/program', color: '' } },
     2: {
         name: 'Music или mod discord бот на заказ', description: `Модератор-бот на ${sim['nodejs']}
 <br>Музыкальный-бот на ${sim['nodejs']}`, icon: './img/avatars/1.gif', buttonShare: { link: 'https://zippw.github.io/me/items/buy-3', title: 'Купить скрипт бота' }, date: 'Услуга', bg: 'url(./img/bgs/bg1.jpg)', color: '', button: { title: '499₽', link: './items/buy-3', color: '#3ba55c' }
@@ -31,6 +31,7 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                             </div>
                                         </div>
                                         <div style="background: ${profile[i].color !== '' ? profile[i].color : profile.defColor}" class="portfolio__card-num">${i}</div>
+                                        ${profile[i].new ? `<div style="background: ${profile[i].color !== '' ? profile[i].color : profile.defColor}" class="portfolio__card-newBadge">новое</div>` : ''}
                                         <div class="padd" style="position: relative;">
                                             <img id="portfolio__card-icon" src="${profile[i].icon}" onerror="this.src='../img/avatars/avatar.gif'"
                                                 width="110" height="110"

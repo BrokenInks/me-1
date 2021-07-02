@@ -308,6 +308,22 @@ hr {
     color: #FFF;
 }
 
+.portfolio__card-newBadge {
+    margin-top: -10px;
+    margin-right: -10px;
+    z-index: 1;
+    height: 25px;
+    right: 0;
+    position: absolute;
+    top: 0;
+    font-size: 15px;
+    padding-top: 2px;
+    width: 60px;
+    border-radius: 10px;
+    border: none;
+    color: #FFF;
+}
+
 .portfolio__card {
     transition: all 0.3s ease;
     -webkit-transform: scale(1.0);

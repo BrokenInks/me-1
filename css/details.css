@@ -156,6 +156,10 @@ img {
     .itemPersonalPage.des {
         padding-bottom: 20px!important;
     }
+    .itemPersonalPage.des {
+        background: rgba(0, 0, 0, 0.6)!important;
+        opacity: 1!important
+    }
     .itemPersonalPage.bottom {
         position: unset!important;
     }
@@ -330,9 +334,14 @@ button:focus {
 .itemPersonalPage.des {
     opacity: 0.6;
     word-break: break-word;
+    transition: .3s;
+    background: transparent;
+    padding: 15px;
+    border-radius: 15px;
 }
 
-.itemPersonalPage.des:hover {
+.container2:hover .itemPersonalPage.des {
+    background: rgba(0, 0, 0, 0.6);
     opacity: 1
 }
 

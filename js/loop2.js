@@ -42,7 +42,7 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                             ` : ''}
                                         </div>
                                         <div class="padd" style="position: relative;">
-                                            <img id="portfolio__card-icon" src="${profile[i].icon}" onerror="this.src='../img/avatars/avatar.gif'"
+                                            <img id="portfolio__card-icon" src="${profile[i].icon}" onerror="this.src='./img/avatars/avatar.gif'"
                                                 width="110" height="110"
                                                 style="
                                                 transition: .3s; border-radius: 20%; border: 2px solid #fff; margin-bottom: 15px; margin-top: 10px; background-color: rgb(33 37 41);"

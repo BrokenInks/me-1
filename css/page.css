@@ -276,9 +276,9 @@ a:hover {
 @media screen and (max-width:420px) {
     .image {
         width: 80%;
-        height: 40.633%;
+        height: 70.633%;
         margin: 0 10%;
-        top: 25.859%;
+        top: 15.859%;
     }
 }
 
@@ -306,6 +306,7 @@ a:hover {
 
 .image--about {
     background: url(https://cdn.discordapp.com/attachments/785141845402583053/851404774633111592/InShot_20210607_131822603.jpg) no-repeat center;
+    background-color: #202230;
     background-size: cover;
 }
 
@@ -329,12 +330,16 @@ a:hover {
 .page-num-main-page {
     bottom: 50.3762%;
     font-size: 2rem;
+	margin-top: 150px;
 }
 
 @media screen and (max-width:800px) {
-    .image .page-num {
+    .image {
         font-size: 7.5rem;
         right: -5%;
+    }
+    .page-num {
+        display: none;
     }
 }
 

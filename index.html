@@ -20,6 +20,7 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/list.css">
+    <link rel="stylesheet" href="./css/svg-items.css">
     <link rel="stylesheet" href="./css/page.css">
     <link rel="stylesheet" href="./css/jquery.fullPage.css">
     <link rel="stylesheet" media="all" href="./css/animate.css">
@@ -115,6 +116,53 @@
     <div class="fullpage" id="js-fullpage">
         <div class="section">
             <header class="home-page-header">
+                <div class="header">
+                    <style>
+                        .fancy {
+                            line-height: 0.5;
+                            text-align: center;
+                        }
+
+                        .fancy span {
+                            font-family: 'Montserrat Light', sans-serif;
+                            font-style: bold;
+                            display: inline-block;
+                            position: relative;
+                        }
+
+                        .fancy span:before,
+                        .fancy span:after {
+                            content: "";
+                            position: absolute;
+                            height: 5px;
+                            border-bottom: 1px solid white;
+                            top: 0;
+                            width: 400px;
+                        }
+
+                        .fancy span:before {
+                            right: 100%;
+                            margin-right: 15px;
+                        }
+
+                        .fancy span:after {
+                            left: 100%;
+                            margin-left: 15px;
+                        }
+
+                        .paragraph {
+                            margin-top: 30px;
+                            color: #ffffff99;
+                            font-family: 'Montserrat Light';
+                            transition: .3s;
+                        }
+                    </style>
+                    <h2 class="js-letter h2-main">~ Привет ~</h2>
+                    <p class="fancy"><span>ZippWitch</span></p>
+                    <p style="font-family: 'Montserrat Medium'" class="js-letter paragraph">
+                        Если бы выкладывал конкурсные грамоты, вы бы очумэли <img style="padding-bottom: 5px; height: 18px" src="./img/icons/emojis/kaif.png" alt=":kaif:" title=":kaif:">
+                    </p>
+                </div>
                 <a style="outline:none; width: 300px;" href="./portfolio">
                     <button href="./portfolio" class="button black2 hoverable">Моё портфолио</button>
                 </a>

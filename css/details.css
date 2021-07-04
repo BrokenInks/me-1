@@ -37,6 +37,7 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    transition: .2s ease;
 }
 
 @media (min-width:576px) {
@@ -314,6 +315,7 @@ button:focus {
     margin: 0;
     font-size: 33px;
     text-shadow: 1px 1px 1px #000;
+    transition: .2s ease;
 }
 
 .itemPersonalPage.pinstatus {
@@ -342,7 +344,7 @@ button:focus {
 
 .container2:hover .itemPersonalPage.des {
     background: rgba(0, 0, 0, 0.6);
-    opacity: 1
+    opacity: 1;
 }
 
 .pins {

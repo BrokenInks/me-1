@@ -127,9 +127,9 @@ hr {
 .row2 {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
-    margin-right: -24px;
-    margin-left: -24px;
+    margin-top: 7px;
+    margin-right: 14px;
+    margin-left: 14px;
 }
 
 .col {
@@ -440,7 +440,7 @@ hr {
 
 .card__portfolio {
     height: 300px;
-    margin: 10px 10px 40px;
+    margin: 10px 10px 7px;
     border-radius: 0px 15px 15px 15px;
     width: 290px;
 }

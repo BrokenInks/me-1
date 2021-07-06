@@ -141,6 +141,7 @@
         .menu-head {
             padding: 2px
         }
+
         .base-1x0h_U {
             font-family: var(--font-display);
             font-weight: 600;
@@ -296,8 +297,10 @@
         }
 
         .searchBox-3Y2Vi7 .searchBoxInput-uJtBcv {
+            font-family: 'Montserrat Light';
             border: none;
             font-size: 18px;
+            color: #5b43f0;
             font-weight: 500;
             padding: 12px;
             background: transparent;
@@ -435,8 +438,26 @@
             display: inherit;
             left: 50%;
             border-radius: 15px;
-            width: 100%;
+            width: calc(92% - 7px);
             transition: .3s;
+        }
+
+        @media (max-width:1411px) {
+            .headerImage-3X1tyY {
+                width: 90%
+            }
+        }
+
+        @media (max-width:1355px) {
+            .headerImage-3X1tyY {
+                width: 84%
+            }
+        }
+
+        @media (max-width:1100px) {
+            .headerImage-3X1tyY {
+                width: 100%
+            }
         }
 
         .headerContentWrapper-2u32yq {
@@ -502,6 +523,7 @@
         }
 
         .searchSubtitle-2jsC5X {
+            font-family: 'Montserrat Medium';
             color: #fff;
             margin-top: 18px;
         }
@@ -518,8 +540,7 @@
                 class="headerImage-3X1tyY desaturate-qhyunI">
                 <source src="./img/portfolio-head-bg.mp4" type='video/mp4'>
             </video> -->
-            <img class="headerImage-3X1tyY desaturate-qhyunI"
-                src="./img/rsz_inshot_20210817_155138823.jpg" alt="">
+            <img class="headerImage-3X1tyY desaturate-qhyunI" src="./img/rsz_inshot_20210817_155138823.jpg" alt="">
             <div class="headerContentWrapper-2u32yq">
                 <div class="headerContent-2gImvv">
                     <h3 class="searchTitle-36D1cB base-1x0h_U size24-RIRrxO">Портфолио ZippWitch

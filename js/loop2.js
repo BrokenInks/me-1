@@ -51,7 +51,7 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                             <div class="badge_icon"></div>
                                             <h5 class="portfolio__card-title">
                                                 <a href="${profile[i].button.link}"
-                                                    id="portfolio__card-hide" class="partner-va">${profile[i].name}</a><br><span style="margin-top: 10px;"
+                                                    id="portfolio__card-hide" class="partner-va">${profile[i].name}</a><br><span style="font-family: 'Montserrat Medium', sans-serif; margin-top: 10px;"
                                                     id="portfolio__card-hide" class="status-badge badge badge-success">${profile[i].date}</span>
                                             </h5>
                                         </div>

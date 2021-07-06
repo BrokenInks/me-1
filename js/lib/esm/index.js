@@ -1,7 +1,7 @@
 (() => {
   const cssText = `
   #notify {
-    font-family: 'Monsterrat Light';
+    font-family: 'Montserrat Light';
     position: absolute;
     z-index: 999999;
     display: flex;
@@ -80,13 +80,13 @@
     border-color: #ffeeba;
   }
   @font-face {
-    font-family: 'Monsterrat Light';
+    font-family: 'Montserrat Light';
     src: url('../../fonts/Montserrat-ExtraLight.ttf');
     font-weight: 200;
   }
   
   @font-face {
-    font-family: 'Monsterrat Bold';
+    font-family: 'Montserrat Bold';
     src: url('../fonts/Montserrat-ExtraBold.ttf');
     font-weight: 200;
   }

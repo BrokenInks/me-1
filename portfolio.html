@@ -543,10 +543,9 @@
         .itemDiv {
             position: absolute;
             z-index: 9999;
-            left: calc(50% - 180px);
             width: 360px;
             font-size: 20px;
-            transition: all 3s;
+            transition: all .3s;
         }
 
         .item {
@@ -560,10 +559,30 @@
         button {
             transition: 3s;
             z-index: 9999;
-            left: calc(50% - 180px);
-            width: 360px;
             font-size: 15px;
             border: none
+        }
+
+        @media screen and (min-width:844px) {
+            .itemDiv {
+                width: 560px;
+                left: calc(50% - 280px)
+            }
+            button {
+                width: 560px;
+                left: calc(50% - 280px)
+            }
+            
+        }
+        @media screen and (max-width:844px) {
+            .itemDiv {
+                width: 360px;
+                left: calc(50% - 180px)
+            }
+            button {
+                width: 360px;
+                left: calc(50% - 180px)
+            }
         }
 
         button:focus {

@@ -455,6 +455,7 @@
             .headerImage-3X1tyY {
                 width: 100%
             }
+
             main {
                 top: -20px
             }
@@ -538,6 +539,52 @@
                 font-size: 14px;
             }
         }
+
+        .container-V70vZ2 {
+            position: relative
+        }
+
+        .itemDiv {
+            position: absolute;
+            z-index: 9999;
+            left: calc(50% - 180px);
+            width: 360px;
+            font-size: 20px;
+            transition: all 3s;
+        }
+
+        .item {
+            font-family: 'Montserrat Medium', sans-serif;
+            color: black;
+            display: block;
+            background: rgb(228, 228, 228);
+            transition: .1s
+        }
+
+        button {
+            transition: 3s;
+            z-index: 9999;
+            left: calc(50% - 180px);
+            width: 360px;
+            font-size: 15px;
+            border: none
+        }
+
+        button:focus {
+            transform: translateY(-5px)
+        }
+
+        .itemClose {
+            background: rgb(221, 81, 81)
+        }
+
+        .item:hover {
+            background: rgba(228, 228, 228, 0.666);
+        }
+
+        .show {
+            display: block;
+        }
     </style>
     <main class="h">
         <div class="searchHeader-2I26nG">
@@ -557,14 +604,57 @@
                             <div class="searchBox-3Y2Vi7 searchBox-2_mAlO">
                                 <div class="inputWrapper-31_8H8 searchBoxInputWrapper-nKncfu">
 
+                                    <div class="dropdown">
+                                        <div class="dropdown-content">
+                                            <input onkeyup="filterFunction()"
+                                                class="inputDefault-_djjkz input-cIJ7To searchBoxInput-uJtBcv searchBoxInput-K6mkng"
+                                                name="search" maxlength="100" id="myInput" placeholder="Поиск"
+                                                aria-label="а" autocomplete="off" type="text" value="" onfocus="show()">
 
 
-                                    <input
-                                        class="inputDefault-_djjkz input-cIJ7To searchBoxInput-uJtBcv searchBoxInput-K6mkng"
-                                        name="search" maxlength="100" placeholder="Поиск для красоты, портфолио говно"
-                                        aria-label="а" autocomplete="off" type="text" value="">
+
+                                            <script>
+                                                /* Когда пользователь нажимает на кнопку,
+                                                переключение между скрытием и отображением раскрывающегося содержимого */
+                                                function show() {
+                                                    var TextElements = document.getElementsByClassName("item");
+
+                                                    for (var i = 0, max = TextElements.length; i < max; i++) {
+                                                        TextElements[i].style.display = "block";
+                                                    }
+                                                    let dropdown = 'showed'
+                                                    console.log(dropdown)
+                                                }
+
+                                                function remove() {
+                                                    var TextElements = document.getElementsByClassName("item");
+
+                                                    for (var i = 0, max = TextElements.length; i < max; i++) {
+                                                        TextElements[i].style.display = "none";
+                                                    }
+                                                }
 
 
+                                                function filterFunction() {
+                                                    var input, filter, ul, li, a, i;
+                                                    input = document.getElementById("myInput");
+                                                    filter = input.value.toUpperCase();
+                                                    div = document.getElementById("myDropdown");
+                                                    a = div.getElementsByTagName("a");
+                                                    console.log(div)
+                                                    for (i = 0; i < a.length; i++) {
+                                                        txtValue = a[i].textContent || a[i].innerText;
+                                                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                                            a[i].style.display = "";
+                                                        } else {
+                                                            a[i].style.display = "none";
+                                                        }
+                                                    }
+                                                }
+                                            </script>
+
+                                        </div>
+                                    </div>
                                 </div><svg class="searchIcon-1a1-yA searchIcon-6ljH-4" aria-label="Поиск"
                                     aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
                                     <path fill="currentColor"
@@ -574,6 +664,25 @@
                             </div>
                         </div>
                     </div>
+                    <div class="itemDiv" id="myDropdown" tabindex="0">
+
+                        <button onclick="remove()" class="item itemClose" id="itemClose"
+                            style="border-radius: 5px 5px 0 0;">Закрыть</button>
+                        <a class="item" href="./items/program.html">Приложение с
+                            ботом</a>
+                        <a class="item" href="./items/buy-3.html">Music или mod discord бот на
+                            заказ</a>
+                        <a class="item" href="./items/buy-1.html">FN bot#0209</a>
+                        <a class="item" href="./items/buy-2.html">Slash bot#3799</a>
+                        <a class="item" href="https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ">Альбом Выва | 2021 -
+                            YouTube</a>
+                        <a class="item" style="border-radius: 0 0 5px 5px;" href="https://soundcloud.com/valeriy-is-bro-vp/sets/2-1">Альбом Выва |
+                            2021 -
+                            SoundCloud</a>
+                    </div>
+                    <script>
+                        remove()
+                    </script>
                 </div>
             </div>
         </div>

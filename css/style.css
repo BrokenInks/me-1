@@ -584,6 +584,10 @@ main {
 	content: "\f0f4";
 }
 
+.fa-times:before {
+	content: "\f00d";
+}
+
 .fa-home:before {
 	content: "\f015";
 }

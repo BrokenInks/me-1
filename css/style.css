@@ -588,6 +588,10 @@ main {
 	content: "\f00d";
 }
 
+.fa-external-link:before {
+	content: "\f08e";
+}
+
 .fa-home:before {
 	content: "\f015";
 }
@@ -609,6 +613,10 @@ main {
 	background: #23272A;
 }
 
+.errorPage h1 {
+	font-family: 'Montserrat-Bold', sans-serif
+}
+
 .errorPage b {
 	font-family: 'Montserrat Bold', sans-serif;
 }
@@ -623,6 +631,12 @@ main {
 
 .hit-the-floor {
 	text-align: center;
+}
+
+@media screen and (max-width: 515px) {
+	.hit-the-floor {
+		font-size: 8em
+	}
 }
 
 @font-face {

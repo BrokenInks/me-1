@@ -424,6 +424,7 @@
             position: relative;
             text-align: center;
             min-height: 200px;
+            transition: .2s
         }
 
         .headerImage-3X1tyY {
@@ -432,7 +433,7 @@
             left: 50%;
             border-radius: 15px 15px;
             width: calc(92% - 7px);
-            transition: .3s;
+            transition: .1s
         }
 
         @media (max-width:1411px) {
@@ -569,17 +570,20 @@
                 width: 560px;
                 left: calc(50% - 280px)
             }
+
             button {
                 width: 560px;
                 left: calc(50% - 280px)
             }
-            
+
         }
+
         @media screen and (max-width:844px) {
             .itemDiv {
                 width: 360px;
                 left: calc(50% - 180px)
             }
+
             button {
                 width: 360px;
                 left: calc(50% - 180px)
@@ -599,6 +603,38 @@
         }
     </style>
     <main class="h">
+        <script>
+            // let start;
+            // function progressBar() {
+            //     // Узнаем на сколько страница прокручена
+            //     let scroll = document.body.scrollTop || document.documentElement.scrollTop;
+            //     // Узнаем высоту всей страницы
+            //     let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            //     // Получаем в % на сколько прокручена страница
+            //     let scrolled = scroll / height * 100;
+
+            //     // Подставляем % прокрутки в ширину нашей линии
+            //     if (scrolled > 1 && start == true) {
+            //         var windowCoords = document.documentElement.clientHeight;
+            //         if (window.pageYOffset < windowCoords) {
+            //             window.scrollBy(0, 10);
+            //             setTimeout(scroll, 0);
+            //         }
+            //         if (window.pageYOffset > windowCoords) {
+            //             window.scrollTo(0, windowCoords);
+            //         }
+            //         console.log('auto scroll')
+            //     } else if(scrolled == 0) {
+            //         console.log('start')
+            //         // document.getElementsByClassName('searchHeader-2I26nG')[0].style.minHeight = ''
+            //         // document.getElementsByClassName('headerImage-3X1tyY')[0].style.height = '388px'
+            //     }
+            // }
+
+            // // Запускаем функцию, когда пользователя скролит
+            // window.addEventListener('scroll', progressBar);
+        </script>
+        
         <div class="searchHeader-2I26nG">
             <!-- <video preload="auto" autoplay="true" loop="true" muted="muted" alt=""
                 class="headerImage-3X1tyY desaturate-qhyunI">

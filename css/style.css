@@ -621,6 +621,10 @@ main {
 	font-family: 'Montserrat Bold', sans-serif;
 }
 
+.errorPage a:hover{
+	text-decoration: underline;
+}
+
 .hit-the-floor {
 	color: #fff;
 	font-size: 12em;

@@ -15,8 +15,9 @@ const profile = {
     },
     3: { name: 'FN bot#0209', description: `Мультифункциональный односерверный бот на ${sim['nodejs']}, в которого входят: 65+ команд для модерации/музыки/фана...`, icon: 'https://cdn.discordapp.com/avatars/674942800894361611/568429c0828ceabc102df5dd5617d907.webp?size=4096', buttonShare: { link: 'https://zippw.github.io/me/items/buy-1', title: 'Купить скрипт бота' }, date: 'Дата: 3/4/2021', bg: 'url(./img/bgs/bg1.jpg)', color: '', button: { title: '699₽', link: './items/buy-1', color: '#3ba55c' } },
     4: { name: 'Slash bot#3799', description: `Slash бот с глобальными командами на ${sim['nodejs']}, который включает в себя несколько команд <br>новейшего хэндлера...`, icon: 'https://cdn.discordapp.com/avatars/783995245075103744/405ff76ecd30ee7943f29023d59eea22.webp?size=4096', buttonShare: { link: 'https://zippw.github.io/me/items/buy-2', title: 'Купить скрипт бота' }, date: 'Дата: 7/05/2021', bg: 'url(./img/bgs/bg1.jpg)', color: '', button: { title: '199₽', link: './items/buy-2', color: '#3ba55c' } },
-    5: { name: 'Альбом Выва | 2021', description: `4 трека;<br>площадка ${sim['youtube']}`, icon: './img/avatars/soundcloud_avatar.jpg', buttonShare: { link: 'https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ', title: 'Перейти на YouTube плейлист' }, date: 'Дата: 23/4/2021', bg: 'url(./img/bgs/bg2.jpg)', color: '', button: { title: 'YouTube', link: 'https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ', color: '#ff0000' } },
-    6: { name: 'Альбом Выва | 2021', description: `4 трека; <br>площадка: ${sim['soundcloud']}`, icon: './img/avatars/soundcloud_avatar.jpg', buttonShare: { link: 'https://soundcloud.com/valeriy-is-bro-vp/sets/2-1', title: 'Перейти на SoundCloud плейлист' }, date: 'Дата: 23/4/2021', bg: 'url(./img/bgs/bg2.jpg)', color: '', button: { title: 'SoundCloud', link: 'https://soundcloud.com/valeriy-is-bro-vp/sets/2-1', color: '#ff7400' } },
+    5: { name: 'Альбом Выва 2 | 2021', description: `4 трека;<br>площадка ${sim['youtube']}`, icon: './img/avatars/soundcloud_avatar.jpg', buttonShare: { link: 'https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ', title: 'Перейти на YouTube плейлист' }, date: 'Дата: 23/4/2021', bg: 'url(./img/bgs/bg2.jpg)', color: '', button: { title: 'YouTube', link: 'https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ', color: '#ff0000' } },
+    6: { name: 'Альбом Выва 2 | 2021', description: `4 трека; <br>площадка: ${sim['soundcloud']}`, icon: './img/avatars/soundcloud_avatar.jpg', buttonShare: { link: 'https://soundcloud.com/valeriy-is-bro-vp/sets/2-1', title: 'Перейти на SoundCloud плейлист' }, date: 'Дата: 23/4/2021', bg: 'url(./img/bgs/bg2.jpg)', color: '', button: { title: 'SoundCloud', link: 'https://soundcloud.com/valeriy-is-bro-vp/sets/2-1', color: '#ff7400' } },
+    7: { name: 'Альбом Выва | 2020', description: `3 трека, никуда не выкладывал`, icon: '', buttonShare: { link: '', title: 'Ссылка отсутствует' }, date: 'Дата: ?/?/202', bg: '', color: '', button: { title: '⠀x⠀', link: '', color: '' } },
 }
 
 
@@ -74,7 +75,7 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                                 border-right: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
                                                 border-top: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
                                                 border-bottom: 3px solid ${profile[i].color !== '' ? profile[i].color : profile.defColor};
-                                                border-radius: 0px 10px 10px 0px;" title="${profile[i].buttonShare.title}" onclick="copyLink(event)"
+                                                border-radius: 0px 10px 10px 0px;" title="${profile[i].buttonShare.title}" onclick="copyLink(event, ${profile[i].buttonShare.link == '' ? false : true})"
                                                     class="btn-main" data-link="${profile[i].buttonShare.link}">Поделиться</a>
                                             </div>
                                         </div>

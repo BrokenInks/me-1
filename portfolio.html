@@ -634,7 +634,7 @@
             // // Запускаем функцию, когда пользователя скролит
             // window.addEventListener('scroll', progressBar);
         </script>
-        
+
         <div class="searchHeader-2I26nG">
             <!-- <video preload="auto" autoplay="true" loop="true" muted="muted" alt=""
                 class="headerImage-3X1tyY desaturate-qhyunI">
@@ -749,7 +749,7 @@
                                 <script src="js/loop2.js"></script>
                             </div>
                             <script>
-                                function copyLink(e) {
+                                function copyLink(e, valid) {
                                     let link = e.target.dataset.link;
                                     let tmp = document.createElement('INPUT');
                                     tmp.value = link;
@@ -759,7 +759,9 @@
                                     document.execCommand('copy');
                                     document.body.removeChild(tmp);
 
-                                    Notify({ title: 'Ссылка скопирована!', position: 'bottom center', type: 'success' })
+                                    valid ?
+                                        Notify({ title: 'Ссылка скопирована!', position: 'bottom center', type: 'success' }) :
+                                        Notify({ title: 'Ссылка неккоректна', position: 'bottom center', type: 'danger' })
                                 }
                             </script>
 

@@ -277,13 +277,15 @@ a:hover {
 @media screen and (max-width:420px) {
     .image {
         width: 80%;
-        height: 70.633%;
+        height: 40.633%;
         margin: 0 10%;
-        top: 15.859%;
+        top: 35.859%;
     }
 }
 
 .image__over {
+    border: 2px solid white;
+    border-radius: 15px;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -307,14 +309,12 @@ a:hover {
 
 .image--about {
     background: url(../img/bgs/949.jpg) no-repeat center;
-    border: 2px solid white;
     background-color: #202230;
     background-size: cover;
 }
 
 .image--friends {
     background: url(../img/bgs/cute-purebred-dogs-studio.jpg);
-    border: 2px solid white;
     background-color: #202230;
     background-size: cover;
 }

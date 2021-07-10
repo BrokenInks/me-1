@@ -246,6 +246,7 @@ a:hover {
     display: block;
     position: relative;
     width: 60.125%;
+    border-radius: 15px;
     height: 74.81%;
     margin: 0 8% 0 auto;
     -webkit-box-shadow: 0 80px 140px -40px rgba(0, 0, 0, 0.6);
@@ -305,13 +306,15 @@ a:hover {
 }
 
 .image--about {
-    background: url(https://cdn.discordapp.com/attachments/785141845402583053/851404774633111592/InShot_20210607_131822603.jpg) no-repeat center;
+    background: url(../img/bgs/949.jpg) no-repeat center;
+    border: 2px solid white;
     background-color: #202230;
     background-size: cover;
 }
 
 .image--friends {
-    background: url(https://cdn.discordapp.com/attachments/828167622314688542/854414429085237288/1623778634298.png);
+    background: url(../img/bgs/cute-purebred-dogs-studio.jpg);
+    border: 2px solid white;
     background-color: #202230;
     background-size: cover;
 }

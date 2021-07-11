@@ -120,7 +120,7 @@
             position: absolute;
             height: 300px;
             width: 600px;
-            top: 400px;
+            top: auto;
             left: calc(50% - 300px);
             display: flex;
         }
@@ -244,9 +244,50 @@
 
         @media (max-width: 900px) {
             .container {
-                transform: scale(0.65) translateY(-150px)
+                transform: scale(0.65)
             }
         }
+
+        .h2-main {
+            font-size: 70px;
+            transition: font-size .3s;
+            color: #fff
+        }
+
+        @media screen and (max-width: 436px) {
+            .h2-main {
+                font-size: 20px
+            }
+        }
+
+        @media screen and (max-width: 933px) {
+            .h2-main {
+                font-size: 50px
+            }
+        }
+
+        @media screen and (max-width: 667px) {
+            .h2-main {
+                font-size: 40px
+            }
+        }
+
+        @media screen and (max-width: 537px) {
+            .h2-main {
+                font-size: 30px
+            }
+        }
+
+        @media screen and (max-width: 311px) {
+            .h2-main {
+                font-size: 40px
+            }
+
+            .paragraph {
+                font-size: 10px
+            }
+        }
+
 
         .card:hover .lead {
             opacity: 1
@@ -287,8 +328,13 @@
 
         .header {
             margin-top: 50px;
+            margin-bottom: 700px;
             text-align: center;
         }
+
+        /* @media screen and (max-width: ) {
+            
+        } */
 
         .fancy {
             line-height: 0.5;
@@ -325,7 +371,8 @@
         .paragraph {
             margin-top: 30px;
             color: #ffffff99;
-            font-family: 'Montserrat Light'
+            font-family: 'Montserrat Light';
+            transition: .3s;
         }
     </style>
 
@@ -339,9 +386,23 @@
     </script>
 
     <div class="header">
-        <h1>~ Мои скиллы и хобби ~</h1>
+        <!-- <h1>~ Обо мне ~</h1>
         <p class="fancy"><span>ZippWitch</span></p>
-        <p class="paragraph">Когда-нибудь, я тут что-нибудь напишу.</p>
+        <p class="paragraph">Я Валера. Живу в Климовске. Очень плохо с сочинениям, но очень хорошо всё с русским.<br>
+            Свою первую программу написал в 2019м году, когда любил делать всё по туториалам с ютуба. Со временем, когда
+            <br>
+            всё написанное устарело - мне ничего не оставалось, как перевести на более новый уровень моё приложение. У
+            меня был сервер<br>
+            дискорд, который всё не хотел развиваться, но через 2 года я смог достичь 700 участников. Очень жаль, что
+            сервер никому<br>
+            больше не пригождался и в скором времени я всех кикнул. Умный ход, ведь когда <br>
+            я стану популярным, возможно, опубликую его снова<br>
+            Впринципе, о том, чем я занимался и когда можно размышлять бесконечно долго, <br>
+            но всё же вкрадце о моих "масштабных" можно прочитать на страничке <a href="portfolio">портфолио</a>.
+        </p> -->
+
+        <h2 class="h2-main">~ Мои скиллы и хобби ~</h2>
+        <p class="fancy"><span>ZippWitch</span></p>
     </div>
     <div class="container">
         <div onmouseover="document.getElementsByClassName('filledbar')[0].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[0].style.width =`${130 * scheme['html'] / 100}px`"

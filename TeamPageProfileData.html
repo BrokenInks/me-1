@@ -33,9 +33,9 @@
 
 <body>
     <script>
-        window.onload = function () {
+        window.onload = function() {
             document.body.classList.add('loaded_hiding');
-            window.setTimeout(function () {
+            window.setTimeout(function() {
                 document.body.classList.add('loaded');
                 document.body.classList.remove('loaded_hiding');
             }, 500);
@@ -43,9 +43,13 @@
     </script>
 
     <div class="preloader">
-        <div class="preloader__row">
-            <div class="preloader__item"></div>
-            <div class="preloader__item"></div>
+        <div class="gooey">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
     <div id="notify"></div>
@@ -56,8 +60,7 @@
             <div class="row">
                 <div class="col-md-12" style="padding-right: 0">
                     <div id="hide" class="logo" alt="">
-                        <a itemprop="url" tabindex="0" href="./" alt="DISCORD" title="На главную"><img itemprop="logo"
-                                class="hoverable" src="./img/logo.svg"></a>
+                        <a itemprop="url" tabindex="0" href="./" alt="DISCORD" title="На главную"><img itemprop="logo" class="hoverable" src="./img/logo.svg"></a>
                     </div>
 
                     <div class="menu-head hidden-sm hidden-xs">
@@ -69,12 +72,13 @@
                                     </a>
                                 </li>
                                 </li>
-                                <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable" href="./team">
+                                <li itemprop="name">
+                                    <a itemprop="url" tabindex="0" class="hoverable" href="./team">
                                         <i class="fas fa-handshake"></i> Лучшие
                                     </a>
                                 </li>
-                                <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable"
-                                        href="https://www.donationalerts.com/r/zippwitch">
+                                <li itemprop="name">
+                                    <a itemprop="url" tabindex="0" class="hoverable" href="https://www.donationalerts.com/r/zippwitch">
                                         <i class="fas fa-coffee"></i> Донат
                                     </a>
                             </ul>
@@ -126,37 +130,37 @@
             clear: both;
             text-align: right;
         }
-
+        
         .field {
             clear: both;
             text-align: right;
         }
-
+        
         label {
             float: left;
         }
-
+        
         body {
             color: #fff
         }
-
+        
         input {
             width: 100%;
             font-size: 15px;
             transition: transform .5s, border-radius .2s;
             padding: 3px;
         }
-
+        
         input:hover {
             transition: .2s;
             border-radius: 6px;
             transform: scale(1.05);
         }
-
+        
         .menu-head {
             margin: -2px
         }
-
+        
         .inp-btn {
             height: 30px;
             font-size: 15px;
@@ -167,7 +171,7 @@
             width: 100%;
             cursor: pointer;
         }
-
+        
         .inp-btn:hover {
             background: linear-gradient(45deg, #7f78bd 0%, #788abd 50%, #78a7bd 60%, #7abd78 70%, #bcbd78 80%, #bd9978 90%, #dd5151 100%);
             background-size: 400% 400%;
@@ -176,59 +180,50 @@
             -o-animation: glowing 10s ease infinite;
             animation: glowing 5s ease infinite;
         }
-
-
+        
         @-webkit-keyframes glowing {
             0% {
                 background-position: 0% 50%;
             }
-
             50% {
                 background-position: 100% 50%;
             }
-
             100% {
                 background-position: 0% 50%;
             }
         }
-
+        
         @-moz-keyframes glowing {
             0% {
                 background-position: 0% 50%;
             }
-
             50% {
                 background-position: 100% 50%;
             }
-
             100% {
                 background-position: 0% 50%;
             }
         }
-
+        
         @-o-keyframes glowing {
             0% {
                 background-position: 0% 50%;
             }
-
             50% {
                 background-position: 100% 50%;
             }
-
             100% {
                 background-position: 0% 50%;
             }
         }
-
+        
         @keyframes glowing {
             0% {
                 background-position: 0% 50%;
             }
-
             50% {
                 background-position: 100% 50%;
             }
-
             100% {
                 background-position: 0% 50%;
             }
@@ -243,34 +238,25 @@
                         <div class="col">
                             <div class="main">
                                 <div class="field">
-                                    <input oninput="oninputFn(prev)" onmouseover="this.style.borderRadius='8px'"
-                                        onmouseout="this.style.borderRadius='8px 8px 0 0'"
-                                        style="border-radius: 8px 8px 0 0" id="title" type="text" name="quantity"
-                                        class="input" placeholder="Заголовок (ник)">
+                                    <input oninput="oninputFn(prev)" onmouseover="this.style.borderRadius='8px'" onmouseout="this.style.borderRadius='8px 8px 0 0'" style="border-radius: 8px 8px 0 0" id="title" type="text" name="quantity" class="input" placeholder="Заголовок (ник)">
                                 </div>
                                 <div class="field">
-                                    <input oninput="oninputFn()" id="bg" type="text" name="quantity" class="input"
-                                        placeholder="Фон: url(ссылка) или цвет)">
+                                    <input oninput="oninputFn()" id="bg" type="text" name="quantity" class="input" placeholder="Фон: url(ссылка) или цвет)">
                                 </div>
                                 <div class="field">
-                                    <input oninput="oninputFn()" id="icon" type="text" name="quantity" class="input"
-                                        placeholder="Аватарка (ссылка)">
+                                    <input oninput="oninputFn()" id="icon" type="text" name="quantity" class="input" placeholder="Аватарка (ссылка)">
                                 </div>
                                 <div class="field">
-                                    <input oninput="oninputFn()" id="link" type="text" name="quantity" class="input"
-                                        placeholder="Ссылка для перехода">
+                                    <input oninput="oninputFn()" id="link" type="text" name="quantity" class="input" placeholder="Ссылка для перехода">
                                 </div>
                                 <div class="field">
-                                    <input oninput="oninputFn()" id="description" type="text" name="quantity"
-                                        class="input" placeholder="Описание (макс: 2 стр.)">
+                                    <input oninput="oninputFn()" id="description" type="text" name="quantity" class="input" placeholder="Описание (макс: 2 стр.)">
                                 </div>
                                 <div class="field">
-                                    <input oninput="oninputFn()" id="color" type="text" name="quantity" class="input"
-                                        placeholder="Основной цвет">
+                                    <input oninput="oninputFn()" id="color" type="text" name="quantity" class="input" placeholder="Основной цвет">
                                 </div>
                                 <div class="field">
-                                    <input oninput="oninputFn()" class="inp-btn" id="butt" type="button"
-                                        value="Предосмотр" /><br><br>
+                                    <input oninput="oninputFn()" class="inp-btn" id="butt" type="button" value="Предосмотр" /><br><br>
                                 </div>
                             </div>
                             <div style="color: #fff" id="str"></div>
@@ -290,16 +276,30 @@
                                     document.execCommand('copy');
                                     document.body.removeChild(tmp);
                                 }
-                                butt.onclick = function () {
-                                    if (!document.getElementById('title').value) return Notify({ title: 'Элемент "заголовок" обязателен', type: 'danger' })
-                                    if (!document.getElementById('icon').value) return Notify({ title: 'Элемент "аватарка" обязателен', type: 'danger' })
-                                    if (!document.getElementById('description').value) return Notify({ title: 'Элемент "описание" обязателен', type: 'danger' })
+                                butt.onclick = function() {
+                                    if (!document.getElementById('title').value) return Notify({
+                                        title: 'Элемент "заголовок" обязателен',
+                                        type: 'danger'
+                                    })
+                                    if (!document.getElementById('icon').value) return Notify({
+                                        title: 'Элемент "аватарка" обязателен',
+                                        type: 'danger'
+                                    })
+                                    if (!document.getElementById('description').value) return Notify({
+                                        title: 'Элемент "описание" обязателен',
+                                        type: 'danger'
+                                    })
                                     copyLink(event)
-                                    Notify({ title: 'Код скопирован! Отправьте его владельцу для получения карточки профиля', position: 'bottom center', type: 'warning', duration: 5000 })
-                                    // document.getElementById('str').innerHTML = code
+                                    Notify({
+                                            title: 'Код скопирован! Отправьте его владельцу для получения карточки профиля',
+                                            position: 'bottom center',
+                                            type: 'warning',
+                                            duration: 5000
+                                        })
+                                        // document.getElementById('str').innerHTML = code
 
                                 };
-                                oninputFn = function (prev) {
+                                oninputFn = function(prev) {
                                     // let elem = document.getElementById('update')
                                     // elem.remove();
                                     document.getElementById('teamIcon').src = document.getElementById('icon').value;
@@ -324,7 +324,11 @@
                                         icon: document.getElementById('icon').value,
                                         bg: document.getElementById('bg').value,
                                         color: document.getElementById('color').value,
-                                        button: { title: 'Вступить', link: document.getElementById('link').value, color: '#3395db' }
+                                        button: {
+                                            title: 'Вступить',
+                                            link: document.getElementById('link').value,
+                                            color: '#3395db'
+                                        }
                                     },
                                 }
                                 prev = `

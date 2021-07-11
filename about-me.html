@@ -29,9 +29,9 @@
 <body>
 
     <script>
-        window.onload = function () {
+        window.onload = function() {
             document.body.classList.add('loaded_hiding');
-            window.setTimeout(function () {
+            window.setTimeout(function() {
                 document.body.classList.add('loaded');
                 document.body.classList.remove('loaded_hiding');
             }, 500);
@@ -39,9 +39,13 @@
     </script>
 
     <div class="preloader">
-        <div class="preloader__row">
-            <div class="preloader__item"></div>
-            <div class="preloader__item"></div>
+        <div class="gooey">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
 
@@ -52,8 +56,7 @@
             <div class="row">
                 <div class="col-md-12" style="padding-right: 0">
                     <div id="hide" class="logo" alt="">
-                        <a itemprop="url" tabindex="0" href="./" alt="DISCORD" title="На главную"><img itemprop="logo"
-                                class="hoverable" src="./img/logo.svg"></a>
+                        <a itemprop="url" tabindex="0" href="./" alt="DISCORD" title="На главную"><img itemprop="logo" class="hoverable" src="./img/logo.svg"></a>
                     </div>
                     <div class="menu-head hidden-sm hidden-xs">
                         <nav id="top-menu" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
@@ -63,12 +66,12 @@
                                         <i class="fas fa-user"></i> Портфолио
                                     </a>
                                 </li>
-                                <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable" href="./team">
+                                <li itemprop="name">
+                                    <a itemprop="url" tabindex="0" class="hoverable" href="./team">
                                         <i class="fas fa-handshake"></i> Лучшие
                                     </a>
                                 </li>
-                                <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable"
-                                        href="https://www.donationalerts.com/r/zippwitch"><i class="fas fa-coffee"></i>
+                                <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable" href="https://www.donationalerts.com/r/zippwitch"><i class="fas fa-coffee"></i>
                                         Донат</a></li>
                             </ul>
                         </nav>
@@ -114,7 +117,7 @@
         body {
             background-color: #100e17;
         }
-
+        
         .container {
             align-items: center;
             position: absolute;
@@ -124,7 +127,7 @@
             left: calc(50% - 300px);
             display: flex;
         }
-
+        
         .containerNext {
             align-items: center;
             position: absolute;
@@ -134,7 +137,7 @@
             left: calc(50% - 300px);
             display: flex;
         }
-
+        
         .card {
             display: flex;
             height: 280px;
@@ -148,22 +151,22 @@
             left: 0px;
             border: 3px solid rgba(255, 255, 255, 0.575)
         }
-
+        
         .card:not(:first-child) {
             margin-left: -50px;
         }
-
+        
         .card:hover {
             transform: translateY(-20px);
             transition: 0.4s ease-out;
         }
-
+        
         .card:hover~.card {
             position: relative;
             left: 50px;
             transition: 0.4s ease-out;
         }
-
+        
         .title {
             color: white;
             font-weight: 300;
@@ -171,7 +174,7 @@
             left: 20px;
             top: 15px;
         }
-
+        
         .bar {
             position: absolute;
             top: 100px;
@@ -179,13 +182,13 @@
             height: 5px;
             width: 150px;
         }
-
+        
         .emptybar {
             background-color: #2e3033;
             width: 130px;
             height: 100%;
         }
-
+        
         .filledbar {
             position: absolute;
             top: 0px;
@@ -196,31 +199,31 @@
             background: linear-gradient(90deg, #a965ec 20%, cyan 100%);
             transition: 0.6s ease-out;
         }
-
+        
         .pic {
             top: 150px;
             left: calc(50% - 60px);
             width: 120px;
         }
-
+        
         .pic1 {
             top: 175px;
             left: calc(50% - 30px);
             width: 90px;
         }
-
+        
         .pic2 {
             top: 200px;
             left: calc(50% - 40px);
             width: 100px;
         }
-
+        
         .pic3 {
             top: 225px;
             left: calc(50% - 53px);
             width: 113px;
         }
-
+        
         #picture {
             position: absolute;
             background: rgba(255, 255, 255, 0.4);
@@ -228,7 +231,7 @@
             border-radius: 20px;
             transition: .5s
         }
-
+        
         .lead {
             position: absolute;
             color: #fff;
@@ -241,83 +244,81 @@
             opacity: 0;
             transition: .4s;
         }
-
+        
         @media (max-width: 900px) {
             .container {
                 transform: scale(0.65)
             }
         }
-
+        
         .h2-main {
             font-size: 70px;
             transition: font-size .3s;
             color: #fff
         }
-
+        
         @media screen and (max-width: 436px) {
             .h2-main {
                 font-size: 20px
             }
         }
-
+        
         @media screen and (max-width: 933px) {
             .h2-main {
                 font-size: 50px
             }
         }
-
+        
         @media screen and (max-width: 667px) {
             .h2-main {
                 font-size: 40px
             }
         }
-
+        
         @media screen and (max-width: 537px) {
             .h2-main {
                 font-size: 30px
             }
         }
-
+        
         @media screen and (max-width: 311px) {
             .h2-main {
                 font-size: 40px
             }
-
             .paragraph {
                 font-size: 10px
             }
         }
-
-
+        
         .card:hover .lead {
             opacity: 1
         }
-
+        
         .card:hover #picture {
             opacity: 0
         }
-
+        
         .stroke {
             stroke: white;
             stroke-dasharray: 360;
             stroke-dashoffset: 360;
             transition: 0.6s ease-out;
         }
-
+        
         svg {
             fill: #17141d;
             stroke-width: 2px;
         }
-
+        
         .card:hover .stroke {
             stroke-dashoffset: 100;
             transition: 0.6s ease-out;
         }
-
+        
         p {
             color: #fff
         }
-
+        
         h1 {
             position: relative;
             font-size: 50px;
@@ -325,29 +326,28 @@
             overflow: hidden;
             text-align: center;
         }
-
+        
         .header {
             margin-top: 50px;
             margin-bottom: 700px;
             text-align: center;
         }
-
         /* @media screen and (max-width: ) {
             
         } */
-
+        
         .fancy {
             line-height: 0.5;
             text-align: center;
         }
-
+        
         .fancy span {
             font-family: 'Montserrat Light', sans-serif;
             font-style: bold;
             display: inline-block;
             position: relative;
         }
-
+        
         .fancy span:before,
         .fancy span:after {
             content: "";
@@ -357,17 +357,17 @@
             top: 0;
             width: 400px;
         }
-
+        
         .fancy span:before {
             right: 100%;
             margin-right: 15px;
         }
-
+        
         .fancy span:after {
             left: 100%;
             margin-left: 15px;
         }
-
+        
         .paragraph {
             margin-top: 30px;
             color: #ffffff99;
@@ -405,12 +405,10 @@
         <p class="fancy"><span>ZippWitch</span></p>
     </div>
     <div class="container">
-        <div onmouseover="document.getElementsByClassName('filledbar')[0].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[0].style.width =`${130 * scheme['html'] / 100}px`"
-            onmouseout="document.getElementsByClassName('filledbar')[0].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[0].style.width ='0px'"
+        <div onmouseover="document.getElementsByClassName('filledbar')[0].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[0].style.width =`${130 * scheme['html'] / 100}px`" onmouseout="document.getElementsByClassName('filledbar')[0].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[0].style.width ='0px'"
             class="card">
             <h3 class="title">
-                <img style="height: 22px;" src="./img/icons/HTML.svg" alt="ЯП" title="ru">
-                HTML
+                <img style="height: 22px;" src="./img/icons/HTML.svg" alt="ЯП" title="ru"> HTML
             </h3>
             <div class="bar">
                 <div class="emptybar"></div>
@@ -426,8 +424,7 @@
         document.getElementsByClassName('filledbar')[1].style.width =`${130 * scheme['css'] / 100}px`" onmouseout="document.getElementsByClassName('filledbar')[1].style.transition='0.4s ease-out';
              document.getElementsByClassName('filledbar')[1].style.width ='0px'" class="card">
             <h3 class="title">
-                <img style="height: 22px;" src="./img/icons/CSS.svg" alt="ЯП" title="ru">
-                CSS
+                <img style="height: 22px;" src="./img/icons/CSS.svg" alt="ЯП" title="ru"> CSS
             </h3>
             <div class="bar">
                 <div class="emptybar"></div>
@@ -439,12 +436,10 @@
             <div id="picture" class="pic2"></div>
             <div id="picture" class="pic3"></div>
         </div>
-        <div onmouseover="document.getElementsByClassName('filledbar')[2].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[2].style.width =`${130 * scheme['js'] / 100}px`"
-            onmouseout="document.getElementsByClassName('filledbar')[2].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[2].style.width ='0px'"
+        <div onmouseover="document.getElementsByClassName('filledbar')[2].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[2].style.width =`${130 * scheme['js'] / 100}px`" onmouseout="document.getElementsByClassName('filledbar')[2].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[2].style.width ='0px'"
             class="card">
             <h3 class="title">
-                <img style="height: 22px;" src="./img/icons/JavaScript.svg" alt="ЯП" title="ru">
-                JavaScript
+                <img style="height: 22px;" src="./img/icons/JavaScript.svg" alt="ЯП" title="ru"> JavaScript
             </h3>
             <div class="bar">
                 <div class="emptybar"></div>
@@ -456,12 +451,10 @@
             <div id="picture" class="pic2"></div>
             <div id="picture" class="pic3"></div>
         </div>
-        <div onmouseover="document.getElementsByClassName('filledbar')[3].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[3].style.width =`${130 * scheme['music'] / 100}px`"
-            onmouseout="document.getElementsByClassName('filledbar')[3].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[3].style.width ='0px'"
+        <div onmouseover="document.getElementsByClassName('filledbar')[3].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[3].style.width =`${130 * scheme['music'] / 100}px`" onmouseout="document.getElementsByClassName('filledbar')[3].style.transition='0.4s ease-out'; document.getElementsByClassName('filledbar')[3].style.width ='0px'"
             class="card">
             <h3 class="title">
-                <img style="height: 22px;" src="./img/icons/Music.svg" alt="ЯП" title="ru">
-                Музыка
+                <img style="height: 22px;" src="./img/icons/Music.svg" alt="ЯП" title="ru"> Музыка
             </h3>
             <div class="bar">
                 <div class="emptybar"></div>

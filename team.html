@@ -31,9 +31,9 @@
 
 <body>
     <script>
-        window.onload = function () {
+        window.onload = function() {
             document.body.classList.add('loaded_hiding');
-            window.setTimeout(function () {
+            window.setTimeout(function() {
                 document.body.classList.add('loaded');
                 document.body.classList.remove('loaded_hiding');
             }, 500);
@@ -41,9 +41,13 @@
     </script>
 
     <div class="preloader">
-        <div class="preloader__row">
-            <div class="preloader__item"></div>
-            <div class="preloader__item"></div>
+        <div class="gooey">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
     <div id="notify"></div>
@@ -54,8 +58,7 @@
             <div class="row">
                 <div class="col-md-12" style="padding-right: 0">
                     <div id="hide" class="logo" alt="">
-                        <a itemprop="url" tabindex="0" href="./" alt="DISCORD" title="На главную"><img itemprop="logo"
-                                class="hoverable" src="./img/logo.svg"></a>
+                        <a itemprop="url" tabindex="0" href="./" alt="DISCORD" title="На главную"><img itemprop="logo" class="hoverable" src="./img/logo.svg"></a>
                     </div>
 
                     <div class="menu-head hidden-sm hidden-xs">
@@ -67,12 +70,13 @@
                                     </a>
                                 </li>
                                 </li>
-                                <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable" href="./team">
+                                <li itemprop="name">
+                                    <a itemprop="url" tabindex="0" class="hoverable" href="./team">
                                         <i class="fas fa-handshake"></i> Лучшие
                                     </a>
                                 </li>
-                                <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable"
-                                        href="https://www.donationalerts.com/r/zippwitch">
+                                <li itemprop="name">
+                                    <a itemprop="url" tabindex="0" class="hoverable" href="https://www.donationalerts.com/r/zippwitch">
                                         <i class="fas fa-coffee"></i> Донат
                                     </a>
                             </ul>
@@ -121,9 +125,8 @@
     <main class="h">
 
         <h1 style="text-align: center;">Лучшие</h1>
-        <h3 style="font-family: 'Montserrat Light', sans-serif; text-align: center; color: rgb(228, 228, 228)">Друзья,
-            сотрудники
-            проекта<br> и поддерживающие <img src="./img/icons/emojis/moloric.gif" alt=":moloric:" title=":moloric:">
+        <h3 style="font-family: 'Montserrat Light', sans-serif; text-align: center; color: rgb(228, 228, 228)">Друзья, сотрудники проекта
+            <br> и поддерживающие <img src="./img/icons/emojis/moloric.gif" alt=":moloric:" title=":moloric:">
         </h3>
         <section>
             <div class="container">
@@ -146,7 +149,11 @@
                                     document.execCommand('copy');
                                     document.body.removeChild(tmp);
 
-                                    Notify({ title: 'Ссылка скопирована!', position: 'bottom center', type: 'success' })
+                                    Notify({
+                                        title: 'Ссылка скопирована!',
+                                        position: 'bottom center',
+                                        type: 'success'
+                                    })
                                 }
                             </script>
 

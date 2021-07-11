@@ -31,9 +31,9 @@
 <body>
 
     <script>
-        window.onload = function () {
+        window.onload = function() {
             document.body.classList.add('loaded_hiding');
-            window.setTimeout(function () {
+            window.setTimeout(function() {
                 document.body.classList.add('loaded');
                 document.body.classList.remove('loaded_hiding');
             }, 500);
@@ -41,9 +41,13 @@
     </script>
 
     <div class="preloader">
-        <div class="preloader__row">
-            <div class="preloader__item"></div>
-            <div class="preloader__item"></div>
+        <div class="gooey">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
     <!-- top-line -->
@@ -52,8 +56,7 @@
             <div class="row">
                 <div class="col-md-12" style="padding-right: 0">
                     <div id="hide" class="logo" alt="">
-                        <a itemprop="url" tabindex="0" href="../" alt="DISCORD" title="На главную"><img itemprop="logo"
-                                class="hoverable" src="../img/logo.svg"></a>
+                        <a itemprop="url" tabindex="0" href="../" alt="DISCORD" title="На главную"><img itemprop="logo" class="hoverable" src="../img/logo.svg"></a>
                     </div>
 
                     <div class="menu-head hidden-sm hidden-xs">
@@ -64,12 +67,12 @@
                                         <i class="fas fa-user"></i> Портфолио
                                     </a>
                                 </li>
-                                <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable" href="../team">
+                                <li itemprop="name">
+                                    <a itemprop="url" tabindex="0" class="hoverable" href="../team">
                                         <i class="fas fa-handshake"></i> Лучшие
                                     </a>
                                 </li>
-                                <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable"
-                                        href="https://www.donationalerts.com/r/zippwitch"><i class="fas fa-coffee"></i>
+                                <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable" href="https://www.donationalerts.com/r/zippwitch"><i class="fas fa-coffee"></i>
                                         Донат</a></li>
                             </ul>
                         </nav>
@@ -83,7 +86,7 @@
                     <ul class="menu__box">
                         <li><a class=" menu__item" href="../"><i class="fas fa-home"> </i> Главная</a></li>
                         <li><a class="menu__item" href="../portfolio"><i class="fas fa-user"> </i> Портфолио</a>
-                        <li><a class="menu__item" href="../team"><i class="fas fa-handshake"> </i> Лучшие</a></li>
+                            <li><a class="menu__item" href="../team"><i class="fas fa-handshake"> </i> Лучшие</a></li>
                         </li>
                         <li><a class="menu__item" href="https://www.donationalerts.com/r/zippwitch"><i
                                     class="fas fa-coffee"> </i> Донат</a></li>
@@ -115,21 +118,17 @@
             <div class="container2 col-12 col-sm-10 col-md-10 col-xl-7">
                 <div style="background: url(../img/bgs/bg1.jpg)" class="row2 additemForm t3 tempDiv">
                     <div class="col-md-4">
-                        <img src=""
-                            onerror="this.src='https://cdn.discordapp.com/avatars/783995245075103744/405ff76ecd30ee7943f29023d59eea22.webp?size=4096'"
-                            class="itemPersonalPage avatar black2">
+                        <img src="" onerror="this.src='https://cdn.discordapp.com/avatars/783995245075103744/405ff76ecd30ee7943f29023d59eea22.webp?size=4096'" class="itemPersonalPage avatar black2">
 
 
-                        <a href="https://www.donationalerts.com/r/zippwitch" class="tempBtn boost black2"
-                            target="_blank" rel="noopener" title="Оплатить счёт" tabindex="0">Оплатить
+                        <a href="https://www.donationalerts.com/r/zippwitch" class="tempBtn boost black2" target="_blank" rel="noopener" title="Оплатить счёт" tabindex="0">Оплатить
                             199₽</a>
                     </div>
                     <div class="col-md-8">
                         <div class="container2">
                             <br>
                             <div class="row2 centeredContent">
-                                <img class="itemPersonalPage lang" src="../img/icons/JavaScript.svg" alt="ЯП"
-                                    title="ru">
+                                <img class="itemPersonalPage lang" src="../img/icons/JavaScript.svg" alt="ЯП" title="ru">
                                 <h1 class="itemPersonalPage name centeredContent" style="margin: 0;">Discord Slash Bot
                                 </h1>
                             </div>
@@ -141,16 +140,10 @@
                                     'discord': '<img class="card-text-sim" src="../img/icons/Discord.svg" alt=":discord:" title=":discord:">',
                                 }
                             </script>
-                            <article class="row2 itemPersonalPage des centeredContent">Бот, который просто устроен на
-                                Slash командах.
-                                <br> Он небольшой, но всё-же новый. Slash бот с глобальными командами на<img
-                                    style="height: 20px;" src="../img/icons/node-js.svg" alt=":nodejs:"
-                                    title=":nodejs:">, который
-                                включает в себя несколько команд новейшего
-                                хэндлера Slash интеракций и наилучшим взаимодействием с платформой
-                                <img style="height: 20px;" src="../img/icons/Discord.svg" alt=":discord:"
-                                    title=":discord:"> для
-                                получения наилучшего впечатления от общения
+                            <article class="row2 itemPersonalPage des centeredContent">Бот, который просто устроен на Slash командах.
+                                <br> Он небольшой, но всё-же новый. Slash бот с глобальными командами на<img style="height: 20px;" src="../img/icons/node-js.svg" alt=":nodejs:" title=":nodejs:">, который включает в себя несколько команд новейшего хэндлера
+                                Slash интеракций и наилучшим взаимодействием с платформой
+                                <img style="height: 20px;" src="../img/icons/Discord.svg" alt=":discord:" title=":discord:"> для получения наилучшего впечатления от общения
 
                             </article>
                         </div>

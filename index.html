@@ -32,9 +32,9 @@
 <body>
 
     <script>
-        window.onload = function () {
+        window.onload = function() {
             document.body.classList.add('loaded_hiding');
-            window.setTimeout(function () {
+            window.setTimeout(function() {
                 document.body.classList.add('loaded');
                 document.body.classList.remove('loaded_hiding');
             }, 500);
@@ -42,9 +42,13 @@
     </script>
 
     <div class="preloader">
-        <div class="preloader__row">
-            <div class="preloader__item"></div>
-            <div class="preloader__item"></div>
+        <div class="gooey">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
 
@@ -54,8 +58,7 @@
             <div class="row">
                 <div class="col-md-12" style="padding-right: 0">
                     <div id="hide" class="logo" alt="">
-                        <a itemprop="url" tabindex="0" href="./" alt="DISCORD" title="На главную"><img itemprop="logo"
-                                class="hoverable" src="./img/logo.svg"></a>
+                        <a itemprop="url" tabindex="0" href="./" alt="DISCORD" title="На главную"><img itemprop="logo" class="hoverable" src="./img/logo.svg"></a>
                     </div>
 
                     <div class="menu-head hidden-sm hidden-xs">
@@ -66,12 +69,12 @@
                                         <i class="fas fa-user"></i> Портфолио
                                     </a>
                                 </li>
-                                <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable" href="./team">
+                                <li itemprop="name">
+                                    <a itemprop="url" tabindex="0" class="hoverable" href="./team">
                                         <i class="fas fa-handshake"></i> Лучшие
                                     </a>
                                 </li>
-                                <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable"
-                                        href="https://www.donationalerts.com/r/zippwitch"><i class="fas fa-coffee"></i>
+                                <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable" href="https://www.donationalerts.com/r/zippwitch"><i class="fas fa-coffee"></i>
                                         Донат</a></li>
                             </ul>
                         </nav>
@@ -85,7 +88,7 @@
                     <ul class="menu__box">
                         <li><a class=" menu__item" href="./"><i class="fas fa-home"> </i> Главная</a></li>
                         <li><a class="menu__item" href="./portfolio"><i class="fas fa-user"> </i> Портфолио</a>
-                        <li><a class="menu__item" href="./team"><i class="fas fa-handshake"> </i> Лучшие</a></li>
+                            <li><a class="menu__item" href="./team"><i class="fas fa-handshake"> </i> Лучшие</a></li>
                         </li>
                         <li><a class="menu__item" href="https://www.donationalerts.com/r/zippwitch"><i
                                     class="fas fa-coffee"> </i> Донат</a></li>
@@ -121,14 +124,14 @@
                             line-height: 0.5;
                             text-align: center;
                         }
-
+                        
                         .fancy span {
                             font-family: 'Montserrat Light', sans-serif;
                             font-style: bold;
                             display: inline-block;
                             position: relative;
                         }
-
+                        
                         .fancy span:before,
                         .fancy span:after {
                             content: "";
@@ -138,17 +141,17 @@
                             top: 0;
                             width: 400px;
                         }
-
+                        
                         .fancy span:before {
                             right: 100%;
                             margin-right: 15px;
                         }
-
+                        
                         .fancy span:after {
                             left: 100%;
                             margin-left: 15px;
                         }
-
+                        
                         .paragraph {
                             margin-top: 30px;
                             color: #ffffff99;
@@ -180,7 +183,8 @@
                     <h2 class="title__text js-letter">Обо мне</h2>
                     <div class="border js-letter"><span></span><span class="js-letter"></span></div>
                     <p class="title__lead js-letter">Мне нравится дизайн, игры<br>и музыка.</p>
-                </div><a class="image image--about hoverable" href="./about-me">
+                </div>
+                <a class="image image--about hoverable" href="./about-me">
                     <div class="image__over">
                         <div class="image__cover"></div>
                         <div class="image__cover"></div>
@@ -194,7 +198,8 @@
                     <h2 class="title__text js-letter">Лучшие</h2>
                     <div class="border js-letter"><span></span><span class="js-letter"></span></div>
                     <p class="title__lead js-letter">Друзья, сотрудники проекта<br> и поддерживающие</p>
-                </div><a class="image image--friends" href="./team">
+                </div>
+                <a class="image image--friends" href="./team">
                     <div class="image__over">
                         <div class="image__cover"></div>
                         <div class="image__cover"></div>

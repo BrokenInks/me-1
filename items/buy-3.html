@@ -30,9 +30,9 @@
 
 <body>
     <script>
-        window.onload = function () {
+        window.onload = function() {
             document.body.classList.add('loaded_hiding');
-            window.setTimeout(function () {
+            window.setTimeout(function() {
                 document.body.classList.add('loaded');
                 document.body.classList.remove('loaded_hiding');
             }, 500);
@@ -40,9 +40,13 @@
     </script>
 
     <div class="preloader">
-        <div class="preloader__row">
-            <div class="preloader__item"></div>
-            <div class="preloader__item"></div>
+        <div class="gooey">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
     <!-- top-line -->
@@ -51,8 +55,7 @@
             <div class="row">
                 <div class="col-md-12" style="padding-right: 0">
                     <div id="hide" class="logo" alt="">
-                        <a itemprop="url" tabindex="0" href="../" alt="DISCORD" title="На главную"><img itemprop="logo"
-                                class="hoverable" src="../img/logo.svg"></a>
+                        <a itemprop="url" tabindex="0" href="../" alt="DISCORD" title="На главную"><img itemprop="logo" class="hoverable" src="../img/logo.svg"></a>
                     </div>
 
                     <div class="menu-head hidden-sm hidden-xs">
@@ -63,12 +66,12 @@
                                         <i class="fas fa-user"></i> Портфолио
                                     </a>
                                 </li>
-                                <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable" href="../team">
+                                <li itemprop="name">
+                                    <a itemprop="url" tabindex="0" class="hoverable" href="../team">
                                         <i class="fas fa-handshake"></i> Лучшие
                                     </a>
                                 </li>
-                                <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable"
-                                        href="https://www.donationalerts.com/r/zippwitch"><i class="fas fa-coffee"></i>
+                                <li itemprop="name"><a itemprop="url" tabindex="0" class="hoverable" href="https://www.donationalerts.com/r/zippwitch"><i class="fas fa-coffee"></i>
                                         Донат</a></li>
                             </ul>
                         </nav>
@@ -82,7 +85,7 @@
                     <ul class="menu__box">
                         <li><a class=" menu__item" href="../"><i class="fas fa-home"> </i> Главная</a></li>
                         <li><a class="menu__item" href="../portfolio"><i class="fas fa-user"> </i> Портфолио</a>
-                        <li><a class="menu__item" href="../team"><i class="fas fa-handshake"> </i> Лучшие</a></li>
+                            <li><a class="menu__item" href="../team"><i class="fas fa-handshake"> </i> Лучшие</a></li>
                         </li>
                         <li><a class="menu__item" href="https://www.donationalerts.com/r/zippwitch"><i
                                     class="fas fa-coffee"> </i> Донат</a></li>
@@ -118,24 +121,20 @@
                         <img src="" onerror="this.src='../img/avatars/1.gif'" class="itemPersonalPage avatar black2">
 
 
-                        <a href="https://www.donationalerts.com/r/zippwitch" class="tempBtn boost black2"
-                            target="_blank" rel="noopener" title="Оплатить счёт" tabindex="0">Оплатить
+                        <a href="https://www.donationalerts.com/r/zippwitch" class="tempBtn boost black2" target="_blank" rel="noopener" title="Оплатить счёт" tabindex="0">Оплатить
                             499₽</a>
                     </div>
                     <div class="col-md-8">
                         <div class="container2">
                             <br>
                             <div class="row2 centeredContent">
-                                <img class="itemPersonalPage lang" src="../img/icons/JavaScript.svg" alt="ЯП"
-                                    title="ru">
+                                <img class="itemPersonalPage lang" src="../img/icons/JavaScript.svg" alt="ЯП" title="ru">
                                 <h1 class="itemPersonalPage name centeredContent" style="margin: 0;">Music/moder d-c bot
                                 </h1>
                             </div>
                             <br>
-                            <article class="row2 itemPersonalPage des centeredContent">Основные команды модерации:<br>
-                                ban, clear, kick, lock-channel, move, mute, poll, unban, unlock-channel, unmute.
-                                <br>Основные команды музыки:<br>
-                                loop, now-playing, play, queue, resume, shuffle, skip, stop, volume
+                            <article class="row2 itemPersonalPage des centeredContent">Основные команды модерации:<br> ban, clear, kick, lock-channel, move, mute, poll, unban, unlock-channel, unmute.
+                                <br>Основные команды музыки:<br> loop, now-playing, play, queue, resume, shuffle, skip, stop, volume
                                 <br>Дополнительно: help, eval, reload
 
                             </article>

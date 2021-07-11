@@ -301,7 +301,6 @@ hr {
 
 .portfolio__card-num {
     padding-top: 3px;
-    z-index: 1;
     height: 35px;
     left: 0;
     position: absolute;
@@ -311,6 +310,7 @@ hr {
     border-radius: 0 0 15px 0px;
     border: none;
     color: #FFF;
+    z-index: 0;
 }
 
 .portfolio__card-newBadge {

@@ -43,7 +43,7 @@ a:hover {
     top: 50%;
     -webkit-transform: translate3d(0, -50%, 0);
     transform: translate3d(0, -50%, 0);
-    z-index: 200;
+    z-index: 1;
     margin-left: 11%;
     pointer-events: none;
 }
@@ -60,10 +60,10 @@ a:hover {
         text-align: center;
         width: 87.5%;
         margin: 0 5%;
-        top: auto;
+        top: 65%;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
-        bottom: 8rem;
+        /* bottom: 8rem; */
     }
 }
 
@@ -230,6 +230,7 @@ a:hover {
     align-items: center;
     position: relative;
     color: #fff;
+    z-index: 0;
 }
 
 @media screen and (max-width:420px) {
@@ -280,7 +281,7 @@ a:hover {
         width: 80%;
         height: 40.633%;
         left: 10%;
-        top: 10.859%;
+        top: 20.859%;
     }
 }
 

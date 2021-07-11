@@ -315,7 +315,7 @@ img {
 	width: 26px;
 	height: 26px;
 	cursor: pointer;
-	z-index: 1;
+	z-index: 9;
 }
 
 .menu__btn>span, .menu__btn>span::before, .menu__btn>span::after {
@@ -353,7 +353,8 @@ img {
 	text-align: center;
 	background-color: #7f78bd;
 	box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-	transition: .5s
+	transition: .5s;
+	z-index: 8;
 }
 
 /* элементы меню */
@@ -366,7 +367,8 @@ img {
 	font-size: 20px;
 	font-weight: 600;
 	text-decoration: none;
-	transition: all 0.3s
+	transition: all 0.3s;
+	z-index: 7;
 }
 
 .menu__item:hover {
@@ -541,7 +543,7 @@ main {
 	background: #7f78bd;
 	min-width: 100%;
 	height: 60px;
-	z-index: 1;
+	z-index: 9;
 }
 
 .top-line.h {

@@ -876,9 +876,26 @@ main {
     width: 142px;
     height: 40px;
     margin: -20px 0 0 -71px;
+    /* background: #fff; */
     background: #100e17;
     filter: contrast(20);
 }
+
+/* .gooey__container {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    width: 142px;
+    height: 130px;
+    margin: -20px 0 0 -71px;
+    background: black;
+}
+.gooey__container img {
+    height: 70px;
+    margin-top: 45px;
+    margin-left: 25%;
+    filter:grayscale(0.5)
+} */
 
 .gooey .dot {
     position: absolute;

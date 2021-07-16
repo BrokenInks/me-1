@@ -40,6 +40,20 @@
     transition: .2s ease;
 }
 
+.col-md-4 {
+    height: 50%
+}
+
+.screenshots{
+    padding: 15px;
+    height: 460px
+}
+
+.screenshots img {
+    border-radius: 8px;
+    height: 400px
+}
+
 @media (min-width:576px) {
     .container2 {
         max-width: 540px;

@@ -47,7 +47,7 @@ for (let i = 1; i <= Object.keys(profile).length - 1; i++) {
                                                 width="110" height="110"
                                                 style="
                                                 transition: .3s; border-radius: 20%; border: 2px solid #fff; margin-bottom: 15px; margin-top: 10px; background-color: rgb(33 37 41);"
-                                                alt="${profile[i].name}" loading="lazy"
+w                                                alt="${profile[i].name}" loading="lazy"
                                                 onerror="this.src = '../img/avatars/avatar.gif';">
                                             <div class="badge_icon"></div>
                                             <h5 class="portfolio__card-title">

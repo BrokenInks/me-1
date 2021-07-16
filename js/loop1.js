@@ -15,6 +15,8 @@ const profile = {
     6: { name: `${sim['bug-hunter']} Luminity`, description: `Лучший сервер`, icon: './img/avatars/radeon.png', bg: 'url(./img/avatars/radeon.png)', color: '#dd3f55', link: 'https://discord.gg/radeon' },
     7: { name: 'List&ltDemetry>🐾', description: `:c_ringed_planet: Сатурн-шиза`, icon: 'https://cdn.discordapp.com/avatars/641299259747991592/df0bdc3881921bfcf94ddc7ffeab1421.png?size=2048', buttonShare: { link: 'https://discord.gg/T8we7sYnCN', title: 'Скопировать ссылку на Discord сервер' }, date: 'Дружище', bg: '', color: '#3395db', link: 'https://discord.gg/T8we7sYnCN' },
     8: { name: `${sim['banana']} алех даббер`, description: `Сильная:c_russianbaby:независимая:flushed:женщина:c_cryrage:с_прекрасным_голосом`, icon: './img/avatars/алех.gif', bg: '', color: '', link: './team' },
+    9: { name: `BrokenInk`, description: `:c_emoji_4:Bot Developer, not verified developer`, icon: 'https://i.gifer.com/QZfI.gif', bg: 'https://pa1.narvii.com/6757/39a71dc75844ff997a6d3197989dfda1e8acc7e5_hq.gif', color: 'black', link: 'https://zippw.github.io/me/BrokenInk' },
+
 
 }
 

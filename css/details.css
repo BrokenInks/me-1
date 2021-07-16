@@ -57,10 +57,14 @@
     max-width: 200px
 }
 
-@media screen and (max-width:522) {
+@media screen and (max-width:523px) {
     .screenshots .img {
-        max-height: 100px;
-        max-width: 100px
+        left: 50%;
+        max-height: 150px;
+        max-width: 150px
+    }
+    .screenshots h1 {
+        text-align: center;
     }
 }
 
@@ -74,7 +78,7 @@
     margin-bottom: -1em;
 } */
 
-a {
+.screenshotsA {
     display: inline-block;
 }
 

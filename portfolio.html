@@ -31,13 +31,7 @@
 
 <body>
     <script>
-        window.onload = function() {
-            document.body.classList.add('loaded_hiding');
-            window.setTimeout(function() {
-                document.body.classList.add('loaded');
-                document.body.classList.remove('loaded_hiding');
-            }, 500);
-        }
+        window.onload = function () { document.body.classList.add("loaded_hiding"), window.setTimeout(function () { document.body.classList.add("loaded"), document.body.classList.remove("loaded_hiding") }, 500) };
     </script>
 
     <div class="preloader">
@@ -61,7 +55,8 @@
             <div class="row">
                 <div class="col-md-12" style="padding-right: 0">
                     <div id="hide" class="logo" alt="">
-                        <a itemprop="url" tabindex="0" href="./" alt="DISCORD" title="На главную"><img itemprop="logo" class="hoverable" src="./img/logo.svg"></a>
+                        <a itemprop="url" tabindex="0" href="./" alt="DISCORD" title="На главную"><img itemprop="logo"
+                                class="hoverable" src="./img/logo.svg"></a>
                     </div>
 
                     <div class="menu-head hidden-sm hidden-xs">
@@ -78,7 +73,8 @@
                                     </a>
                                 </li>
                                 <li itemprop="name">
-                                    <a itemprop="url" tabindex="0" class="hoverable" href="https://www.donationalerts.com/r/zippwitch">
+                                    <a itemprop="url" tabindex="0" class="hoverable"
+                                        href="https://www.donationalerts.com/r/zippwitch">
                                         <i class="fas fa-coffee"></i> Донат
                                     </a>
                                 </li>
@@ -127,36 +123,36 @@
     <!-- content -->
     <style>
         /*! CSS Used from: https://discord.com/assets/0.9101655e82ea93181bab.css */
-        
+
         .desaturate-qhyunI {
             -webkit-filter: saturate(var(--saturation-factor, 1));
             filter: saturate(var(--saturation-factor, 1));
         }
-        
+
         .colorStandard-2KCXvj {
             color: var(--text-normal);
         }
-        
+
         .size16-1P40sf {
             font-size: 16px;
             line-height: 20px;
         }
-        
+
         .size24-RIRrxO {
             font-size: 24px;
             line-height: 30px;
         }
-        
+
         .menu-head {
             padding: 2px
         }
-        
+
         .base-1x0h_U {
             font-family: var(--font-display);
             font-weight: 600;
             color: var(--header-primary);
         }
-        
+
         .inputWrapper-31_8H8 {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -166,7 +162,7 @@
             -ms-flex-direction: column;
             flex-direction: column;
         }
-        
+
         .input-cIJ7To {
             font-size: 16px;
             -webkit-box-sizing: border-box;
@@ -176,25 +172,25 @@
             -webkit-transition: border-color .2s ease-in-out;
             transition: border-color .2s ease-in-out;
         }
-        
+
         .input-cIJ7To::-webkit-input-placeholder {
             -webkit-user-select: none;
             user-select: none;
             color: var(--text-muted);
         }
-        
+
         .input-cIJ7To::-moz-placeholder {
             -moz-user-select: none;
             user-select: none;
             color: var(--text-muted);
         }
-        
+
         .input-cIJ7To:-ms-input-placeholder {
             -ms-user-select: none;
             user-select: none;
             color: var(--text-muted);
         }
-        
+
         .input-cIJ7To::placeholder {
             -webkit-user-select: none;
             -moz-user-select: none;
@@ -202,20 +198,20 @@
             user-select: none;
             color: var(--text-muted);
         }
-        
+
         .input-cIJ7To:hover {
             border-color: var(--deprecated-text-input-border-hover);
         }
-        
+
         .input-cIJ7To:focus {
             border-color: var(--text-link);
         }
-        
+
         .inputDefault-_djjkz {
             padding: 10px;
             height: 40px;
         }
-        
+
         div,
         h3,
         img {
@@ -228,64 +224,64 @@
             font-size: 100%;
             vertical-align: baseline;
         }
-        
-         ::-webkit-input-placeholder,
+
+        ::-webkit-input-placeholder,
         input {
             font-family: var(--font-primary);
             font-weight: 400;
         }
-        
-         ::-moz-placeholder,
+
+        ::-moz-placeholder,
         input {
             font-family: var(--font-primary);
             font-weight: 400;
         }
-        
-         :-ms-input-placeholder,
+
+        :-ms-input-placeholder,
         input {
             font-family: var(--font-primary);
             font-weight: 400;
         }
-        
-         ::placeholder,
+
+        ::placeholder,
         input {
             font-family: var(--font-primary);
             font-weight: 400;
         }
-        
-         ::-webkit-input-placeholder,
+
+        ::-webkit-input-placeholder,
         input {
             font-family: var(--font-primary);
             text-rendering: optimizeLegibility;
         }
-        
-         ::-moz-placeholder,
+
+        ::-moz-placeholder,
         input {
             font-family: var(--font-primary);
             text-rendering: optimizeLegibility;
         }
-        
-         :-ms-input-placeholder,
+
+        :-ms-input-placeholder,
         input {
             font-family: var(--font-primary);
             text-rendering: optimizeLegibility;
         }
-        
-         ::placeholder,
+
+        ::placeholder,
         input {
             font-family: var(--font-primary);
             text-rendering: optimizeLegibility;
         }
-        
+
         div,
         input {
             outline: 0;
         }
-        
+
         img[alt] {
             text-indent: -9999px;
         }
-        
+
         .searchBox-3Y2Vi7 {
             position: relative;
             overflow: hidden;
@@ -301,7 +297,7 @@
             border: 1px solid transparent;
             transition: .4s;
         }
-        
+
         .searchBox-3Y2Vi7 .searchBoxInput-uJtBcv {
             font-family: 'Montserrat Light';
             border: none;
@@ -312,67 +308,67 @@
             background: transparent;
             height: auto;
         }
-        
+
         .searchBox-3Y2Vi7 .searchBoxInput-uJtBcv::-webkit-input-placeholder {
             font-weight: 500;
         }
-        
+
         .searchBox-3Y2Vi7 .searchBoxInput-uJtBcv::-moz-placeholder {
             font-weight: 500;
         }
-        
+
         .searchBox-3Y2Vi7 .searchBoxInput-uJtBcv:-ms-input-placeholder {
             font-weight: 500;
         }
-        
+
         .searchBox-3Y2Vi7 .searchBoxInput-uJtBcv::placeholder {
             font-weight: 500;
         }
-        
+
         .searchBoxInputWrapper-nKncfu {
             -webkit-box-flex: 1;
             -ms-flex: 1;
             flex: 1;
         }
-        
+
         .searchIcon-1a1-yA {
             -ms-flex-negative: 0;
             flex-shrink: 0;
             -webkit-transition: color .2s ease;
             transition: color .2s ease;
         }
-        
+
         .searchIcon-1a1-yA {
             width: 1.4em;
             height: 1.4em;
         }
-        
+
         .theme-dark .searchBox-3Y2Vi7 {
             background-color: #4f545c;
             -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
         }
-        
+
         .theme-dark .searchBox-3Y2Vi7 .searchBoxInput-uJtBcv::-webkit-input-placeholder {
             color: hsla(0, 0%, 100%, .3);
         }
-        
+
         .theme-dark .searchBox-3Y2Vi7 .searchBoxInput-uJtBcv::-moz-placeholder {
             color: hsla(0, 0%, 100%, .3);
         }
-        
+
         .theme-dark .searchBox-3Y2Vi7 .searchBoxInput-uJtBcv:-ms-input-placeholder {
             color: hsla(0, 0%, 100%, .3);
         }
-        
+
         .theme-dark .searchBox-3Y2Vi7 .searchBoxInput-uJtBcv::placeholder {
             color: hsla(0, 0%, 100%, .3);
         }
-        
+
         .theme-dark .searchIcon-1a1-yA {
             color: hsla(0, 0%, 100%, .3);
         }
-        
+
         .container-V70vZ2 {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -382,60 +378,60 @@
             justify-content: flex-start;
             margin-top: 16px;
         }
-        
+
         .search-1iTphC {
             width: 100%;
             max-width: 560px;
             position: relative;
             margin: auto auto 16px;
         }
-        
+
         .search-1iTphC .searchBox-2_mAlO {
             z-index: 0;
             border-radius: 8px;
             background-color: #fff;
             padding-right: 8px;
         }
-        
+
         .search-1iTphC .searchBox-2_mAlO:focus {
             -webkit-box-shadow: 0 0 0 1px #5b43f0, 0 0 0 2px #bdb3f9, 0 0 0 3px #bdb3f9;
             box-shadow: 0 0 0 1px #5b43f0, 0 0 0 2px #bdb3f9, 0 0 0 3px #bdb3f9;
             border-color: transparent;
         }
-        
+
         .search-1iTphC .searchBox-2_mAlO .searchBoxInput-K6mkng {
             font-size: 16px;
             padding: 8px;
             color: #2e3338;
         }
-        
+
         .search-1iTphC .searchBox-2_mAlO .searchBoxInput-K6mkng::-webkit-input-placeholder {
             color: #72767d;
         }
-        
+
         .search-1iTphC .searchBox-2_mAlO .searchBoxInput-K6mkng::-moz-placeholder {
             color: #72767d;
         }
-        
+
         .search-1iTphC .searchBox-2_mAlO .searchBoxInput-K6mkng:-ms-input-placeholder {
             color: #72767d;
         }
-        
+
         .search-1iTphC .searchBox-2_mAlO .searchBoxInput-K6mkng::placeholder {
             color: #72767d;
         }
-        
+
         .search-1iTphC .searchBox-2_mAlO .searchIcon-6ljH-4 {
             color: rgba(79, 84, 92, .6);
         }
-        
+
         .searchHeader-2I26nG {
             position: relative;
             text-align: center;
             min-height: 200px;
             transition: .2s
         }
-        
+
         .headerImage-3X1tyY {
             margin: 0 auto;
             display: inherit;
@@ -444,32 +440,33 @@
             width: calc(92% - 7px);
             transition: .1s
         }
-        
+
         @media (max-width:1411px) {
             .headerImage-3X1tyY {
                 width: 90%
             }
         }
-        
+
         @media (max-width:1355px) {
             .headerImage-3X1tyY {
                 width: 84%
             }
         }
-        
+
         @media (max-width:1100px) {
             .headerImage-3X1tyY {
                 width: 100%
             }
+
             main {
                 top: -20px
             }
         }
-        
+
         main {
             padding-bottom: 60px;
         }
-        
+
         .headerContentWrapper-2u32yq {
             position: absolute;
             top: 0;
@@ -486,66 +483,68 @@
             -ms-flex-pack: center;
             justify-content: center;
         }
-        
+
         .headerContent-2gImvv {
             width: 100%;
             min-width: 360px;
             max-width: 820px;
             margin: 0 240px;
         }
-        
+
         .searchTitle-36D1cB {
             text-shadow: 1px 1px 2px black;
             font-size: 50px;
             color: #fff;
         }
-        
+
         @media screen and (max-width: 1087px) {
             .searchTitle-36D1cB {
                 font-size: 40px
             }
+
             .headerImage-3X1tyY {
                 border-radius: 0;
             }
         }
-        
+
         @media screen and (max-width: 964px) {
             .searchTitle-36D1cB {
                 font-size: 35px
             }
         }
-        
+
         @media screen and (max-width: 904px) {
             .searchTitle-36D1cB {
                 font-size: 30px
             }
         }
-        
+
         @media screen and (max-width: 560px) {
             .searchHeader-2I26nG {
                 height: 100px
             }
+
             .headerImage-3X1tyY {
                 height: 100%;
             }
         }
-        
+
         .searchSubtitle-2jsC5X {
             font-family: 'Montserrat Medium';
             color: #fff;
             margin-top: 18px;
         }
-        
+
         @media (max-width:1265px) {
             .searchSubtitle-2jsC5X {
                 font-size: 14px;
             }
         }
-        
+
         .container-V70vZ2 {
             position: relative
         }
-        
+
         .itemDiv {
             position: absolute;
             z-index: 2;
@@ -553,7 +552,7 @@
             font-size: 15px;
             transition: all .3s;
         }
-        
+
         .item {
             font-family: 'Montserrat Medium', sans-serif;
             color: black;
@@ -562,43 +561,45 @@
             background: rgb(228, 228, 228);
             transition: .1s
         }
-        
+
         button {
             transition: 3s;
             font-size: 15px;
             border: none
         }
-        
+
         @media screen and (min-width:844px) {
             .itemDiv {
                 width: 560px;
                 left: calc(50% - 280px)
             }
+
             button {
                 width: 560px;
                 left: calc(50% - 280px)
             }
         }
-        
+
         @media screen and (max-width:844px) {
             .itemDiv {
                 width: 360px;
                 left: calc(50% - 180px)
             }
+
             button {
                 width: 360px;
                 left: calc(50% - 180px)
             }
         }
-        
+
         .itemClose {
             background: rgb(221, 81, 81)
         }
-        
+
         .item:hover {
             background: #c1a3e3
         }
-        
+
         .show {
             display: block;
         }
@@ -646,7 +647,8 @@
                 <div class="headerContent-2gImvv">
                     <h3 class="searchTitle-36D1cB base-1x0h_U size24-RIRrxO">Портфолио ZippWitch
                     </h3>
-                    <div class="colorStandard-2KCXvj size16-1P40sf searchSubtitle-2jsC5X">Здесь собраны некоторые мои проекты
+                    <div class="colorStandard-2KCXvj size16-1P40sf searchSubtitle-2jsC5X">Здесь собраны некоторые мои
+                        проекты
                     </div>
                     <div class="container-V70vZ2">
                         <div class="search-1iTphC">
@@ -655,53 +657,22 @@
 
                                     <div class="dropdown">
                                         <div class="dropdown-content">
-                                            <input onkeyup="filterFunction()" class="inputDefault-_djjkz input-cIJ7To searchBoxInput-uJtBcv searchBoxInput-K6mkng" name="search" maxlength="100" id="myInput" placeholder="Поиск" aria-label="а" autocomplete="off" type="text" value="" onfocus="show()">
+                                            <input onkeyup="filterFunction()"
+                                                class="inputDefault-_djjkz input-cIJ7To searchBoxInput-uJtBcv searchBoxInput-K6mkng"
+                                                name="search" maxlength="100" id="myInput" placeholder="Поиск"
+                                                aria-label="а" autocomplete="off" type="text" value="" onfocus="show()">
 
 
 
                                             <script>
-                                                /* Когда пользователь нажимает на кнопку,
-                                                                                                переключение между скрытием и отображением раскрывающегося содержимого */
-                                                function show() {
-                                                    var TextElements = document.getElementsByClassName("item");
 
-                                                    for (var i = 0, max = TextElements.length; i < max; i++) {
-                                                        TextElements[i].style.display = "block";
-                                                    }
-                                                    let dropdown = 'showed'
-                                                    console.log(dropdown)
-                                                }
-
-                                                function remove() {
-                                                    var TextElements = document.getElementsByClassName("item");
-
-                                                    for (var i = 0, max = TextElements.length; i < max; i++) {
-                                                        TextElements[i].style.display = "none";
-                                                    }
-                                                }
-
-
-                                                function filterFunction() {
-                                                    var input, filter, ul, li, a, i;
-                                                    input = document.getElementById("myInput");
-                                                    filter = input.value.toUpperCase();
-                                                    div = document.getElementById("myDropdown");
-                                                    a = div.getElementsByTagName("a");
-                                                    console.log(div)
-                                                    for (i = 0; i < a.length; i++) {
-                                                        txtValue = a[i].textContent || a[i].innerText;
-                                                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                                                            a[i].style.display = "";
-                                                        } else {
-                                                            a[i].style.display = "none";
-                                                        }
-                                                    }
-                                                }
+                                                function show() { for (var e = document.getElementsByClassName("item"), t = 0, n = e.length; t < n; t++)e[t].style.display = "block"; console.log("showed") } function remove() { for (var e = document.getElementsByClassName("item"), t = 0, n = e.length; t < n; t++)e[t].style.display = "none" } function filterFunction() { var e, t, n; for (e = document.getElementById("myInput").value.toUpperCase(), div = document.getElementById("myDropdown"), t = div.getElementsByTagName("a"), console.log(div), n = 0; n < t.length; n++)txtValue = t[n].textContent || t[n].innerText, txtValue.toUpperCase().indexOf(e) > -1 ? t[n].style.display = "" : t[n].style.display = "none" }
                                             </script>
 
                                         </div>
                                     </div>
-                                </div><svg class="searchIcon-1a1-yA searchIcon-6ljH-4" aria-label="Поиск" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+                                </div><svg class="searchIcon-1a1-yA searchIcon-6ljH-4" aria-label="Поиск"
+                                    aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
                                     <path fill="currentColor"
                                         d="M21.707 20.293L16.314 14.9C17.403 13.504 18 11.799 18 10C18 7.863 17.167 5.854 15.656 4.344C14.146 2.832 12.137 2 10 2C7.863 2 5.854 2.832 4.344 4.344C2.833 5.854 2 7.863 2 10C2 12.137 2.833 14.146 4.344 15.656C5.854 17.168 7.863 18 10 18C11.799 18 13.504 17.404 14.9 16.314L20.293 21.706L21.707 20.293ZM10 16C8.397 16 6.891 15.376 5.758 14.243C4.624 13.11 4 11.603 4 10C4 8.398 4.624 6.891 5.758 5.758C6.891 4.624 8.397 4 10 4C11.603 4 13.109 4.624 14.242 5.758C15.376 6.891 16 8.398 16 10C16 11.603 15.376 13.11 14.242 14.243C13.109 15.376 11.603 16 10 16Z">
                                     </path>
@@ -711,7 +682,8 @@
                     </div>
                     <div class="itemDiv" id="myDropdown" tabindex="0">
 
-                        <button onclick="remove()" class="item itemClose" id="itemClose" style="border-radius: 8px 8px 0 0;"><i style="color: #fff"
+                        <button onclick="remove()" class="item itemClose" id="itemClose"
+                            style="border-radius: 8px 8px 0 0;"><i style="color: #fff"
                                 class="fas fa-times"></i></button>
                         <a class="item" href="./items/program.html">Приложение с
                             ботом</a>
@@ -719,14 +691,16 @@
                         <a class="item" href="./items/buy-4.html">Mod бот на заказ</a>
                         <a class="item" href="./items/buy-1.html">FN bot#0209</a>
                         <a class="item" href="./items/buy-2.html">Slash bot#3799</a>
-                        <a class="item" href="https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ">Альбом Выва 2 |
+                        <a class="item"
+                            href="https://youtube.com/playlist?list=PL2KqJq9LIGN7q1zGbuYIi5jXvtamjrseQ">Альбом Выва 2 |
                             2021 -
                             YouTube</a>
                         <a class="item" href="https://soundcloud.com/valeriy-is-bro-vp/sets/2-1">Альбом Выва 2 |
                             2021 -
                             SoundCloud</a>
                         <a class="item">Альбом Выва | 2020</a>
-                        <a class="item" href="./items/program-1.html" style="border-radius: 0 0 8px 8px;">Приложение sPoint</a>
+                        <a class="item" href="./items/program-1.html" style="border-radius: 0 0 8px 8px;">Приложение
+                            sPoint</a>
                     </div>
                     <script>
                         remove()
@@ -745,28 +719,7 @@
                                 <script src="js/loop2.js"></script>
                             </div>
                             <script>
-                                function copyLink(e, valid) {
-                                    let link = e.target.dataset.link;
-                                    let tmp = document.createElement('INPUT');
-                                    tmp.value = link;
-                                    document.body.appendChild(tmp);
-                                    tmp.select();
-                                    console.log(tmp.value)
-                                    document.execCommand('copy');
-                                    document.body.removeChild(tmp);
-
-                                    valid ?
-                                        Notify({
-                                            title: 'Ссылка скопирована!',
-                                            position: 'bottom center',
-                                            type: 'success'
-                                        }) :
-                                        Notify({
-                                            title: 'Ссылка неккоректна',
-                                            position: 'bottom center',
-                                            type: 'danger'
-                                        })
-                                }
+                                function copyLink(e, t) { let o = e.target.dataset.link, n = document.createElement("INPUT"); n.value = o, document.body.appendChild(n), n.select(), console.log(n.value), document.execCommand("copy"), document.body.removeChild(n), t ? Notify({ title: "Ссылка скопирована!", position: "bottom center", type: "success" }) : Notify({ title: "Ссылка неккоректна", position: "bottom center", type: "danger" }) }
                             </script>
 
 

@@ -34,13 +34,7 @@
 
 <body>
     <script>
-        window.onload = function () {
-            document.body.classList.add('loaded_hiding');
-            window.setTimeout(function () {
-                document.body.classList.add('loaded');
-                document.body.classList.remove('loaded_hiding');
-            }, 500);
-        }
+        window.onload = function () { document.body.classList.add("loaded_hiding"), window.setTimeout(function () { document.body.classList.add("loaded"), document.body.classList.remove("loaded_hiding") }, 500) };
     </script>
 
     <div class="preloader">
@@ -286,93 +280,7 @@
                         <script src="./js/lib/esm/index.js"></script>
                         <div class="row2" id="all-bots">
                             <script>
-                                // functions
-                                function copyLink(e) {
-                                    let link = `id: {name: \`${document.getElementById('title').value}\`,description: \`${document.getElementById('description').value}\`,icon: '${document.getElementById('icon').value}',bg: '${document.getElementById('bg').value}',color: '${document.getElementById('color').value}',link: '${document.getElementById('link').value}'},`;
-                                    let tmp = document.createElement('INPUT');
-                                    tmp.value = link;
-                                    document.body.appendChild(tmp);
-                                    tmp.select();
-                                    document.execCommand('copy');
-                                    document.body.removeChild(tmp);
-                                }
-                                butt.onclick = function () {
-                                    if (!document.getElementById('title').value) return Notify({
-                                        title: 'Элемент "заголовок" обязателен',
-                                        type: 'danger'
-                                    })
-                                    if (!document.getElementById('icon').value) return Notify({
-                                        title: 'Элемент "аватарка" обязателен',
-                                        type: 'danger'
-                                    })
-                                    if (!document.getElementById('description').value) return Notify({
-                                        title: 'Элемент "описание" обязателен',
-                                        type: 'danger'
-                                    })
-                                    copyLink(event)
-                                    Notify({
-                                        title: 'Код скопирован! Отправьте его владельцу для получения карточки профиля',
-                                        position: 'bottom center',
-                                        type: 'warning',
-                                        duration: 5000
-                                    })
-                                    // document.getElementById('str').innerHTML = code
-
-                                };
-                                oninputFn = function (prev) {
-                                    // let elem = document.getElementById('update')
-                                    // elem.remove();
-                                    document.getElementById('teamIcon').src = document.getElementById('icon').value;
-                                    document.getElementById('teamIcon').style.borderColor = document.getElementById('color').value || '#7f78bd'
-                                    document.getElementById('color/bg').style.background = document.getElementById('bg').value;
-                                    document.getElementById('color/bg').style.color = document.getElementById('bg').value || '#202230';
-                                    document.getElementById('color/bg').style.borderColor = document.getElementById('color').value || '#7f78bd';
-                                    document.getElementById('teamTitle').innerHTML = document.getElementById('title').value;
-                                    document.getElementById('teamDescription').innerHTML = document.getElementById('description').value.replace(/:\w+:/g, (i) => `<i class="twa twa-${i.replaceAll(':', '').replaceAll('_', '-')}"></i>`)
-                                    document.getElementById('teamLink').href = document.get
-
-                                }
-
-                                // generator
-
-                                let i = 0;
-                                const profile = {
-                                    defColor: '#7f78bd',
-                                    0: {
-                                        name: document.getElementById('title').value,
-                                        description: document.getElementById('description').value,
-                                        icon: document.getElementById('icon').value,
-                                        bg: document.getElementById('bg').value,
-                                        color: document.getElementById('color').value,
-                                        button: {
-                                            title: 'Вступить',
-                                            link: document.getElementById('link').value,
-                                            color: '#3395db'
-                                        }
-                                    },
-                                }
-                                prev = `
-                                <div id="update" class="col">
-                                
-                                    <div id="color/bg" style="border-color: ${profile[i].color ? profile[i].color : profile.defColor}; background: ${profile[i].bg || '#202230'} no-repeat; background-size: cover;" class="portfolio__card new-portfolio__card card__team">
-                                        <div class="portfolio__card-head">
-                                        </div>
-                                        <div class="padd" style="position: relative;">
-                                            <img id="teamIcon" src="${profile[i].icon}" onerror="this.src='./img/avatars/avatar.gif'"
-                                                width="110" height="110"
-                                                style="border-radius: 20%; border: 2px solid; border-color: ${profile[i].color !== '' ? profile[i].color : profile.defColor}; margin-bottom: 15px; margin-top: 10px; background-color: rgb(33 37 41);"
-                                                loading="lazy">
-                                            <h5 style="color: #fff" id="teamTitle" class="portfolio__card-title">
-                                                <a href="${profile[i].button.link}"
-                                                    class="hoverable partner-va">${profile[i].name}</a><br><span style="margin-top: 10px;"
-                                            </h5>
-                                        </div>
-                                        <div class="portfolio__card-bd">
-                                            <p id="teamDescription" class="portfolio__card-text">${profile[i].description.replace(/:\w+:/g, (i) => `<i class="twa twe-${i.replaceAll(':', '')}"></i>`)}</p >
-                                        </div >
-                                    </div >
-                                </div >`
-                                document.write(prev)
+                                function copyLink(e) { let t = `id: {name: \`${document.getElementById("title").value}\`,description: \`${document.getElementById("description").value}\`,icon: '${document.getElementById("icon").value}',bg: '${document.getElementById("bg").value}',color: '${document.getElementById("color").value}',link: '${document.getElementById("link").value}'},`, o = document.createElement("INPUT"); o.value = t, document.body.appendChild(o), o.select(), document.execCommand("copy"), document.body.removeChild(o) } butt.onclick = function () { return document.getElementById("title").value ? document.getElementById("icon").value ? document.getElementById("description").value ? (copyLink(event), void Notify({ title: "Код скопирован! Отправьте его владельцу для получения карточки профиля", position: "bottom center", type: "warning", duration: 5e3 })) : Notify({ title: 'Элемент "описание" обязателен', type: "danger" }) : Notify({ title: 'Элемент "аватарка" обязателен', type: "danger" }) : Notify({ title: 'Элемент "заголовок" обязателен', type: "danger" }) }, oninputFn = function (e) { document.getElementById("teamIcon").src = document.getElementById("icon").value, document.getElementById("teamIcon").style.borderColor = document.getElementById("color").value || "#7f78bd", document.getElementById("color/bg").style.background = document.getElementById("bg").value, document.getElementById("color/bg").style.color = document.getElementById("bg").value || "#202230", document.getElementById("color/bg").style.borderColor = document.getElementById("color").value || "#7f78bd", document.getElementById("teamTitle").innerHTML = document.getElementById("title").value, document.getElementById("teamDescription").innerHTML = document.getElementById("description").value.replace(/:\w+:/g, e => `<i class="twa twa-${e.replaceAll(":", "").replaceAll("_", "-")}"></i>`), document.getElementById("teamLink").href = document.get }; let i = 0; const profile = { defColor: "#7f78bd", 0: { name: document.getElementById("title").value, description: document.getElementById("description").value, icon: document.getElementById("icon").value, bg: document.getElementById("bg").value, color: document.getElementById("color").value, button: { title: "Вступить", link: document.getElementById("link").value, color: "#3395db" } } }; prev = `\n                                <div id="update" class="col">\n                                \n                                    <div id="color/bg" style="border-color: ${profile[i].color ? profile[i].color : profile.defColor}; background: ${profile[i].bg || "#202230"} no-repeat; background-size: cover;" class="portfolio__card new-portfolio__card card__team">\n                                        <div class="portfolio__card-head">\n                                        </div>\n                                        <div class="padd" style="position: relative;">\n                                            <img id="teamIcon" src="${profile[i].icon}" onerror="this.src='./img/avatars/avatar.gif'"\n                                                width="110" height="110"\n                                                style="border-radius: 20%; border: 2px solid; border-color: ${"" !== profile[i].color ? profile[i].color : profile.defColor}; margin-bottom: 15px; margin-top: 10px; background-color: rgb(33 37 41);"\n                                                loading="lazy">\n                                            <h5 style="color: #fff" id="teamTitle" class="portfolio__card-title">\n                                                <a href="${profile[i].button.link}"\n                                                    class="hoverable partner-va">${profile[i].name}</a><br><span style="margin-top: 10px;"\n                                            </h5>\n                                        </div>\n                                        <div class="portfolio__card-bd">\n                                            <p id="teamDescription" class="portfolio__card-text">${profile[i].description.replace(/:\w+:/g, e => `<i class="twa twe-${e.replaceAll(":", "")}"></i>`)}</p >\n                                        </div >\n                                    </div >\n                                </div >`, document.write(prev);
                             </script>
                         </div>
                     </table>

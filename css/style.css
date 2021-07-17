@@ -155,8 +155,7 @@ body {
     }
 }
 
-body h1,
-body a {
+body h1, body a {
     color: #fff;
 }
 
@@ -243,8 +242,7 @@ header h1:hover {
     border-radius: 15px;
 }
 
-header,
-header:before {
+header, header:before {
     background: 50% 50% / cover;
 }
 
@@ -320,9 +318,7 @@ img {
     z-index: 9;
 }
 
-.menu__btn>span,
-.menu__btn>span::before,
-.menu__btn>span::after {
+.menu__btn>span, .menu__btn>span::before, .menu__btn>span::after {
     display: block;
     position: absolute;
     width: 100%;
@@ -340,7 +336,6 @@ img {
     content: '';
     top: 8px;
 }
-
 
 /* контейнер меню */
 
@@ -361,7 +356,6 @@ img {
     transition: .5s;
     z-index: 8;
 }
-
 
 /* элементы меню */
 
@@ -400,7 +394,6 @@ img {
     visibility: visible;
     left: 0;
 }
-
 
 /* АБЬТБА */
 
@@ -794,7 +787,6 @@ main {
     color: #322a63a4;
 }
 
-
 /* preloader */
 
 .preloader {
@@ -810,7 +802,6 @@ main {
     /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
     z-index: 1001;
 }
-
 
 /* 
 .preloader__row {
@@ -871,7 +862,7 @@ main {
 
 .gooey {
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: 50%;
     width: 142px;
     height: 40px;
@@ -879,6 +870,18 @@ main {
     /* background: #fff; */
     background: #100e17;
     filter: contrast(20);
+}
+
+.gooey__img {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    width: 142px;
+    height: 142px;
+    margin: -20px 0 0 -71px;
+    /* background: #fff; */
+    /* background: #100e17; */
+    filter: contrast(1);
 }
 
 /* .gooey__container {
@@ -928,7 +931,7 @@ main {
     border-radius: 50%;
 }
 
-@-moz-keyframes dot {
+/* @-moz-keyframes dot {
     50% {
         transform: translateX(96px);
     }
@@ -974,4 +977,4 @@ main {
     50% {
         transform: translateX(-31px);
     }
-}
+} */

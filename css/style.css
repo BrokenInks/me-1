@@ -931,7 +931,7 @@ main {
     border-radius: 50%;
 }
 
-/* @-moz-keyframes dot {
+@-moz-keyframes dot {
     50% {
         transform: translateX(96px);
     }
@@ -977,4 +977,4 @@ main {
     50% {
         transform: translateX(-31px);
     }
-} */
+}
